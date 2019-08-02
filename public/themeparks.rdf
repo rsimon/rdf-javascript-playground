@@ -1,0 +1,4158 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+@prefix psn: <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn: <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix prn: <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix gas: <http://www.bigdata.com/rdf/gas#> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wdtn: <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix psv: <http://www.wikidata.org/prop/statement/value/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix pqv: <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix prv: <http://www.wikidata.org/prop/reference/value/> .
+@prefix pr: <http://www.wikidata.org/prop/reference/> .
+@prefix wdno: <http://www.wikidata.org/prop/novalue/> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wds: <http://www.wikidata.org/entity/statement/> .
+@prefix wdv: <http://www.wikidata.org/value/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix schema: <http://schema.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix geof: <http://www.opengis.net/def/geosparql/function/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+wd:Q2910494 dc:title "Boomers! Parks"@en .
+
+wd:Q8082781 dc:title "Šikland"@en ;
+	dc:spatial "Point(16.1674 49.4749)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Overview%20of%20%C5%A0ikland%20in%20Zvole%2C%20%C5%BD%C4%8F%C3%A1r%20nad%20S%C3%A1zavou%20District.jpg> .
+
+wd:Q3210673 dc:title "La Mer de sable"@en ;
+	dc:spatial "Point(2.67635 49.145388888)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/La%20Mer%20de%20sable%2001.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Rivi%C3%A8re%20Sauvage%20%28Mer%20de%20sable%29.jpg> .
+
+wd:Q4931459 dc:title "Boardwalk and Baseball"@en .
+
+wd:Q5412166 dc:title "Europe Street"@en .
+
+wd:Q5526490 dc:title "Gaslight Village"@en .
+
+wd:Q3392088 dc:title "Play City"@en ;
+	dc:spatial "Point(44.5574 40.2183)"^^geo:wktLiteral .
+
+wd:Q7515843 dc:title "Silver Beach Amusement Park"@en ;
+	dc:spatial "Point(-86.4875 42.1125)"^^geo:wktLiteral .
+
+wd:Q12066678 dc:title "Quassy Amusement Park"@en ;
+	dc:spatial "Point(-73.1504 41.5271)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Quassy.jpg> .
+
+wd:Q10344817 dc:title "Q10344817" .
+
+wd:Q10345426 dc:title "Q10345426" .
+
+wd:Q18770717 dc:title "Koningin Juliana Toren"@en ;
+	dc:spatial "Point(5.91583 52.22694)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Koningin%20Juliana%20Toren%20%286488535611%29.jpg> .
+
+wd:Q2784579 dc:title "Mondo Verde, Landgraaf"@en ;
+	dc:spatial "Point(6.02861 50.88528)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Landgraaf1.jpg> .
+
+wd:Q11863891 dc:title "Q11863891" .
+
+wd:Q3364125 dc:title "Q3364125" ;
+	dc:spatial "Point(3.0 36.75)"^^geo:wktLiteral .
+
+wd:Q5459545 dc:title "Flint Park"@en ;
+	dc:spatial "Point(-83.7195 43.0565)"^^geo:wktLiteral .
+
+wd:Q1718218 dc:title "Q1718218" ;
+	dc:spatial "Point(9.48611 50.2961)"^^geo:wktLiteral .
+
+wd:Q4703297 dc:title "Al-Tro Island Park"@en ;
+	dc:spatial "Point(-73.7273 42.6795)"^^geo:wktLiteral .
+
+wd:Q16973337 dc:title "Daytona Beach Boardwalk"@en .
+
+wd:Q17064913 dc:title "White Swan Park"@en .
+
+wd:Q5604131 dc:title "Greenhills Adventure Park"@en ;
+	dc:spatial "Point(138.624082 -35.528371)"^^geo:wktLiteral .
+
+wd:Q20052851 dc:title "Q20052851" .
+
+wd:Q5048868 dc:title "Casino Pier"@en ;
+	dc:spatial "Point(-74.0692 39.9426)"^^geo:wktLiteral .
+
+wd:Q168754 dc:title "Space World"@en ;
+	dc:spatial "Point(130.81215 33.87352)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Space%20World%2001.jpg> .
+
+wd:Q3311504 dc:title "Michigan's Adventure"@en ;
+	dc:spatial "Point(-86.2789 43.3474)"^^geo:wktLiteral .
+
+wd:Q29469142 dc:title "Six Flags Zhejiang"@en ;
+	dc:spatial "Point(120.985277777 30.547777777)"^^geo:wktLiteral .
+
+wd:Q3315800 dc:title "Mirabilandia"@en ;
+	dc:spatial "Point(-34.87398 -8.032921)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mirabilandia%20Parque%20de%20Divers%C3%B5es%20%28Brasil-Brazil%29.jpg> .
+
+wd:Q7227608 dc:title "Ponce de Leon amusement park"@en ;
+	dc:spatial "Point(-84.366 33.772)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ponce%20de%20Leon%20amusement%20park%20early%20around%201900-1920.jpg> .
+
+wd:Q1207585 dc:title "Knott's Berry Farm"@en ;
+	dc:spatial "Point(-118.000267 33.844178)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Knott%27s%20Gate.jpg> .
+
+wd:Q7134599 dc:title "Paragon Park"@en ;
+	dc:spatial "Point(-70.8547 42.2685)"^^geo:wktLiteral .
+
+wd:Q2276588 dc:title "Legoland California"@en ;
+	dc:spatial "Point(-117.311111 33.126667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Legoland%20California.jpg> .
+
+wd:Q1415173 dc:title "Filmpark Babelsberg"@en ;
+	dc:spatial "Point(13.1172 52.3856)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Filmpark%20Babelsberg%2C%20Der%20kleine%20Muck.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Potsdam%20Filmpark%20Babelsberg%2009-2017%20img1.jpg> .
+
+wd:Q7203448 dc:title "Playland Park"@en ;
+	dc:spatial "Point(-86.218 41.659)"^^geo:wktLiteral .
+
+wd:Q3107826 dc:title "Hersheypark"@en ;
+	dc:spatial "Point(-76.656944444 40.288055555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/HersheyPark15.JPG> .
+
+wd:Q4883059 dc:title "Bell's Amusement Park"@en ;
+	dc:spatial "Point(-95.9311 36.1344)"^^geo:wktLiteral .
+
+wd:Q5989523 dc:title "Idora Park"@en ;
+	dc:spatial "Point(-80.685 41.072222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/IdoraDanceHall1920.jpg> .
+
+wd:Q130170 dc:title "Eram amusement Park"@en ;
+	dc:spatial "Point(51.292656 35.721431)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Amingholamali%20Eram%20Park%20Tehran.JPG> .
+
+wd:Q5989523 dc:spatial "Point(-80.685555555 41.071111111)"^^geo:wktLiteral .
+
+wd:Q7126150 dc:title "Palace Amusements"@en ;
+	dc:spatial "Point(-74.003544 40.217778)"^^geo:wktLiteral .
+
+wd:Q2539704 dc:title "Santa Park"@en ;
+	dc:spatial "Point(25.84444444 66.54361111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Santa%20Park%20%285307457814%29.jpg> .
+
+wd:Q18379094 dc:title "Brocklands Adventure Park"@en ;
+	dc:spatial "Point(-4.48785 50.8755)"^^geo:wktLiteral .
+
+wd:Q6340385 dc:title "Adventure World Warsaw"@en ;
+	dc:spatial "Point(20.582407 52.143523)"^^geo:wktLiteral .
+
+wd:Q14705697 dc:title "Land of Make Believe (amusement park)"@en ;
+	dc:spatial "Point(-74.959 40.902)"^^geo:wktLiteral .
+
+wd:Q1515080 dc:title "Six Flags Magic Mountain"@en ;
+	dc:spatial "Point(-118.597 34.4238)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Colossus%20parking%20view.JPG> .
+
+wd:Q587612 dc:title "Parque de Atracciones de Madrid"@en ;
+	dc:spatial "Point(-3.75083333 40.41277778)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrada%20Parque%20de%20Atracciones%20de%20Madrid.jpg> .
+
+wd:Q8033549 dc:title "Woodward's Gardens"@en ;
+	dc:spatial "Point(-122.421 37.768)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Woodward%20Garden%27s%20in%20San%20Francisco%2C%20CA%2C%20circa%201880%27s.jpg> .
+
+wd:Q11506991 dc:title "Japan Monkey Park"@en ;
+	dc:spatial "Point(136.953908 35.391447)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nihonmonkeypark.JPG> .
+
+wd:Q3041729 dc:title "Dutch Wonderland"@en ;
+	dc:spatial "Point(-76.2184 40.0277)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dutch%20Wonderland%20Entrance.jpg> .
+
+wd:Q17312081 dc:title "Alhambra"@en ;
+	dc:spatial "Point(9.46593 55.4852)"^^geo:wktLiteral .
+
+wd:Q6787459 dc:title "Superland"@en ;
+	dc:spatial "Point(34.74388889 31.97833333)"^^geo:wktLiteral .
+
+wd:Q6024020 dc:title "Indianola Park"@en ;
+	dc:spatial "Point(-82.9977 40.0029)"^^geo:wktLiteral .
+
+wd:Q1138985 dc:title "Tibidabo"@en ;
+	dc:spatial "Point(2.120044 41.421751)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Giradabo%20%28noria%29.jpg> .
+
+wd:Q3887518 dc:title "Kaeson Youth Park"@en ;
+	dc:spatial "Point(125.75805556 39.04777778)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kaeson%20Fun%20Fair.jpg> .
+
+wd:Q3392121 dc:title "Playland"@en ;
+	dc:spatial "Point(-123.037 49.2827)"^^geo:wktLiteral .
+
+wd:Q5989520 dc:title "Idora Park"@en ;
+	dc:spatial "Point(-122.26315556 37.84239444)"^^geo:wktLiteral .
+
+wd:Q16994390 dc:title "Grand Texas Theme Park"@en ;
+	dc:spatial "Point(-95.200088 30.194569)"^^geo:wktLiteral .
+
+wd:Q4816717 dc:title "Atlantis Marine Park"@en ;
+	dc:spatial "Point(115.586 -31.4963)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Atlantis%20dolphins%201980s.png> .
+
+wd:Q510648 dc:title "Beto Carrero World"@en ;
+	dc:spatial "Point(-48.61389 -26.801725)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Casa-Beto-Carrero.jpg> .
+
+wd:Q169442 dc:title "Adventure Island"@en ;
+	dc:spatial "Point(0.715833 51.5325)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Adventure%20Island%20at%20Southend%20-%20geograph.org.uk%20-%20903768.jpg> .
+
+wd:Q20645686 dc:title "Wenona Beach Amusement Park"@en ;
+	dc:spatial "Point(-83.9744 43.5841)"^^geo:wktLiteral .
+
+wd:Q2133667 dc:title "Ravensburger Spieleland"@en ;
+	dc:spatial "Point(9.59527778 47.71138889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ravensburger%20Spieleland%20Panorama%202008.JPG> .
+
+wd:Q3373554 dc:title "Le Pays de la Sagouine"@en ;
+	dc:spatial "Point(-64.7138 46.4628)"^^geo:wktLiteral .
+
+wd:Q2745160 dc:title "Brighton Pier"@en ;
+	dc:spatial "Point(-0.136624 50.8183)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Brighton%20pier%203.jpg> .
+
+wd:Q11310142 dc:title "Q11310142" ;
+	dc:spatial "Point(130.565 31.57)"^^geo:wktLiteral .
+
+wd:Q3366004 dc:title "Zaragoza amusement park"@en ;
+	dc:spatial "Point(-0.900348 41.6204)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gran%20tikal.jpg> .
+
+wd:Q1957525 dc:title "DippieDoe"@en ;
+	dc:spatial "Point(5.433922 51.499514)"^^geo:wktLiteral .
+
+wd:Q1325056 dc:title "Elbauenpark"@en ;
+	dc:spatial "Point(11.669 52.1349)"^^geo:wktLiteral .
+
+wd:Q1936832 dc:title "Mini Mundi"@en ;
+	dc:spatial "Point(3.634722 51.480556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mini%20Mundi%20Achtbaan.jpg> .
+
+wd:Q483663 dc:title "Seoul Land"@en ;
+	dc:spatial "Point(127.019975 37.43421389)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Seoul%20Land.jpg> .
+
+wd:Q864499 dc:title "Shin-Yokohama Raumen Museum"@en ;
+	dc:spatial "Point(139.614537 35.509874)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Shinyokohama%20ramen%20museum.jpg> .
+
+wd:Q3503945 dc:title "Sunnyside Amusement Park"@en ;
+	dc:spatial "Point(-79.4508 43.6379)"^^geo:wktLiteral .
+
+wd:Q29870599 dc:title "Cardoland"@en ;
+	dc:spatial "Point(3.669162 47.457936)"^^geo:wktLiteral .
+
+wd:Q953752 dc:title "Kings Island"@en ;
+	dc:spatial "Point(-84.2725 39.3413)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/KingsIsland-Logo.png> .
+
+wd:Q2892945 dc:title "Glenwood Caverns"@en ;
+	dc:spatial "Point(-107.32 39.5605)"^^geo:wktLiteral .
+
+wd:Q1721757 dc:title "Walygator Parc"@en ;
+	dc:spatial "Point(6.15611111 49.22527778)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entr%C3%A9%20Walygator%20Parc.jpg> .
+
+wd:Q733234 dc:title "Efteling"@en ;
+	dc:spatial "Point(5.048055555 51.650277777)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Efteling%20Entrance.jpg> .
+
+wd:Q1417567 dc:title "Warner Bros. Movie World"@en ;
+	dc:spatial "Point(153.313 -27.9073)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Superman%20Escape%20over%20Movie%20World%27s%20entrance.jpg> .
+
+wd:Q1807595 dc:title "Moomin World"@en ;
+	dc:spatial "Point(22.00472223 60.47305557)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Muumitalo%203.jpg> .
+
+wd:Q28004709 dc:title "SeaWorld Abu Dhabi"@en ;
+	dc:spatial "Point(54.618535 24.485668)"^^geo:wktLiteral .
+
+wd:Q1186714 dc:title "Universal Studios Singapore"@en ;
+	dc:spatial "Point(103.821666666 1.255)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Universal%20Globe%20Singapore.jpg> .
+
+wd:Q2581206 dc:title "Tusenfryd"@en ;
+	dc:spatial "Point(10.777019 59.748226)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/TusenfrydEntrance.jpg> .
+
+wd:Q3361454 dc:title "Palisades Amusement Park"@en ;
+	dc:spatial "Point(-73.9778 40.8281)"^^geo:wktLiteral .
+
+wd:Q11262875 dc:title "Yokohama Cosmo World"@en ;
+	dc:spatial "Point(139.636681 35.455203)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Yokohama-Japon112.JPG> .
+
+wd:Q815261 dc:title "Belantis"@en ;
+	dc:spatial "Point(12.3153 51.2518)"^^geo:wktLiteral .
+
+wd:Q5092379 dc:title "Cherry Hill"@en ;
+	dc:spatial "Point(-111.914 41.0137)"^^geo:wktLiteral .
+
+wd:Q18392862 dc:title "Starin's Glen Island"@en ;
+	dc:spatial "Point(-73.7838 40.8852)"^^geo:wktLiteral .
+
+wd:Q10323036 dc:title "Magic City"@en ;
+	dc:spatial "Point(-46.31206111 -23.70728056)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Fotomagic.jpg> .
+
+wd:Q2940908 dc:title "Casela World of Adventures"@en ;
+	dc:spatial "Point(57.411991 -20.290196)"^^geo:wktLiteral .
+
+wd:Q15503298 dc:title "Pombia Safari Park"@en ;
+	dc:spatial "Point(8.63333 45.65)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Zuliz.JPG> .
+
+wd:Q4935834 dc:title "Boblo Island Amusement Park"@en ;
+	dc:spatial "Point(-83.1175 42.0939)"^^geo:wktLiteral .
+
+wd:Q2074361 dc:title "Six Flags Over Texas"@en ;
+	dc:spatial "Point(-97.0702 32.7551)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Where%27s%20Mr%20Six.jpg> .
+
+wd:Q940673 dc:title "Canada's Wonderland"@en ;
+	dc:spatial "Point(-79.541944444 43.842544444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/FallsatCanadasWonderland.jpg> .
+
+wd:Q2745160 dc:spatial "Point(-0.137222 50.8164)"^^geo:wktLiteral .
+
+wd:Q846548 dc:title "Six Flags New England"@en ;
+	dc:spatial "Point(-72.6157 42.0377)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Batmansixflags%20ne14.jpg> .
+
+wd:Q942719 dc:title "Ghost Town in the Sky"@en ;
+	dc:spatial "Point(-83.102378 35.528769)"^^geo:wktLiteral .
+
+wd:Q7979185 dc:title "Wedgewood Village Amusement Park"@en ;
+	dc:spatial "Point(-97.5936 35.54)"^^geo:wktLiteral .
+
+wd:Q4931452 dc:title "Boardwalk Fun Park"@en ;
+	dc:spatial "Point(-96.997 32.761)"^^geo:wktLiteral .
+
+wd:Q14680542 dc:title "Legend City"@en ;
+	dc:spatial "Point(-111.958 33.447)"^^geo:wktLiteral .
+
+wd:Q5446952 dc:title "Field Station: Dinosaurs"@en ;
+	dc:spatial "Point(-74.083 40.762)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2012%2005%2026%20Fieldstationdinosauropening-6894.jpg> .
+
+wd:Q25395425 dc:title "Island of Dreams amusement park"@en ;
+	dc:spatial "Point(37.668538 55.693724)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Island%20of%20Dreams2.jpg> .
+
+wd:Q3039291 dc:title "Dreamland Margate"@en ;
+	dc:spatial "Point(1.3759 51.3863)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Midweek%20Birthday%20Margate%20Mini-Break-3220160816%20%2829052138755%29.jpg> .
+
+wd:Q2651140 dc:title "Q2651140" ;
+	dc:spatial "Point(11.0938 53.5082)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Snowfunpark%20Wittenburg1.jpg> .
+
+wd:Q314045 dc:title "Spreepark"@en ;
+	dc:spatial "Point(13.4878 52.4858)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv%20Bild%20183-1985-0404-021%2C%20Berlin%2C%20Kulturpark%20Pl%C3%A4nterwald%2C%20Riesenrad.jpg> .
+
+wd:Q3023222 dc:title "Dennlys Park"@en ;
+	dc:spatial "Point(2.15416667 50.57055556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Furio%20-%20Dennlys%20Parc.JPG> .
+
+wd:Q2019207 dc:title "MGM Grand Adventures Theme Park"@en ;
+	dc:spatial "Point(-115.165 36.1067)"^^geo:wktLiteral .
+
+wd:Q2512374 dc:title "Q2512374" ;
+	dc:spatial "Point(4.59722 52.32528)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Monorail200122.jpg> .
+
+wd:Q206521 dc:title "Disneyland Paris"@en ;
+	dc:spatial "Point(2.7818 48.868719444)"^^geo:wktLiteral .
+
+wd:Q2788953 dc:title "Q2788953" ;
+	dc:spatial "Point(6.07722 52.50417)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ecodrome%20Zwolle.jpg> .
+
+wd:Q3487269 dc:title "Wurstelprater"@en ;
+	dc:spatial "Point(16.3956 48.2161)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Prater%20vom%20Riesenrad.jpg> .
+
+wd:Q10333197 dc:title "Q10333197" ;
+	dc:spatial "Point(-50.837454 -29.360572)"^^geo:wktLiteral .
+
+wd:Q13747154 dc:title "Q13747154" ;
+	dc:spatial "Point(6.784802777 52.192586111)"^^geo:wktLiteral .
+
+wd:Q4033431 dc:title "Adventureland"@en ;
+	dc:spatial "Point(-93.4999 41.6544)"^^geo:wktLiteral .
+
+wd:Q2893617 dc:title "Beech Bend Park"@en ;
+	dc:spatial "Point(-86.3953 37.0242)"^^geo:wktLiteral .
+
+wd:Q509529 dc:title "Rainbow Magicland"@en ;
+	dc:spatial "Point(12.95605833 41.76528611)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Magic%20innevato.jpg> .
+
+wd:Q16902166 dc:title "Twinlakes Theme Park"@en ;
+	dc:spatial "Point(-0.8582 52.7835)"^^geo:wktLiteral .
+
+wd:Q4787772 dc:title "Arda E. Lee's Hidden Hollow"@en .
+
+wd:Q5243699 dc:title "Dazzleland"@en .
+
+wd:Q5357452 dc:title "Electric Park, Detroit"@en .
+
+wd:Q6103633 dc:title "J's Amusement Park"@en .
+
+wd:Q2392584 dc:title "Parc Merveilleux"@en ;
+	dc:spatial "Point(6.120715 49.511473)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Eingang%20Park%20Bettembourg%2001.jpg> .
+
+wd:Q6484157 dc:title "Land of Makebelieve"@en .
+
+wd:Q4352488 dc:title "Action Park"@en ;
+	dc:spatial "Point(-74.5075 41.1906)"^^geo:wktLiteral .
+
+wd:Q2330240 dc:title "Neeltje Jans"@en ;
+	dc:spatial "Point(3.700277777 51.626944444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Oosterscheldekering%20%281%29.jpg> .
+
+wd:Q2400339 dc:title "Aviflora"@en .
+
+wd:Q7419128 dc:title "Santa's Workshop"@en ;
+	dc:spatial "Point(-73.8506 44.4)"^^geo:wktLiteral .
+
+wd:Q3567495 dc:title "Western Leone"@en ;
+	dc:spatial "Point(-2.44641 37.0322)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Almeria%209.jpg> .
+
+wd:Q11669123 dc:title "Takakanonuma Greenland"@en .
+
+wd:Q11871168 dc:title "Kesämaa"@en .
+
+wd:Q6703568 dc:title "Luna Park, Pittsburgh"@en ;
+	dc:spatial "Point(-79.9512 40.4533)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/4a12742a.jpg> .
+
+wd:Q16177959 dc:title "KidZania Seoul"@en .
+
+wd:Q17039985 dc:title "Woodside Amusement Park"@en .
+
+wd:Q11391333 dc:title "Benyland"@en ;
+	dc:spatial "Point(140.848611111 38.246666666)"^^geo:wktLiteral .
+
+wd:Q3499899 dc:title "Story Land"@en ;
+	dc:spatial "Point(-71.1828 44.1161)"^^geo:wktLiteral .
+
+wd:Q20669824 dc:title "Q20669824" ;
+	dc:spatial "Point(4.966632 44.022107)"^^geo:wktLiteral .
+
+wd:Q180878 dc:title "Mirabilandia"@en ;
+	dc:spatial "Point(12.263333 44.337222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mirab-img0004.JPG> .
+
+wd:Q2677029 dc:title "Walibi Sud-Ouest"@en ;
+	dc:spatial "Point(0.576317 44.186878)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entr%C3%A9e%20Walibi%20Sud-Ouest.jpg> .
+
+wd:Q2372906 dc:title "Magic Springs and Crystal Falls"@en ;
+	dc:spatial "Point(-93.0169 34.5194)"^^geo:wktLiteral .
+
+wd:Q138475 dc:title "Conny-Land"@en ;
+	dc:spatial "Point(9.05666667 47.61416667)"^^geo:wktLiteral .
+
+wd:Q3059481 dc:title "Euclid Beach Park"@en ;
+	dc:spatial "Point(-81.57 41.58)"^^geo:wktLiteral .
+
+wd:Q2000964 dc:title "Hunderfossen Familiepark"@en ;
+	dc:spatial "Point(10.42825833 61.22423889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hunderfossen%20-%20Trollet.JPG> .
+
+wd:Q7228085 dc:title "Pontchartrain Beach"@en ;
+	dc:spatial "Point(-90.062 30.032)"^^geo:wktLiteral .
+
+wd:Q5885706 dc:title "Holy Land USA"@en ;
+	dc:spatial "Point(-73.03 41.547)"^^geo:wktLiteral .
+
+wd:Q3339833 dc:title "Nickelodeon Universe"@en ;
+	dc:spatial "Point(-93.242222222 44.854166666)"^^geo:wktLiteral .
+
+wd:Q3088620 dc:title "Frontier City"@en ;
+	dc:spatial "Point(-97.441 35.5848)"^^geo:wktLiteral .
+
+wd:Q5160318 dc:title "Confusion Hill"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/KLAMATH%20RIVER%20-%20NARA%20-%20543094.jpg> .
+
+wd:Q7427647 dc:title "Sauzer's Kiddieland"@en ;
+	dc:spatial "Point(-87.4745 41.4921)"^^geo:wktLiteral .
+
+wd:Q3364227 dc:title "Parc de la Toison d'or"@en ;
+	dc:spatial "Point(5.05544 47.3555)"^^geo:wktLiteral .
+
+wd:Q16956652 dc:title "White City"@en ;
+	dc:spatial "Point(-122.4146106 48.7667769)"^^geo:wktLiteral .
+
+wd:Q7827877 dc:title "Tosselilla Summer Park"@en ;
+	dc:spatial "Point(13.906111111 55.553055555)"^^geo:wktLiteral .
+
+wd:Q6730692 dc:title "Magic Forest"@en ;
+	dc:spatial "Point(-73.7031 43.3959)"^^geo:wktLiteral .
+
+wd:Q16711022 dc:title "Q16711022" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B0%D1%80%D0%BA%20%D1%96%D0%BC%D0%B5%D0%BD%D1%96%20%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0%20%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0%20%28%D0%91%D1%96%D0%BB%D0%B0%20%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0%29.%20%D0%92%D1%85%D1%96%D0%B4.jpg> .
+
+wd:Q3059481 dc:spatial "Point(-81.56929 41.58172)"^^geo:wktLiteral .
+
+wd:Q1721935 dc:title "Air Zoo"@en ;
+	dc:spatial "Point(-85.56 42.2322)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Air%20Zoo%20Main%20Entrance.JPG> .
+
+wd:Q3267418 dc:title "Luna Park, Cleveland"@en ;
+	dc:spatial "Point(-81.6117 41.4897)"^^geo:wktLiteral .
+
+wd:Q3216474 dc:title "Lakemont Park"@en ;
+	dc:spatial "Point(-78.3955 40.4718)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Skyliner01.jpg> .
+
+wd:Q7199740 dc:title "Pixieland"@en ;
+	dc:spatial "Point(-123.965 45.0205)"^^geo:wktLiteral .
+
+wd:Q3568134 dc:title "Wild West World"@en ;
+	dc:spatial "Point(-97.3212 37.8182)"^^geo:wktLiteral .
+
+wd:Q1358423 dc:title "Toverland"@en ;
+	dc:spatial "Point(5.98583 51.39583)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Toverland%20Entrance.jpg> .
+
+wd:Q3090513 dc:title "Jardin d'Acclimatation"@en ;
+	dc:spatial "Point(2.26305556 48.8775)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20acclimatation%20DSC04371.JPG> .
+
+wd:Q23994724 dc:title "Fun Spot"@en ;
+	dc:spatial "Point(-81.4556994 28.4653543)"^^geo:wktLiteral .
+
+wd:Q7382688 dc:title "Rusutsu Resort"@en ;
+	dc:spatial "Point(140.90329 42.74968)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Rusutsu%20WestMt%28200703%29.jpg> .
+
+wd:Q2843806 dc:title "Lütge Land"@en ;
+	dc:spatial "Point(7.786741666 53.653811111)"^^geo:wktLiteral .
+
+wd:Q3487269 dc:spatial "Point(16.4022 48.2147)"^^geo:wktLiteral .
+
+wd:Q3240893 dc:title "Q3240893" ;
+	dc:spatial "Point(10.438557 61.241092)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2010-08-07%20Lilleputthammer.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Lilleputthammer.JPG> .
+
+wd:Q648935 dc:title "Mini Hollywood"@en ;
+	dc:spatial "Point(-2.432244 37.020382)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cowboy%20show%20-%20dragged%20by%20a%20horse.jpg> .
+
+wd:Q443909 dc:title "Alton Towers"@en ;
+	dc:spatial "Point(-1.8925 52.990555555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Alton%20Towers%20-%20Ch%C3%A2teau.jpg> .
+
+wd:Q2842839 dc:title "The American Adventure Theme Park"@en ;
+	dc:spatial "Point(-1.335 52.9947)"^^geo:wktLiteral .
+
+wd:Q667541 dc:title "Mirapolis"@en ;
+	dc:spatial "Point(1.99916667 49.055)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Le%20parc%20vu%20du%20ciel.JPG> .
+
+wd:Q7354964 dc:title "Rockaways' Playland"@en ;
+	dc:spatial "Point(-73.8187 40.5839)"^^geo:wktLiteral .
+
+wd:Q7355788 dc:title "Rocky Glen Park"@en ;
+	dc:spatial "Point(-75.7084 41.3538)"^^geo:wktLiteral .
+
+wd:Q3216474 foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Leap%20The%20Dips%20%28Lakemont%20Park%29.jpg> .
+
+wd:Q5617789 dc:title "Gulliver's Kingdom"@en ;
+	dc:spatial "Point(-1.56439 53.1182)"^^geo:wktLiteral .
+
+wd:Q2029763 dc:title "Duinen Zathe Amusement Park"@en ;
+	dc:spatial "Point(6.335642 52.956624)"^^geo:wktLiteral .
+
+wd:Q4942446 dc:title "Bonnie Springs Ranch"@en ;
+	dc:spatial "Point(-115.454 36.0594)"^^geo:wktLiteral .
+
+wd:Q3267423 dc:title "Luna Park"@en ;
+	dc:spatial "Point(-122.387551 47.595324)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Luna%20Park%20Original%20NATATORIUM%20WIKI.jpg> .
+
+wd:Q23805582 dc:title "Energylandia"@en ;
+	dc:spatial "Point(19.409 50.0)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dee%20Push%20%26%20Timmy%20Trumpet.jpg> .
+
+wd:Q314414 dc:title "Movie Park Germany"@en ;
+	dc:spatial "Point(6.9725 51.62)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Eingangspforte%20moviepark.png> .
+
+wd:Q3354431 dc:title "Opryland USA"@en ;
+	dc:spatial "Point(-86.695277777 36.208333333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Skyride%20Opryland%201.jpg> .
+
+wd:Q5363436 dc:title "Kidzania Tokyo"@en ;
+	dc:spatial "Point(139.79194444 35.65583333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kidzania.JPG> .
+
+wd:Q2474979 dc:title "Q2474979" ;
+	dc:spatial "Point(6.53806 52.96806)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Verkeerspark%20Hoofdingang.jpg> .
+
+wd:Q3392124 dc:title "Playland"@en ;
+	dc:spatial "Point(-73.673889 40.965833)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Playland%20Gondola%20Wheel.jpg> .
+
+wd:Q2779657 dc:title "Q2779657" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/VerhalenArkWijkBijDuurstede.jpg> .
+
+wd:Q3077762 dc:title "Fort Aventure"@en ;
+	dc:spatial "Point(6.09056 48.5972)"^^geo:wktLiteral .
+
+wd:Q4126784 dc:title "Q4126784" ;
+	dc:spatial "Point(30.2125 59.93833333)"^^geo:wktLiteral .
+
+wd:Q4873935 dc:title "Bay Beach Amusement Park"@en ;
+	dc:spatial "Point(-87.980833333 44.530916666)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/BayBeachBuildingParkingLotGreenBayWisconsin.jpg> .
+
+wd:Q3569131 dc:title "Willow Grove Park"@en ;
+	dc:spatial "Point(-75.1211 40.1392)"^^geo:wktLiteral .
+
+wd:Q2521644 dc:title "Six Flags Fiesta Texas"@en ;
+	dc:spatial "Point(-98.6094 29.5995)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SFFT-Entrance.jpg> .
+
+wd:Q4588838 dc:title "Kongeparken"@en ;
+	dc:spatial "Point(5.84055556 58.77861111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kongeparken2007.jpg> .
+
+wd:Q723078 dc:title "Vidám Park"@en ;
+	dc:spatial "Point(19.08284 47.51979)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hull%C3%A1mvas%C3%BAt%201.jpg> .
+
+wd:Q14686684 dc:title "Joyland"@en ;
+	dc:spatial "Point(-84.3964 33.712)"^^geo:wktLiteral .
+
+wd:Q3484028 dc:title "Silverwood Theme Park"@en ;
+	dc:spatial "Point(-116.705 47.9085)"^^geo:wktLiteral .
+
+wd:Q3363780 dc:title "Parc Avenue"@en ;
+	dc:spatial "Point(4.36639 44.5431)"^^geo:wktLiteral .
+
+wd:Q4033433 dc:title "Adventureland"@en ;
+	dc:spatial "Point(55.3723 25.2978)"^^geo:wktLiteral .
+
+wd:Q1677960 dc:title "Q1677960" ;
+	dc:spatial "Point(8.84306 52.2633)"^^geo:wktLiteral .
+
+wd:Q4837568 dc:title "Babb's Beach"@en ;
+	dc:spatial "Point(-72.751111 42.03)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SuffieldCT%20BabbsBeach%20Pavilion.jpg> .
+
+wd:Q845460 dc:title "Cavallino Matto"@en ;
+	dc:spatial "Point(10.54861111 43.18138889)"^^geo:wktLiteral .
+
+wd:Q3225108 dc:title "Le Pal"@en ;
+	dc:spatial "Point(3.6305 46.5073)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Azteka.jpg> .
+
+wd:Q11318121 dc:title "Q11318121" ;
+	dc:spatial "Point(141.171678 38.760747)"^^geo:wktLiteral .
+
+wd:Q2706557 dc:title "Q2706557" .
+
+wd:Q377592 dc:title "Parc Astérix"@en ;
+	dc:spatial "Point(2.571666666 49.135277777)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Goudurix.JPG> .
+
+wd:Q8031897 dc:title "Wonderland City"@en ;
+	dc:spatial "Point(151.271 -33.8999)"^^geo:wktLiteral .
+
+wd:Q7440208 dc:title "Seabreeze Amusement Park"@en ;
+	dc:spatial "Point(-77.5435 43.233)"^^geo:wktLiteral .
+
+wd:Q11102395 dc:title "Q11102395" .
+
+wd:Q5025799 dc:title "Camden Park"@en ;
+	dc:spatial "Point(-82.4336 38.413)"^^geo:wktLiteral .
+
+wd:Q5649040 dc:title "Hanna–Barbera Land"@en .
+
+wd:Q12701480 dc:title "Q12701480" .
+
+wd:Q7083647 dc:title "Old Chicago"@en .
+
+wd:Q7371155 dc:title "Round Top Park"@en .
+
+wd:Q8001558 dc:title "Wildwood Amusement Park"@en .
+
+wd:Q7126185 dc:title "Palace Playland"@en ;
+	dc:spatial "Point(-70.3747 43.5147)"^^geo:wktLiteral .
+
+wd:Q1413270 dc:title "Liseberg"@en ;
+	dc:spatial "Point(11.99 57.695555555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/G%C3%B6teborg%20Liseberg%20entrance.jpg> .
+
+wd:Q987756 dc:title "California's Great America"@en ;
+	dc:spatial "Point(-121.972 37.3959)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/California%27s%20Great%20America%20Logo.svg> .
+
+wd:Q11340215 dc:title "MagiQuest"@en .
+
+wd:Q18467806 dc:title "Q18467806" .
+
+wd:Q18658686 dc:title "Q18658686" .
+
+wd:Q20050504 dc:title "Q20050504" .
+
+wd:Q5005209 dc:title "Bø Sommarland"@en ;
+	dc:spatial "Point(9.072905555 59.447955555)"^^geo:wktLiteral .
+
+wd:Q2981127 dc:title "Cobac Parc"@en ;
+	dc:spatial "Point(-1.83163 48.4492)"^^geo:wktLiteral .
+
+wd:Q23901528 dc:title "Q23901528" .
+
+wd:Q19962434 dc:title "Q19962434" ;
+	dc:spatial "Point(9.925 52.45)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Looping.jpg> .
+
+wd:Q4686554 dc:title "Adventure Wonderland"@en ;
+	dc:spatial "Point(-1.845 50.776)"^^geo:wktLiteral .
+
+wd:Q7446173 dc:title "Sega World Sydney"@en ;
+	dc:spatial "Point(151.202 -33.8746)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SWScomplex.jpg> .
+
+wd:Q3677153 dc:title "Cinecittà World"@en ;
+	dc:spatial "Point(12.4467 41.709)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Altair%20cinecitta%20world.jpg> .
+
+wd:Q7974547 dc:title "Waterville USA"@en ;
+	dc:spatial "Point(-87.686 30.259)"^^geo:wktLiteral .
+
+wd:Q6542212 dc:title "Libertyland"@en ;
+	dc:spatial "Point(-89.9824 35.1185)"^^geo:wktLiteral .
+
+wd:Q28180204 dc:title "Agartala Amusement Park"@en .
+
+wd:Q28224584 dc:title "Nickelodeon Cultural Resort"@en .
+
+wd:Q2341753 dc:title "Steinwasen Park"@en ;
+	dc:spatial "Point(7.92222222 47.89972222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Steinwasen-Park%20Eingang.jpg> .
+
+wd:Q19864620 dc:title "Luna Park, Coney Island"@en ;
+	dc:spatial "Point(-73.978479 40.573968)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Coney%20Island%20Scream%20Zone%20gate.jpg> .
+
+wd:Q2853136 dc:title "Q2853136" ;
+	dc:spatial "Point(7.122 43.613)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Antibes%20Land.jpg> .
+
+wd:Q2201306 dc:title "Q2201306" ;
+	dc:spatial "Point(6.163877 51.339214)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Klein%20zwitserland.jpg> .
+
+wd:Q924944 dc:title "Luna Park"@en ;
+	dc:spatial "Point(-73.9785 40.574)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Luna%20Park%2C%20Surf%20Avenue%2C%20Coney%20Island%2C%20NY.jpg> .
+
+wd:Q3493652 dc:title "Alabama Splash Adventure"@en ;
+	dc:spatial "Point(-86.9987 33.38)"^^geo:wktLiteral .
+
+wd:Q5506044 dc:title "Frontier Village"@en ;
+	dc:spatial "Point(-121.819 37.2621)"^^geo:wktLiteral .
+
+wd:Q5431013 dc:title "Fairyland Park"@en ;
+	dc:spatial "Point(-94.557 38.9906)"^^geo:wktLiteral .
+
+wd:Q2654021 dc:title "Q2654021" ;
+	dc:spatial "Point(5.77985 53.0412)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Terhorne%20Kameleondorp.jpg> .
+
+wd:Q1483280 dc:title "Gold Reef City"@en ;
+	dc:spatial "Point(28.01222222 -26.23611111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/20080216%2097%20Johannesburg%20Gold%20Reef%20City.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Gold%20Reef%20City%20005.jpg> .
+
+wd:Q3240914 dc:title "Lillom"@en ;
+	dc:spatial "Point(2.982975 50.65405)"^^geo:wktLiteral .
+
+wd:Q3331644 dc:title "Myrtle Beach Pavilion"@en ;
+	dc:spatial "Point(-78.8816 33.6925)"^^geo:wktLiteral .
+
+wd:Q855246 dc:title "Happy Valley Shanghai"@en ;
+	dc:spatial "Point(121.213778 31.098319)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mega-Lite%20-%20Happy%20Valley%20Shanghai%201.jpg> .
+
+wd:Q1843206 dc:title "Siam Park"@en ;
+	dc:spatial "Point(-16.726573 28.071764)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Siamparkentrada1.JPG> .
+
+wd:Q2390592 dc:title "Drievliet"@en ;
+	dc:spatial "Point(4.34962 52.054918)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Drievliet.jpg> .
+
+wd:Q1956647 dc:title "Q1956647" ;
+	dc:spatial "Point(5.29011 52.71214)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Baron%20van%20M%C3%BCnchhausen-Sprookjeswonderland.jpg> .
+
+wd:Q6911528 dc:title "Morgan's Wonderland"@en ;
+	dc:spatial "Point(-98.392 29.539)"^^geo:wktLiteral .
+
+wd:Q21490962 dc:title "Styrassic Park"@en ;
+	dc:spatial "Point(15.8856 46.8907)"^^geo:wktLiteral .
+
+wd:Q6312844 dc:title "Jungle Jack's Landing"@en ;
+	dc:spatial "Point(-83.1197 40.1558)"^^geo:wktLiteral .
+
+wd:Q21139624 dc:title "Taipei Children's Amusement Park"@en ;
+	dc:spatial "Point(121.515 25.0972)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Taipei%20Children%27s%20Amusement%20Park%2020141224.jpg> .
+
+wd:Q10516500 dc:title "Halmstad Adventure Park"@en ;
+	dc:spatial "Point(12.81722222 56.66638889)"^^geo:wktLiteral .
+
+wd:Q2600530 dc:title "Q2600530" ;
+	dc:spatial "Point(5.925 51.81722)"^^geo:wktLiteral .
+
+wd:Q18389254 dc:title "The Big Sheep"@en ;
+	dc:spatial "Point(-4.24402 51.0157)"^^geo:wktLiteral .
+
+wd:Q2028841 dc:title "Kennywood"@en ;
+	dc:spatial "Point(-79.863333 40.3875)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/NewGates.jpg> .
+
+wd:Q6685176 dc:title "Lotus Isle"@en ;
+	dc:spatial "Point(-122.674 45.6109)"^^geo:wktLiteral .
+
+wd:Q260304 dc:title "Gröna Lund"@en ;
+	dc:spatial "Point(18.096111111 59.323055555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gr%C3%B6na%20Lund%202016-07.jpg> .
+
+wd:Q181016 dc:title "Jungfrau Park"@en ;
+	dc:spatial "Point(7.888056 46.682222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mystery-Park-Negative0-07-5A%281%29.jpg> .
+
+wd:Q3881966 dc:title "Oltremare"@en ;
+	dc:spatial "Point(12.6453 43.9887)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Oltremare%20-%20Delfini.JPG> .
+
+wd:Q11280640 dc:title "Palette town"@en ;
+	dc:spatial "Point(139.781083 35.625611)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Palette%20Town%20en%20Odaiba.jpg> .
+
+wd:Q5131502 dc:title "Clementon Amusement Park"@en ;
+	dc:spatial "Point(-74.9847 39.8031)"^^geo:wktLiteral .
+
+wd:Q14709151 dc:title "Oaks Amusement Park"@en ;
+	dc:spatial "Point(-122.661 45.473)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Oaks%20Amusement%20Park%20entrance%20Portland%20Oregon.jpg> .
+
+wd:Q1454963 dc:title "Freizeit-Land Geiselwind"@en ;
+	dc:spatial "Point(10.4576 49.7804)"^^geo:wktLiteral .
+
+wd:Q34808702 dc:title "Aquaboggan Park"@en ;
+	dc:spatial "Point(-70.425833333 43.534722222)"^^geo:wktLiteral .
+
+wd:Q3565299 dc:title "Waldameer Park"@en ;
+	dc:spatial "Point(-80.1555 42.1087)"^^geo:wktLiteral .
+
+wd:Q11938462 dc:title "Naturlandia"@en ;
+	dc:spatial "Point(1.52833333 42.44138889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Naturlandia%20%28Andorra%29%2000%20Entrada.JPG> .
+
+wd:Q2348779 dc:title "Q2348779" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Land%20van%20Jan%20Klaassen%20binnenspeeltuin.jpg> .
+
+wd:Q5375366 dc:title "Enchanted Forest Water Safari"@en ;
+	dc:spatial "Point(-74.9667 43.7)"^^geo:wktLiteral .
+
+wd:Q1455092 dc:title "Steel Pier"@en ;
+	dc:spatial "Point(-74.419 39.3575)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Steel%20Pier%201908.jpg> .
+
+wd:Q44043 dc:title "Adventure City"@en ;
+	dc:spatial "Point(-117.993 33.8153)"^^geo:wktLiteral .
+
+wd:Q4883720 dc:title "Belle Vue Zoological Gardens"@en ;
+	dc:spatial "Point(-2.1875 53.4636)"^^geo:wktLiteral .
+
+wd:Q159144 dc:title "Europa-Park"@en ;
+	dc:spatial "Point(7.720833 48.268333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2008-04-26-DSC%201978-c-Europapark.jpg> .
+
+wd:Q19588537 dc:title "Fun Park Fyn"@en ;
+	dc:spatial "Point(10.0407 55.4249)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/They%20were%20great%20fun%20some%2015%20years%20ago...%20%284486860129%29.jpg> .
+
+wd:Q2800195 dc:title "Skara Sommarland"@en ;
+	dc:spatial "Point(13.5523 58.4042)"^^geo:wktLiteral .
+
+wd:Q3216454 dc:title "Lake Compounce"@en ;
+	dc:spatial "Point(-72.923333333 41.641666666)"^^geo:wktLiteral .
+
+wd:Q3570037 dc:title "Worlds of Fun"@en ;
+	dc:spatial "Point(-94.489 39.1773)"^^geo:wktLiteral .
+
+wd:Q3051155 dc:title "Elitch Gardens Theme Park"@en ;
+	dc:spatial "Point(-105.011111111 39.750555555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Elitch%20Gardens%20satellite%202004.jpg> .
+
+wd:Q643201 dc:title "Duinrell"@en ;
+	dc:spatial "Point(4.381111 52.146667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/LocatieWassenaar.png> .
+
+wd:Q781609 dc:title "Parque Warner Madrid"@en ;
+	dc:spatial "Point(-3.59429419 40.23170824)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Insignia%20del%20Parque%20Warner%2C%20Madrid%2C%20Espa%C3%B1a.jpg> .
+
+wd:Q7419125 dc:title "Santa's Village AZoosment Park"@en ;
+	dc:spatial "Point(-88.2598 42.0907)"^^geo:wktLiteral .
+
+wd:Q7084273 dc:title "Old Indiana Fun Park"@en ;
+	dc:spatial "Point(-86.5367 40.1448)"^^geo:wktLiteral .
+
+wd:Q5287878 dc:title "Dodge Park Playland"@en ;
+	dc:spatial "Point(-95.916 41.262)"^^geo:wktLiteral .
+
+wd:Q1355398 dc:title "Erlebnispark Schloss Thurn"@en ;
+	dc:spatial "Point(10.9992 49.6852)"^^geo:wktLiteral .
+
+wd:Q6925145 dc:title "Mountain Park"@en ;
+	dc:spatial "Point(-72.6304 42.244)"^^geo:wktLiteral .
+
+wd:Q2614334 dc:title "Q2614334" ;
+	dc:spatial "Point(5.833555555 50.856916666)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sprookjesbos%20Valkenburg.JPG> .
+
+wd:Q1016030 dc:title "Siam Park City"@en ;
+	dc:spatial "Point(100.697229 13.805242)"^^geo:wktLiteral .
+
+wd:Q3568128 dc:title "Wild Waves Theme Park"@en ;
+	dc:spatial "Point(-122.312 47.2725)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wild%20Waves%20Theme%20Park%20-%20Federal%20Way%20WA.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Wild%20Waves%20Water%20Park%20pool.jpg> .
+
+wd:Q4959732 dc:title "Brean Leisure Park"@en ;
+	dc:spatial "Point(-3.00966 51.2857)"^^geo:wktLiteral .
+
+wd:Q2147466 dc:title "Speelland Beekse Bergen"@en ;
+	dc:spatial "Point(5.125 51.527)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Achtbaan.jpg> .
+
+wd:Q3360850 dc:title "Crystal Palace Amusement Park"@en ;
+	dc:spatial "Point(-64.7631 46.0988)"^^geo:wktLiteral .
+
+wd:Q4983514 dc:title "Buckskin Joe"@en ;
+	dc:spatial "Point(-105.326 38.476)"^^geo:wktLiteral .
+
+wd:Q40677 dc:title "Deltapark Neeltje Jans"@en ;
+	dc:spatial "Point(3.71342 51.63738)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/HtwoONOX.png> .
+
+wd:Q17333518 dc:title "Q17333518" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Olympic%20Club%20View%20of%20Putin%20World%20%2814458951110%29.jpg> .
+
+wd:Q7578402 dc:title "Splashmins Fun Park"@en ;
+	dc:spatial "Point(-58.1594 6.812080555)"^^geo:wktLiteral .
+
+wd:Q30527242 dc:title "Q30527242" ;
+	dc:spatial "Point(34.978055555 29.575)"^^geo:wktLiteral .
+
+wd:Q994229 dc:title "Bruparck"@en ;
+	dc:spatial "Point(4.339251 50.895035)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mini%20Europe%20Birds%20Eye.jpg> .
+
+wd:Q1395407 dc:title "Familypark"@en ;
+	dc:spatial "Point(16.6461 47.8016)"^^geo:wktLiteral .
+
+wd:Q10938609 dc:title "Taroko Park"@en ;
+	dc:spatial "Point(120.329666666 22.5835)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/%E5%A4%A7%E9%AD%AF%E9%96%A3%E8%8D%89%E8%A1%99%E9%81%93.jpg> .
+
+wd:Q6703646 dc:title "Amusement park at Prague Fairground"@en ;
+	dc:spatial "Point(14.426331 50.109278)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Matejska-Pout.JPG> .
+
+wd:Q6484771 dc:title "Landmark Forest Adventure Park"@en ;
+	dc:spatial "Point(-3.812 57.2786)"^^geo:wktLiteral .
+
+wd:Q3127206 dc:title "Happy Valley Beijing"@en ;
+	dc:spatial "Point(116.488627 39.866418)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Happy%20Valley%20Beijing%207.jpg> .
+
+wd:Q1191845 dc:title "Huis Ten Bosch"@en ;
+	dc:spatial "Point(129.786889 33.0865)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Huis%20Ten%20Bosch%20-%2001.jpg> .
+
+wd:Q7085259 dc:title "Old Town"@en ;
+	dc:spatial "Point(-81.5158 28.3316)"^^geo:wktLiteral .
+
+wd:Q1474750 dc:title "Funny-World"@en ;
+	dc:spatial "Point(7.73238 48.2938)"^^geo:wktLiteral .
+
+wd:Q15229708 dc:title "Jolly Roger Amusement Park"@en ;
+	dc:spatial "Point(-75.07652778 38.35994444)"^^geo:wktLiteral .
+
+wd:Q3542633 dc:title "Ty' Bamboo"@en ;
+	dc:spatial "Point(2.62389 48.5175)"^^geo:wktLiteral .
+
+wd:Q950545 dc:title "Fraispertuis City"@en ;
+	dc:spatial "Point(6.728562 48.323993)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Canyon%20Fraispertuis%20City.JPG> .
+
+wd:Q4895872 dc:title "Bertrand Island Amusement Park"@en ;
+	dc:spatial "Point(-74.6598 40.9118)"^^geo:wktLiteral .
+
+wd:Q9060830 dc:title "Q9060830" .
+
+wd:Q464445 dc:title "Canevaworld"@en ;
+	dc:spatial "Point(10.72639 45.47806)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/MedievalTimesEingang.JPG> .
+
+wd:Q10282595 dc:title "Q10282595" .
+
+wd:Q10322670 dc:title "Q10322670" .
+
+wd:Q10334045 dc:title "Q10334045" .
+
+wd:Q10374906 dc:title "Q10374906" .
+
+wd:Q7400110 dc:title "Saikai Pearl Sea Resort"@en ;
+	dc:spatial "Point(129.67944444 33.16138889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Saikai%20Pearlsea%20Umikirara.jpg> .
+
+wd:Q2940113 dc:title "Carowinds"@en ;
+	dc:spatial "Point(-80.9397 35.1043)"^^geo:wktLiteral .
+
+wd:Q1454994 dc:title "Q1454994" ;
+	dc:spatial "Point(9.21556 48.3714)"^^geo:wktLiteral .
+
+wd:Q3047891 dc:title "Legoland Windsor"@en ;
+	dc:spatial "Point(-0.65114 51.4635)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20to%20Legoland%20Windsor.jpg> .
+
+wd:Q1355419 dc:title "Q1355419" ;
+	dc:spatial "Point(9.125 52.2158)"^^geo:wktLiteral .
+
+wd:Q3529967 dc:title "Tivoli World"@en ;
+	dc:spatial "Point(-4.54059 36.6008)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tivoli%20World%201.jpg> .
+
+wd:Q3087377 dc:title "Freestyle Music Park"@en ;
+	dc:spatial "Point(-78.934 33.714)"^^geo:wktLiteral .
+
+wd:Q6872446 dc:title "Miracle Strip at Pier Park"@en .
+
+wd:Q5018638 dc:title "Calaway Park"@en ;
+	dc:spatial "Point(-114.358 51.0864)"^^geo:wktLiteral .
+
+wd:Q4905881 dc:title "Big Island Amusement Park"@en ;
+	dc:spatial "Point(-93.5558 44.9336)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Big%20Island%20Park.jpg> .
+
+wd:Q4519503 dc:title "Luna Park, Tel Aviv"@en ;
+	dc:spatial "Point(34.812026 32.106279)"^^geo:wktLiteral .
+
+wd:Q764906 dc:title "Walt Disney Studios Park"@en ;
+	dc:spatial "Point(2.779008333 48.8673)"^^geo:wktLiteral .
+
+wd:Q3016111 dc:title "Six Flags Darien Lake"@en ;
+	dc:spatial "Point(-78.3849 42.9285)"^^geo:wktLiteral .
+
+wd:Q5562315 dc:title "Gillians Wonderland Pier and Island Waterpark"@en ;
+	dc:spatial "Point(-74.5668 39.2774)"^^geo:wktLiteral .
+
+wd:Q20819471 dc:title "Romon U-Park"@en .
+
+wd:Q961917 dc:title "Särkänniemi"@en ;
+	dc:spatial "Point(23.743888888 61.505277777)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/S%C3%A4rk%C3%A4nniemen%20sis%C3%A4%C3%A4nk%C3%A4ynti.jpg> .
+
+wd:Q3026873 dc:title "Q3026873" ;
+	dc:spatial "Point(7.752748 48.913038)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Magic%20Mouse%20-%20Didiland.JPG> .
+
+wd:Q7338762 dc:title "Riverview Park"@en ;
+	dc:spatial "Point(-76.5439 39.2603)"^^geo:wktLiteral .
+
+wd:Q611275 dc:title "Six Flags Great America"@en ;
+	dc:spatial "Point(-87.934722222 42.368694444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Six%20Flags%20Great%20America%27s%20Entrance.jpg> .
+
+wd:Q2614520 dc:title "Tykkimäki"@en ;
+	dc:spatial "Point(26.775556 60.884722)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tykkim%C3%A4ki%20sis%C3%A4%C3%A4nk%C3%A4ynti.JPG> .
+
+wd:Q11571173 dc:title "Q11571173" ;
+	dc:spatial "Point(140.853111111 35.705333333)"^^geo:wktLiteral .
+
+wd:Q878022 dc:title "Fort Fun Abenteuerland"@en ;
+	dc:spatial "Point(8.4375 51.3086)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bestwig%20Fort%20Fun%20Sauerland-Ost%20379.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/FortFunEingang.jpg> .
+
+wd:Q3033769 dc:title "Dogpatch USA"@en ;
+	dc:spatial "Point(-93.1322 36.1068)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dogpatch%20USA.JPG> .
+
+wd:Q6206829 dc:title "Brændesgårdshaven"@en ;
+	dc:spatial "Point(15.10361111 55.12916667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ballpit.jpg> .
+
+wd:Q2775027 dc:title "Gilroy Gardens"@en ;
+	dc:spatial "Point(-121.628 37.0053)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Twolegtree.jpg> .
+
+wd:Q4762525 dc:title "Angela Park"@en ;
+	dc:spatial "Point(-75.951 41.035)"^^geo:wktLiteral .
+
+wd:Q20971849 dc:title "Tayto Park"@en ;
+	dc:spatial "Point(-6.459375 53.545377)"^^geo:wktLiteral .
+
+wd:Q814725 dc:title "Beijing Shijingshan Amusement Park"@en ;
+	dc:spatial "Point(116.20083333 39.915)"^^geo:wktLiteral .
+
+wd:Q18589096 dc:title "ZDT's Amusement Park"@en ;
+	dc:spatial "Point(-97.967 29.58)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/ZDTs%20Amusement%20Park%20Seguin%20Texas%202016.jpg> .
+
+wd:Q819530 dc:title "Phantasialand"@en ;
+	dc:spatial "Point(6.879444444 50.8)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Phantasialand%20Br%C3%BChl.JPG> .
+
+wd:Q3576051 dc:title "Zoomarine"@en ;
+	dc:spatial "Point(12.4574 41.6344)"^^geo:wktLiteral .
+
+wd:Q7754604 dc:title "The Oasis Exhibits"@en ;
+	dc:spatial "Point(-81.5903 28.3561)"^^geo:wktLiteral .
+
+wd:Q12336409 dc:title "Q12336409" ;
+	dc:spatial "Point(11.6106 55.8963)"^^geo:wktLiteral .
+
+wd:Q3196520 dc:title "Kijima Amusement Park"@en ;
+	dc:spatial "Point(131.427 33.2644)"^^geo:wktLiteral .
+
+wd:Q2785435 dc:title "BillyBird Park Hemelrijk"@en ;
+	dc:spatial "Point(5.672336 51.636996)"^^geo:wktLiteral .
+
+wd:Q3392192 dc:title "Pleasurewood Hills"@en ;
+	dc:spatial "Point(1.74443 52.5071)"^^geo:wktLiteral .
+
+wd:Q4686512 dc:title "Adventure Landing"@en ;
+	dc:spatial "Point(-81.4124 30.287)"^^geo:wktLiteral .
+
+wd:Q7572296 dc:title "Space City USA"@en ;
+	dc:spatial "Point(-86.7239 34.6658)"^^geo:wktLiteral .
+
+wd:Q5140329 dc:title "Codonas Amusement Park"@en ;
+	dc:spatial "Point(-2.0775 57.1511)"^^geo:wktLiteral .
+
+wd:Q7988171 dc:title "Western Playland"@en ;
+	dc:spatial "Point(-106.56 31.803)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wester%20Playland.jpeg> .
+
+wd:Q1256280 dc:title "Dreamworld"@en ;
+	dc:spatial "Point(153.316 -27.864)"^^geo:wktLiteral .
+
+wd:Q3039284 dc:title "Dreamland"@en ;
+	dc:spatial "Point(-73.9749 40.5745)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dreamland%20Park%2C%201905.JPG> .
+
+wd:Q20205235 dc:title "Mini Hungary"@en ;
+	dc:spatial "Point(20.532527777 46.878527777)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kisb%C3%A9r-2016-05-07-%20%2840%29.JPG> .
+
+wd:Q971808 dc:title "Plopsa Indoor Hasselt"@en ;
+	dc:spatial "Point(5.361667 50.934167)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/PSi-ingang.JPG> .
+
+wd:Q18124894 dc:title "Foreigners' Street"@en ;
+	dc:spatial "Point(106.598 29.613)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Upside-down%20house%20at%20Foreigners%20Street%2C%20Chongqing.JPG> .
+
+wd:Q4890226 dc:title "Benson's Wild Animal Farm"@en ;
+	dc:spatial "Point(-71.4056 42.7667)"^^geo:wktLiteral .
+
+wd:Q11652324 dc:title "Nagasaki Holland Village"@en ;
+	dc:spatial "Point(129.757467 32.997006)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nagasaki%20Holland%20Village%202011.JPG> .
+
+wd:Q863180 dc:title "Hanayashiki"@en ;
+	dc:spatial "Point(139.794688888 35.715497222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Asakusa%20Hanayashiki%20-01.jpg> .
+
+wd:Q3179183 dc:title "Jinjiang Action Park"@en ;
+	dc:spatial "Point(121.40361111 31.14111111)"^^geo:wktLiteral .
+
+wd:Q1417123 dc:title "Q1417123" ;
+	dc:spatial "Point(11.4632 49.6571)"^^geo:wktLiteral .
+
+wd:Q2562111 dc:title "Six Flags México"@en ;
+	dc:spatial "Point(-99.209 19.295)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Six%20Flags%20Mexico%202.png> .
+
+wd:Q1978990 dc:title "Steinerbos"@en ;
+	dc:spatial "Point(5.77459 50.96908)"^^geo:wktLiteral .
+
+wd:Q7569569 dc:title "Southern Adventures"@en ;
+	dc:spatial "Point(-86.5944 34.6969)"^^geo:wktLiteral .
+
+wd:Q888402 dc:title "Bobbejaanland"@en ;
+	dc:spatial "Point(4.905 51.201111111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bobbejaanland%20entry.jpg> .
+
+wd:Q11124693 dc:title "Happy Valley Wuhan"@en ;
+	dc:spatial "Point(114.387222 30.591944)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/OCT%20Thrust%20SSC1000%20Happy%20Valley%20Wuhan.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/OCT%20Thrust%20SSC1000%20Happy%20Valley%20Wuhan%202.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Shoot%20the%20Chute%20Happy%20Valley%20Wuhan.jpg> .
+
+wd:Q3229621 dc:title "Leofoo Village Theme Park"@en ;
+	dc:spatial "Point(121.18166667 24.82111111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/LeofooVillage%20MainEntrance%20Back.jpg> .
+
+wd:Q1414854 dc:title "Plopsaland"@en ;
+	dc:spatial "Point(2.596944 51.079722)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Plopsaland.jpg> .
+
+wd:Q11305817 dc:title "Q11305817" ;
+	dc:spatial "Point(139.252833333 37.764916666)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SUNTOPIA%20WORLD.JPG> .
+
+wd:Q3323943 dc:title "Morey's Piers"@en ;
+	dc:spatial "Point(-74.8093 38.9856)"^^geo:wktLiteral .
+
+wd:Q5210918 dc:title "Dalian Discovery Kingdom"@en ;
+	dc:spatial "Point(121.999269 39.081665)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/%E7%96%AF%E7%8B%82%E7%9C%BC%E9%95%9C%E8%9B%87%E8%BF%87%E5%B1%B1%E8%BD%A6.JPG> .
+
+wd:Q5132509 dc:title "Cliff's Amusement Park"@en ;
+	dc:spatial "Point(-106.589 35.1449)"^^geo:wktLiteral .
+
+wd:Q391162 dc:title "Walibi Holland"@en ;
+	dc:spatial "Point(5.7625 52.44)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Walibi%20WK.jpg> .
+
+wd:Q2570257 dc:title "Wild- und Freizeitpark Klotten"@en ;
+	dc:spatial "Point(7.165 50.1606)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Klotten%2C%20Wild-%20und%20Freizeitpark%20Klotten%20005x.jpg> .
+
+wd:Q2389341 dc:title "Riverview Park"@en ;
+	dc:spatial "Point(-87.6907 41.9418)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20to%20Riverview%20Park%20%28JJH%29.jpg> .
+
+wd:Q859230 dc:title "Cedar Point"@en ;
+	dc:spatial "Point(-82.681818 41.480033)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/CedarPoint%20Overview%20BackHalf%20DSCN9502%20%28cropped%29.JPG> .
+
+wd:Q3485584 dc:title "AutoWorld"@en ;
+	dc:spatial "Point(-83.69138889 43.02083333)"^^geo:wktLiteral .
+
+wd:Q2750308 dc:title "Luna Park"@en ;
+	dc:spatial "Point(144.976 -37.868)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20to%20Melbourne%27s%20Luna%20Park%202014.jpg> .
+
+wd:Q7149591 dc:title "Paul Bunyan Land"@en ;
+	dc:spatial "Point(-94.0317 46.352)"^^geo:wktLiteral .
+
+wd:Q3147882 dc:title "Idlewild and Soak Zone"@en ;
+	dc:spatial "Point(-79.2814 40.2611)"^^geo:wktLiteral .
+
+wd:Q3059351 dc:title "Q3059351" ;
+	dc:spatial "Point(14.932158 37.535764)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Storm%20%C3%A0%20Etnaland.jpg> .
+
+wd:Q11175218 dc:title "Lihpao Land"@en ;
+	dc:spatial "Point(120.695555555 24.3225)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20Lihpao%20Land.jpg> .
+
+wd:Q11811636 dc:title "Q11811636" ;
+	dc:spatial "Point(18.2931 49.8312)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Miniuni%20Ostrava.JPG> .
+
+wd:Q21396189 dc:title "Q21396189" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Camps%20Elisis%20Passeig%20Gr%C3%A0cia.jpg> .
+
+wd:Q3196520 dc:spatial "Point(131.426694 33.264722)"^^geo:wktLiteral .
+
+wd:Q6478516 dc:title "Lake Winnepesaukah"@en ;
+	dc:spatial "Point(-85.2472 34.9764)"^^geo:wktLiteral .
+
+wd:Q1384663 dc:title "Expoland"@en ;
+	dc:spatial "Point(135.535 34.80555556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Expoland%20gate.jpg> .
+
+wd:Q1132664 dc:title "La Ronde"@en ;
+	dc:spatial "Point(-73.535 45.5225)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/La%20Ronde.jpg> .
+
+wd:Q20669792 dc:title "Q20669792" ;
+	dc:spatial "Point(-2.89262 47.8905)"^^geo:wktLiteral .
+
+wd:Q11344287 dc:title "Mosaic Garden"@en ;
+	dc:spatial "Point(135.184944 34.678556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mozaic-garden007.jpg> .
+
+wd:Q3150104 dc:title "Indiana Beach"@en ;
+	dc:spatial "Point(-86.77 40.79)"^^geo:wktLiteral .
+
+wd:Q892017 dc:title "BonBon-Land"@en ;
+	dc:spatial "Point(11.86333333 55.26055556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/BonBon-Lands%20indgang.jpg> .
+
+wd:Q685790 dc:title "Taman Mini Indonesia Indah"@en ;
+	dc:spatial "Point(106.896667 -6.301667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/TMII%20Logo.svg> .
+
+wd:Q1856259 dc:title "Sybrandy's Speelpark"@en ;
+	dc:spatial "Point(5.50472 52.85944)"^^geo:wktLiteral .
+
+wd:Q2265402 dc:title "Q2265402" ;
+	dc:spatial "Point(6.47757 53.07187)"^^geo:wktLiteral .
+
+wd:Q6297742 dc:title "Joyland Amusement Park"@en ;
+	dc:spatial "Point(-97.3039 37.6412)"^^geo:wktLiteral .
+
+wd:Q3567767 dc:title "White City"@en .
+
+wd:Q3039270 dc:title "Dream World"@en ;
+	dc:spatial "Point(100.675 13.9875)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dream%20World%2C%20Thailand.jpg> .
+
+wd:Q2466852 dc:title "Q2466852" ;
+	dc:spatial "Point(5.08496 52.10472)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/KidZcity.jpg> .
+
+wd:Q1228570 dc:title "Discovery Cove"@en ;
+	dc:spatial "Point(-81.4617 28.4054)"^^geo:wktLiteral .
+
+wd:Q5048153 dc:title "Cascade Park (amusement park)"@en ;
+	dc:spatial "Point(-80.322 40.9772)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Big%20run%20creek.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Cascade%20park%20main.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Cascade%20park%20memorial.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Dance%20Pavilion.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/The%20former%20train%20station%20at%20Cascade%20Park%2C%20New%20Castle%2C%20Pennsylvania.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Tumble%20Bug.jpg> .
+
+wd:Q5062718 dc:title "Centreville Amusement Park"@en ;
+	dc:spatial "Point(-79.3737 43.6203)"^^geo:wktLiteral .
+
+wd:Q4950720 dc:title "Bowcraft Amusement Park"@en ;
+	dc:spatial "Point(-74.3874 40.6654)"^^geo:wktLiteral .
+
+wd:Q8033284 dc:title "Woods of Terror"@en ;
+	dc:spatial "Point(-79.7849 36.1961)"^^geo:wktLiteral .
+
+wd:Q2058294 dc:title "Q2058294" ;
+	dc:spatial "Point(4.48139 51.95611)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hillegersberg%20Schiebroek.jpg> .
+
+wd:Q288325 dc:title "uShaka Marine World"@en ;
+	dc:spatial "Point(31.04333333 -29.86666667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/UShaka%20Dolphin%20show.JPG> .
+
+wd:Q5358677 dc:title "Kidzania Koshien"@en ;
+	dc:spatial "Point(135.36388889 34.71694444)"^^geo:wktLiteral .
+
+wd:Q3696356 dc:title "Cowboyland"@en ;
+	dc:spatial "Point(9.01316643 44.96863889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cowboyland%20Voghera-1.jpg> .
+
+wd:Q863153 dc:title "Yokohama Hakkeijima Sea Paradise"@en ;
+	dc:spatial "Point(139.647333333 35.337441666)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Yokohama%20Hakkeijima%20Sea%20Paradise.jpg> .
+
+wd:Q6983013 dc:title "Nay Aug Park"@en ;
+	dc:spatial "Point(-75.6428 41.4014)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Everhart%20Museum%20and%20Nay%20Aug%20Park%2C%20Scranton%2C%20Pa%20%2879587%29.jpg> .
+
+wd:Q1827548 dc:title "Q1827548" ;
+	dc:spatial "Point(6.44667 52.90833)"^^geo:wktLiteral .
+
+wd:Q2301819 dc:title "Thorpe Park"@en ;
+	dc:spatial "Point(-0.513055555 51.404722222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nemisis%20inferno.jpg> .
+
+wd:Q1906703 dc:title "Joyland Amusement Park"@en ;
+	dc:spatial "Point(-101.832072 33.591708)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Joyland%20Lubbock%20TX%20entrance%20DSCN8529.JPG> .
+
+wd:Q13418288 dc:title "Luna Park, Tokyo"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Asakusa-Luna-Park-maingate-1910-1911.jpg> .
+
+wd:Q6773605 dc:title "Marshall Hall"@en .
+
+wd:Q8031891 dc:title "Wonderland Amusement Park"@en .
+
+wd:Q8031896 dc:title "Wonderland Amusement Park"@en .
+
+wd:Q7338420 dc:title "Riverside Amusement Park"@en .
+
+wd:Q25420636 dc:title "Q25420636" .
+
+wd:Q1624689 dc:title "Holiday World & Splashin' Safari"@en ;
+	dc:spatial "Point(-86.916 38.119)"^^geo:wktLiteral .
+
+wd:Q2941462 dc:title "Castle Park"@en ;
+	dc:spatial "Point(-117.468 33.9028)"^^geo:wktLiteral .
+
+wd:Q3557754 dc:title "Victory Kingdom"@en ;
+	dc:spatial "Point(117.01 39.3941)"^^geo:wktLiteral .
+
+wd:Q5306652 dc:title "Dreamland"@en ;
+	dc:spatial "Point(144.976369 -37.868036)"^^geo:wktLiteral .
+
+wd:Q5419465 dc:title "Excelsior Amusement Park"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Excelsior%20Amusement%20Park%20%28Minnesota%29.jpg> .
+
+wd:Q16259504 dc:title "New World Amusement Park"@en .
+
+wd:Q16919785 dc:title "Paxtang Park"@en .
+
+wd:Q296768 dc:title "Öland Zoo and Amusement Park"@en ;
+	dc:spatial "Point(16.490277777 56.670555555)"^^geo:wktLiteral .
+
+wd:Q3341433 dc:title "Nigloland"@en ;
+	dc:spatial "Point(4.61701944 48.264175)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nigloland%20-%20Entr%C3%A9e%20du%20parc.jpg> .
+
+wd:Q30527235 dc:title "Q30527235" ;
+	dc:spatial "Point(34.970555555 29.601111111)"^^geo:wktLiteral .
+
+wd:Q23823579 dc:title "Motiongate"@en .
+
+wd:Q4686555 dc:title "Adventure World"@en ;
+	dc:spatial "Point(115.818 -32.096)"^^geo:wktLiteral .
+
+wd:Q7687236 dc:title "Tashmoo Park"@en ;
+	dc:spatial "Point(-82.5675 42.5795)"^^geo:wktLiteral .
+
+wd:Q10345444 dc:title "Parque da Mônica"@en ;
+	dc:spatial "Point(-46.69872 -23.677185)"^^geo:wktLiteral .
+
+wd:Q5375360 dc:title "Enchanted Forest"@en ;
+	dc:spatial "Point(-87.0658 41.6342)"^^geo:wktLiteral .
+
+wd:Q2663388 dc:title "Dadipark"@en ;
+	dc:spatial "Point(3.09333 50.85333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dadizele%20-%20Dadipark%201.jpg> .
+
+wd:Q6484164 dc:title "Land of Oz"@en ;
+	dc:spatial "Point(-81.8804 36.1853)"^^geo:wktLiteral .
+
+wd:Q1850562 dc:title "Lightwater Valley"@en ;
+	dc:spatial "Point(-1.57044 54.176)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/EaglesClaw%20Lightwater.jpg> .
+
+wd:Q1159506 dc:title "Danfoss Universe"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Danfoss%20Universe.jpg> .
+
+wd:Q3411066 dc:title "Puuhamaa"@en ;
+	dc:spatial "Point(24.612659 60.8094351)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Puuhamaa%20in%20July%201986%20Sc10%20C.jpg> .
+
+wd:Q7419129 dc:title "Santa's Workshop"@en ;
+	dc:spatial "Point(-104.977 38.9047)"^^geo:wktLiteral .
+
+wd:Q4745556 dc:title "LeSourdesville Lake Amusement Park"@en ;
+	dc:spatial "Point(-84.4336 39.4456)"^^geo:wktLiteral .
+
+wd:Q7203447 dc:title "Playland"@en ;
+	dc:spatial "Point(-122.512 37.7733)"^^geo:wktLiteral .
+
+wd:Q5509324 dc:title "Funland Amusement Park"@en ;
+	dc:spatial "Point(-92.303 34.8003)"^^geo:wktLiteral .
+
+wd:Q5159586 dc:title "Coney Island"@en ;
+	dc:spatial "Point(-84.42 39.0543)"^^geo:wktLiteral .
+
+wd:Q5045561 dc:title "Carousel Gardens Amusement Park"@en ;
+	dc:spatial "Point(-90.0985 29.9875)"^^geo:wktLiteral .
+
+wd:Q15078111 dc:title "Vialand"@en ;
+	dc:spatial "Point(28.922099 41.070317)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vialand%20Theme%20Park%2C%20%C4%B0stanbul%20p3.jpg> .
+
+wd:Q1536315 dc:title "Q1536315" ;
+	dc:spatial "Point(8.1 53.5625)"^^geo:wktLiteral .
+
+wd:Q44041 dc:title "Belmont Park"@en ;
+	dc:spatial "Point(-117.252 32.7714)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Belmont%20Park%20with%20Giant%20Dipper.jpg> .
+
+wd:Q28963407 dc:title "Ferrari Land"@en ;
+	dc:spatial "Point(1.152287719 41.085448888)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entr%C3%A9e%20de%20Ferrari%20Land.jpg> .
+
+wd:Q1498410 dc:title "Q1498410" ;
+	dc:spatial "Point(8.11028 50.115)"^^geo:wktLiteral .
+
+wd:Q1373447 dc:title "Tier- und Freizeitpark Thüle"@en ;
+	dc:spatial "Point(7.91912 52.9585)"^^geo:wktLiteral .
+
+wd:Q1256152 dc:title "Q1256152" ;
+	dc:spatial "Point(-16.71916767 13.44650021)"^^geo:wktLiteral .
+
+wd:Q19298191 dc:title "Panarbora Park"@en ;
+	dc:spatial "Point(7.6075 50.860277777)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Panarbora-Park%20001.jpg> .
+
+wd:Q6446511 dc:title "Kursaal"@en ;
+	dc:spatial "Point(0.7247 51.5331)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Kursaal%2C%20Southend-On-Sea.jpg> .
+
+wd:Q441647 dc:title "Galaxyland"@en ;
+	dc:spatial "Point(-113.621 53.5236)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/WEM%20Galaxyland%20MindBender%20Galaxy%20Orbitter.JPG> .
+
+wd:Q7818730 dc:title "Tombstone Junction"@en ;
+	dc:spatial "Point(-84.358 36.8348)"^^geo:wktLiteral .
+
+wd:Q4345340 dc:title "Pripyat amusement park"@en ;
+	dc:spatial "Point(30.057125 51.40813333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Pripyat%20-%20Abandoned%20funfair.jpg> .
+
+wd:Q1454992 dc:title "Q1454992" ;
+	dc:spatial "Point(8.58361 50.2839)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lochm%C3%BChle%20068.jpg> .
+
+wd:Q6730737 dc:title "Magic Kingdom"@en ;
+	dc:spatial "Point(150.97 -33.8991)"^^geo:wktLiteral .
+
+wd:Q5375362 dc:title "Enchanted Forest"@en ;
+	dc:spatial "Point(-123.008249 44.833085)"^^geo:wktLiteral .
+
+wd:Q442538 dc:title "Wunderland Kalkar"@en ;
+	dc:spatial "Point(6.32611 51.76417)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/WunderlandKalkar.jpg> .
+
+wd:Q489313 dc:title "Walibi Belgium"@en ;
+	dc:spatial "Point(4.590555555 50.698611111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Walibi%20Belgium%20Entr%C3%A9e.jpg> .
+
+wd:Q74498 dc:title "Plopsa Indoor Coevorden"@en ;
+	dc:spatial "Point(6.773883 52.678646)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/PlopsaIndoorCoevorden.jpg> .
+
+wd:Q6062708 dc:title "fairground of Montjuic"@en ;
+	dc:spatial "Point(2.16553056 41.36803333)"^^geo:wktLiteral .
+
+wd:Q1361784 dc:title "Q1361784" ;
+	dc:spatial "Point(10.2311 52.4728)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ersepark.jpg> .
+
+wd:Q5943818 dc:title "Hunt's Pier"@en ;
+	dc:spatial "Point(-74.804 38.989)"^^geo:wktLiteral .
+
+wd:Q3363911 dc:title "Sohmer Park"@en ;
+	dc:spatial "Point(-73.547567 45.517479)"^^geo:wktLiteral .
+
+wd:Q5617791 dc:title "Gulliver's World"@en ;
+	dc:spatial "Point(-2.618 53.406)"^^geo:wktLiteral .
+
+wd:Q3127208 dc:title "Happyland"@en ;
+	dc:spatial "Point(100.640516 13.77961)"^^geo:wktLiteral .
+
+wd:Q494673 dc:title "Everland Resort"@en ;
+	dc:spatial "Point(127.20445278 37.29517778)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Korea-Yongin-Everland-04.jpg> .
+
+wd:Q1695355 dc:title "Skyline Park"@en ;
+	dc:spatial "Point(10.5914 48.0431)"^^geo:wktLiteral .
+
+wd:Q1133851 dc:title "Sanrio Puroland"@en ;
+	dc:spatial "Point(139.42916667 35.62444444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sanrio%20Puroland.jpg> .
+
+wd:Q6446511 dc:spatial "Point(0.724816 51.533111)"^^geo:wktLiteral .
+
+wd:Q571557 dc:title "Hansa Park"@en ;
+	dc:spatial "Point(10.78 54.07694444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hansapark1.jpg> .
+
+wd:Q2620204 dc:title "Pacific Park"@en ;
+	dc:spatial "Point(-118.498056 34.008333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Pacific%20Park.jpg> .
+
+wd:Q6631464 dc:title "Mill River Fun Park"@en ;
+	dc:spatial "Point(-64.126 46.7477)"^^geo:wktLiteral .
+
+wd:Q16635490 dc:title "Q16635490" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sokolniki%20District%2C%20Moscow%2C%20Russia%20-%20panoramio%20%28105%29.jpg> .
+
+wd:Q10500251 dc:title "Furuviksparken"@en ;
+	dc:spatial "Point(17.33277778 60.65138889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Furuviksparken.JPG> .
+
+wd:Q110289 dc:title "Tivoli Gardens"@en ;
+	dc:spatial "Point(12.568333333 55.673611111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/CopenhagenTivoliEntrance.jpg> .
+
+wd:Q3349991 dc:title "Q3349991" ;
+	dc:spatial "Point(5.729326 43.267886)"^^geo:wktLiteral .
+
+wd:Q747322 dc:title "Madurodam"@en ;
+	dc:spatial "Point(4.297558 52.099403)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Madurodam%20pays%20bas.JPG> .
+
+wd:Q26267473 dc:title "Precious Moments Park and Chapel"@en ;
+	dc:spatial "Point(-94.34529 37.11184)"^^geo:wktLiteral .
+
+wd:Q7439833 dc:title "SeaWorld Ohio"@en ;
+	dc:spatial "Point(-81.3692 41.3484)"^^geo:wktLiteral .
+
+wd:Q646122 dc:title "Legoland Florida"@en ;
+	dc:spatial "Point(-81.6899 27.9892)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lego%20Land%20-%20Las%20Vegas%20-%20panoramio.jpg> .
+
+wd:Q28449757 dc:title "Ocean Park Ha Long"@en ;
+	dc:spatial "Point(107.049652 20.955479)"^^geo:wktLiteral .
+
+wd:Q12404791 dc:title "George and Vulture"@en ;
+	dc:spatial "Point(-0.085914563 51.51292068)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/The%20George%20and%20Vulture%2C%20Castle%20Court%20-%20City%20Of%20London.%20%284793266343%29.jpg> .
+
+wd:Q5184402 dc:title "Crescent Park"@en ;
+	dc:spatial "Point(-71.3578 41.7561)"^^geo:wktLiteral .
+
+wd:Q1426470 dc:title "Freizeitpark Plohn"@en ;
+	dc:spatial "Point(12.39972222 50.56583333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Achterbahn%20Plohn.jpg> .
+
+wd:Q530744 dc:title "Dollywood"@en ;
+	dc:spatial "Point(-83.528838 35.805702)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Thunderhead%20%28Dollywood%29%2002.JPG> .
+
+wd:Q3120770 dc:title "Gulliver's Land"@en ;
+	dc:spatial "Point(-0.730278 52.0511)"^^geo:wktLiteral .
+
+wd:Q5121839 dc:title "Circus World"@en ;
+	dc:spatial "Point(-81.6432 28.2315)"^^geo:wktLiteral .
+
+wd:Q10336800 dc:title "Q10336800" .
+
+wd:Q10344888 dc:title "Q10344888" .
+
+wd:Q4161277 dc:title "Divo-Ostrov"@en ;
+	dc:spatial "Point(30.25338 59.972818)"^^geo:wktLiteral .
+
+wd:Q11103446 dc:title "Q11103446" .
+
+wd:Q804685 dc:title "Balboa Fun Zone"@en ;
+	dc:spatial "Point(-117.899 33.6028)"^^geo:wktLiteral .
+
+wd:Q2132175 dc:title "Rasti-Land"@en ;
+	dc:spatial "Point(9.66388889 52.09611111)"^^geo:wktLiteral .
+
+wd:Q7166426 dc:title "Peppermint Park"@en .
+
+wd:Q15882164 dc:title "Q15882164" .
+
+wd:Q7419122 dc:title "Santa's Village"@en ;
+	dc:spatial "Point(-71.4958 44.4264)"^^geo:wktLiteral .
+
+wd:Q5050593 dc:title "Castles N' Coasters"@en ;
+	dc:spatial "Point(-112.119 33.5723)"^^geo:wktLiteral .
+
+wd:Q530744 foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dollywoodsign1.jpg> .
+
+wd:Q369789 dc:title "Kentucky Kingdom"@en ;
+	dc:spatial "Point(-85.7472 38.1954)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/KentuckyKingdom.jpg> .
+
+wd:Q7354693 dc:title "Rock Springs Park"@en ;
+	dc:spatial "Point(-80.5628 40.6128)"^^geo:wktLiteral .
+
+wd:Q3198042 dc:title "Knoebels Amusement Resort"@en ;
+	dc:spatial "Point(-76.505 40.8784)"^^geo:wktLiteral .
+
+wd:Q33262691 dc:title "Bollywood Parks Dubai"@en ;
+	dc:spatial "Point(55.010102 24.922107)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bollywood%20Parks%20Dubai4.jpg> .
+
+wd:Q494668 dc:title "Lotte World"@en ;
+	dc:spatial "Point(127.09811111 37.51119444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lotte%20World.jpg> .
+
+wd:Q2397019 dc:title "Cypress Gardens"@en ;
+	dc:spatial "Point(-81.69185 27.990113888)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/0105CypressGardens17.jpg> .
+
+wd:Q28005433 dc:title "Q28005433" .
+
+wd:Q5430977 dc:title "Fairy Park"@en ;
+	dc:spatial "Point(144.26 -37.8917)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/AnakieFairyPark.JPG> .
+
+wd:Q30716992 dc:title "Dreamland"@en .
+
+wd:Q7460939 dc:title "Shady Lake Park"@en ;
+	dc:spatial "Point(-81.358333 41.247222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/ShadyLake20030621.JPG> .
+
+wd:Q1635596 dc:title "Linnanmäki"@en ;
+	dc:spatial "Point(24.94027778 60.18833333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Linnanm%C3%A4en%20portti.jpg> .
+
+wd:Q3070877 dc:title "Festyland"@en ;
+	dc:spatial "Point(-0.423056 49.182778)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Festyland%20Kaskade%20-%20Hydro%20Lift.png> .
+
+wd:Q5600265 dc:title "Great World Amusement Park"@en .
+
+wd:Q7994550 dc:title "White City"@en ;
+	dc:spatial "Point(-87.617 41.779)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/White%20City%20At%20Night.jpg> .
+
+wd:Q6348155 dc:title "Kaintuck Territory"@en .
+
+wd:Q6703562 dc:title "Luna Park, Houston"@en .
+
+wd:Q6703571 dc:title "Luna Park, Scranton"@en .
+
+wd:Q6750613 dc:title "Manly Fun Pier"@en .
+
+wd:Q7283092 dc:title "Raging Waters"@en .
+
+wd:Q7429919 dc:title "Scandia Amusements"@en .
+
+wd:Q7578378 dc:title "Splash Kingdom"@en .
+
+wd:Q18104943 dc:title "Q18104943" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/DinoPark%20Ko%C5%A1ice%2C%20Gate.jpg> .
+
+wd:Q3304238 dc:title "Q3304238" ;
+	dc:spatial "Point(4.79506 51.2621)"^^geo:wktLiteral .
+
+wd:Q3734809 dc:title "Europark Idroscalo Milano"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Paolo%20Monti%20-%20Serie%20fotografica%20%28Milano%2C%201963%29%20-%20BEIC%206328651.jpg> .
+
+wd:Q2102973 dc:title "Q2102973" ;
+	dc:spatial "Point(5.8223 51.9755)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Westerbouwing.JPG> .
+
+wd:Q16258099 dc:title "Chimelong Ocean Kingdom"@en ;
+	dc:spatial "Point(113.53 22.1001)"^^geo:wktLiteral .
+
+wd:Q3161941 dc:title "Janfusun Fancyworld"@en ;
+	dc:spatial "Point(120.57789444 23.62008333)"^^geo:wktLiteral .
+
+wd:Q2457123 dc:title "Drouwenerzand"@en ;
+	dc:spatial "Point(6.78806 52.95639)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Drouwenerzand%20Attractiepark%2C%20NL.jpg> .
+
+wd:Q578703 dc:title "Blackpool Pleasure Beach"@en ;
+	dc:spatial "Point(-3.05556 53.7903)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Pepsi%20BM.JPG> .
+
+wd:Q3363795 dc:title "Belmont Park, Montreal"@en ;
+	dc:spatial "Point(-73.7247 45.5322)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/News.%20Monitor%20Day%20BAnQ%20P48S1P16831.jpg> .
+
+wd:Q3090976 dc:title "Funtown Splashtown USA"@en ;
+	dc:spatial "Point(-70.4276 43.5272)"^^geo:wktLiteral .
+
+wd:Q1749186 dc:title "Six Flags America"@en ;
+	dc:spatial "Point(-76.7726 38.9062)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SFA-Joker%27s%20Jinx.jpg> .
+
+wd:Q126877 dc:title "Gorky Park"@en ;
+	dc:spatial "Point(37.603197222 55.731169444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Moscow%20Gorky%20Park%20View%20from%20Frunzenskaya%20Embankment%2006.jpg> .
+
+wd:Q23905885 dc:title "Orbi"@en .
+
+wd:Q12336411 dc:title "Q12336411" ;
+	dc:spatial "Point(9.18083 54.963)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sommerland%20Syd%20-%20Danmark.JPG> .
+
+wd:Q7069845 dc:title "Nunley's"@en ;
+	dc:spatial "Point(-73.6045 40.6555)"^^geo:wktLiteral .
+
+wd:Q3100026 dc:title "Geauga Lake"@en ;
+	dc:spatial "Point(-81.369188888 41.348388888)"^^geo:wktLiteral .
+
+wd:Q7355970 dc:title "Rocky Point Amusement Park"@en ;
+	dc:spatial "Point(-71.3675 41.68916667)"^^geo:wktLiteral .
+
+wd:Q7757103 dc:title "The Pike"@en ;
+	dc:spatial "Point(-118.189 33.7661)"^^geo:wktLiteral .
+
+wd:Q3276891 dc:title "Magic Park Land"@en ;
+	dc:spatial "Point(5.1876785 43.3657041)"^^geo:wktLiteral .
+
+wd:Q3196370 dc:title "Q3196370" ;
+	dc:spatial "Point(-1.10591 44.6228)"^^geo:wktLiteral .
+
+wd:Q2242821 dc:title "De Valkenier"@en ;
+	dc:spatial "Point(5.824 50.868)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Valkenburg%2C%20Pretpark%20Valkenier02.jpg> .
+
+wd:Q19874758 dc:title "Joyland"@en ;
+	dc:spatial "Point(1.74966 52.6078)"^^geo:wktLiteral .
+
+wd:Q2496825 dc:title "Great Escape"@en ;
+	dc:spatial "Point(-73.6901 43.351)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Comet%20-%20Great%20Escape.jpg> .
+
+wd:Q39058150 dc:title "Hoffman's Playland"@en .
+
+wd:Q2936946 dc:title "Q2936946" ;
+	dc:spatial "Point(2.143972 44.019833)"^^geo:wktLiteral .
+
+wd:Q3363808 dc:title "Dominion Park"@en ;
+	dc:spatial "Point(-73.51488889 45.57725)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20to%20Dominion%20Park%20Montreal%201910.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Chutes%20Dominion%20Park%20Montreal%201910.jpg> .
+
+wd:Q3327295 dc:title "Mt. Olympus Water & Theme Park"@en ;
+	dc:spatial "Point(-89.7894 43.6151)"^^geo:wktLiteral .
+
+wd:Q29168099 dc:title "Legoland Japan"@en ;
+	dc:spatial "Point(136.843611 35.0505)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Legoland%20Japan-Entrance%20gate-20170410.jpg> .
+
+wd:Q6872445 dc:title "Miracle Strip Amusement Park"@en ;
+	dc:spatial "Point(-85.825 30.191)"^^geo:wktLiteral .
+
+wd:Q5275638 dc:title "Diggerland"@en ;
+	dc:spatial "Point(0.476667 51.3819)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Diggerland%20-%20geograph.org.uk%20-%20248033.jpg> .
+
+wd:Q4904998 dc:title "Big Banana"@en ;
+	dc:spatial "Point(153.133916666 -30.274805555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Big%20Banana%20Coffs.jpg> .
+
+wd:Q15206076 dc:title "Bushkill Park"@en ;
+	dc:spatial "Point(-75.25407 40.70149)"^^geo:wktLiteral .
+
+wd:Q3212567 dc:title "Q3212567" ;
+	dc:spatial "Point(-4.52579 48.4729)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/La%20R%C3%A9cr%C3%A9.jpg> .
+
+wd:Q15196871 dc:title "Barry Island Pleasure Park"@en ;
+	dc:spatial "Point(-3.2753 51.3914)"^^geo:wktLiteral .
+
+wd:Q432237 dc:title "Six Flags AstroWorld"@en ;
+	dc:spatial "Point(-95.4074 29.6755)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/TexasCycloneHeaven.jpg> .
+
+wd:Q496893 dc:title "Dyrehavsbakken"@en ;
+	dc:spatial "Point(12.5739 55.7761)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Dyrehavsbakken.jpg> .
+
+wd:Q5354182 dc:title "Eldridge Park"@en ;
+	dc:spatial "Point(-76.8168 42.1151)"^^geo:wktLiteral .
+
+wd:Q880839 dc:title "Blackgang Chine"@en ;
+	dc:spatial "Point(-1.315833333 50.583888888)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Blackgang%20Chine%2C%20IW%2C%20UK.jpg> .
+
+wd:Q15206076 dc:spatial "Point(-75.251 40.702)"^^geo:wktLiteral .
+
+wd:Q2963705 dc:title "China Dinosaurs Park"@en ;
+	dc:spatial "Point(119.99761111 31.82616667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lake%20China%20Dinosaurs%20Park.jpg> .
+
+wd:Q1688118 dc:title "Jesperhus"@en ;
+	dc:spatial "Point(8.82159 56.76131)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Jesperhus%2C%20dk%2C%2020050820%2C%2014%20ubt.jpeg> .
+
+wd:Q947775 dc:title "Schwaben Park"@en ;
+	dc:spatial "Point(9.65639 48.9022)"^^geo:wktLiteral .
+
+wd:Q565945 dc:title "Holiday Park"@en ;
+	dc:spatial "Point(8.29472 49.3197)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Rollercoaster%20expedition%20geforce%20holiday%20park%20germany.jpg> .
+
+wd:Q593464 dc:title "Djurs Summer Park"@en ;
+	dc:spatial "Point(10.54992199 56.42478475)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Piraten%20at%20Djurs%20Sommerland.jpg> .
+
+wd:Q6404698 dc:title "Kiddieland Amusement Park"@en ;
+	dc:spatial "Point(-87.8364 41.9094)"^^geo:wktLiteral .
+
+wd:Q1144922 dc:title "Gardaland"@en ;
+	dc:spatial "Point(10.71083 45.45722)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Magic%20Mountain%20Gardaland.JPG> .
+
+wd:Q7990579 dc:title "Whalom Park"@en ;
+	dc:spatial "Point(-71.7466 42.5756)"^^geo:wktLiteral .
+
+wd:Q2874483 dc:title "Avonturenpark Hellendoorn"@en ;
+	dc:spatial "Point(6.435833 52.389444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Rollercoaster%20Tornado%20Avonturenpark%20Hellendoorn%20Netherlands.jpg> .
+
+wd:Q520675 dc:title "Erlebnispark Tripsdrill"@en ;
+	dc:spatial "Point(9.0525 49.0353)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Eingang%20Tripsdrill.jpg> .
+
+wd:Q1789271 dc:title "Kristiansand Zoo and Amusement Park"@en ;
+	dc:spatial "Point(8.141406 58.18506)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kardemomme%20by.jpg> .
+
+wd:Q7204279 dc:title "Pleasure Island"@en ;
+	dc:spatial "Point(-71.0453 42.5202)"^^geo:wktLiteral .
+
+wd:Q379978 dc:title "Adventuredome"@en ;
+	dc:spatial "Point(-115.166 36.1378)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Circus%20Circus%20Las%20Vegas%2020080322.jpg> .
+
+wd:Q18206594 dc:title "IMG Worlds of Adventure"@en ;
+	dc:spatial "Point(55.318055555 25.083055555)"^^geo:wktLiteral .
+
+wd:Q5161353 dc:title "Conneaut Lake Park"@en ;
+	dc:spatial "Point(-80.315 41.6356)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Conneaut%20Lake%20Park%20Logo.svg> .
+
+wd:Q3851347 dc:title "Mangyongdae Funfair"@en ;
+	dc:spatial "Point(125.65117778 39.00705833)"^^geo:wktLiteral .
+
+wd:Q5685289 dc:title "Illa Fantasia"@en ;
+	dc:spatial "Point(2.36353056 41.50383611)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Slides.jpg> .
+
+wd:Q5508618 dc:title "Fun-Plex"@en ;
+	dc:spatial "Point(-96.02027778 41.20361111)"^^geo:wktLiteral .
+
+wd:Q5508689 dc:title "Fun Spot Amusement Park & Zoo"@en ;
+	dc:spatial "Point(-85.0298 41.6765)"^^geo:wktLiteral .
+
+wd:Q8021034 dc:title "Williams Grove Amusement Park"@en ;
+	dc:spatial "Point(-77.034 40.151)"^^geo:wktLiteral .
+
+wd:Q2787167 dc:title "Q2787167" ;
+	dc:spatial "Point(5.168333 51.695278)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Reus%20Dan.JPG> .
+
+wd:Q6158333 dc:title "Japanese Village and Deer Park"@en ;
+	dc:spatial "Point(-118.01 33.8703)"^^geo:wktLiteral .
+
+wd:Q829491 dc:title "Luna Park"@en ;
+	dc:spatial "Point(12.321 51.37)"^^geo:wktLiteral .
+
+wd:Q3094882 dc:title "Galveston Island Historic Pleasure Pier"@en ;
+	dc:spatial "Point(-94.78991 29.286614)"^^geo:wktLiteral .
+
+wd:Q6386811 dc:title "Kemah Boardwalk"@en ;
+	dc:spatial "Point(-95.017222222 29.547777777)"^^geo:wktLiteral .
+
+wd:Q1791757 dc:title "Q1791757" ;
+	dc:spatial "Point(15.0225 51.29638889)"^^geo:wktLiteral .
+
+wd:Q4686576 dc:title "Adventureland"@en ;
+	dc:spatial "Point(-88.0517 41.956)"^^geo:wktLiteral .
+
+wd:Q12313234 dc:title "Q12313234" ;
+	dc:spatial "Point(10.3714 55.3785)"^^geo:wktLiteral .
+
+wd:Q4994532 dc:title "Q4994532" .
+
+wd:Q729566 dc:title "Q729566" ;
+	dc:spatial "Point(5.19186 52.30544)"^^geo:wktLiteral .
+
+wd:Q11972375 dc:title "Q11972375" .
+
+wd:Q11764257 dc:title "Lunapark, Łódź"@en ;
+	dc:spatial "Point(19.41125278 51.76993889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lunapark%20Lodz%201.jpg> .
+
+wd:Q2056423 dc:title "Dam Sen Cultural Park"@en ;
+	dc:spatial "Point(106.63806 10.76611)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/T%C3%A0u%20l%E1%BB%99n%20v%C3%B2ng%20si%C3%AAu%20t%E1%BB%91c%2C%20C%C3%B4ng%20vi%C3%AAn%20%C4%90%E1%BA%A7m%20Sen.JPG> .
+
+wd:Q903812 dc:title "Astroland"@en ;
+	dc:spatial "Point(-73.9792 40.5743)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Astroland%20Coney%20Island%20by%20David%20Shankbone.JPG> .
+
+wd:Q3678441 dc:title "Q3678441" ;
+	dc:spatial "Point(12.343252777 43.113152777)"^^geo:wktLiteral .
+
+wd:Q27450785 dc:title "Blockhausen"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Blockhausen%2C%20Freiberger%20H%C3%BCtte%2C%20001.jpg> .
+
+wd:Q4033432 dc:title "Adventureland"@en ;
+	dc:spatial "Point(-73.4207 40.7524)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Adventureland%20from%20NB%20NY%20110.JPG> .
+
+wd:Q3576402 dc:title "Zygofolis"@en ;
+	dc:spatial "Point(7.20778 43.71222)"^^geo:wktLiteral .
+
+wd:Q23926547 dc:title "Funland"@en .
+
+wd:Q2930683 dc:title "Suối Tiên Amusement Park"@en ;
+	dc:spatial "Point(106.82139 10.86889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SuoiTien1.JPG> .
+
+wd:Q7623580 dc:title "Stricker's Grove"@en ;
+	dc:spatial "Point(-84.669167 39.295278)"^^geo:wktLiteral .
+
+wd:Q3483991 dc:title "Silver Dollar City"@en ;
+	dc:spatial "Point(-93.3389 36.6671)"^^geo:wktLiteral .
+
+wd:Q7842260 dc:title "Trimper's Rides"@en ;
+	dc:spatial "Point(-75.088 38.3267)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tobogantrimpers.JPG> .
+
+wd:Q423559 dc:title "Toshimaen"@en ;
+	dc:spatial "Point(139.64527778 35.745)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Toshimaen%20entrance.jpg> .
+
+wd:Q2370456 dc:title "Wonderland Park"@en ;
+	dc:spatial "Point(-101.832 35.2408)"^^geo:wktLiteral .
+
+wd:Q7455979 dc:title "Sesame Place"@en ;
+	dc:spatial "Point(-74.872 40.1858)"^^geo:wktLiteral .
+
+wd:Q258524 dc:title "Walibi Rhône-Alpes"@en ;
+	dc:spatial "Point(5.57027778 45.62138889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Boomerang.jpg> .
+
+wd:Q1192174 dc:title "Fuji-Q Highland"@en ;
+	dc:spatial "Point(138.78019 35.48749)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Fujikyu-Highland.JPG> .
+
+wd:Q5254776 dc:title "Delta Village"@en .
+
+wd:Q5354092 dc:title "Eldorado Amusement Park"@en .
+
+wd:Q5357453 dc:title "Electric Park, Kansas City"@en .
+
+wd:Q5447327 dc:title "Fiesta Shows"@en .
+
+wd:Q6550495 dc:title "Lincoln Beach amusement park"@en .
+
+wd:Q6703566 dc:title "Luna Park, Olcott Beach"@en .
+
+wd:Q1971449 dc:title "Splesj"@en .
+
+wd:Q6995651 dc:title "Neptune Beach"@en .
+
+wd:Q741612 dc:title "Steeplechase Park"@en ;
+	dc:spatial "Point(-73.980555555 40.574166666)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Steeplechase%20Park%20entry%20LC-USZ62-80370.jpg> .
+
+wd:Q4703222 dc:title "Al-Shallal Theme Park"@en ;
+	dc:spatial "Point(39.1114354 21.5676572)"^^geo:wktLiteral .
+
+wd:Q5101669 dc:title "Chippewa Lake Park"@en ;
+	dc:spatial "Point(-81.9017 41.0636)"^^geo:wktLiteral .
+
+wd:Q7367805 dc:title "Rose Island"@en ;
+	dc:spatial "Point(-85.6172 38.43)"^^geo:wktLiteral .
+
+wd:Q10330326 dc:title "Q10330326" ;
+	dc:spatial "Point(-50.87592222 -29.38424722)"^^geo:wktLiteral .
+
+wd:Q135379 dc:title "Santa Claus Village"@en ;
+	dc:spatial "Point(25.889444444 66.550555555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Rovaniemi%20pajakyla%202.jpg> .
+
+wd:Q21481332 dc:title "Q21481332" ;
+	dc:spatial "Point(-87.125278 20.592778)"^^geo:wktLiteral .
+
+wd:Q19864760 dc:title "Cirque du Soleil Theme Park"@en .
+
+wd:Q18158723 dc:title "The Beach"@en ;
+	dc:spatial "Point(-106.613 35.1323)"^^geo:wktLiteral .
+
+wd:Q14704940 dc:title "Levi Carter Park"@en ;
+	dc:spatial "Point(-95.9264 41.3025)"^^geo:wktLiteral .
+
+wd:Q24886996 dc:title "Apapa Amusement Park"@en .
+
+wd:Q11402472 dc:title "Hokkaido Green Land"@en ;
+	dc:spatial "Point(141.78 43.165833333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/%E5%B2%A9%E8%A6%8B%E6%B2%A2%E5%8C%97%E6%B5%B7%E9%81%93%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%A9%E3%83%B3%E3%83%89%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4.jpg> .
+
+wd:Q302897 dc:title "Hirakata Park"@en ;
+	dc:spatial "Point(135.63813056 34.80577778)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hirakata%20Park.jpg> .
+
+wd:Q7048071 dc:title "Nokkakivi"@en ;
+	dc:spatial "Point(26.13862 62.245588)"^^geo:wktLiteral .
+
+wd:Q4059407 dc:title "Q4059407" ;
+	dc:spatial "Point(37.456902777 55.706805555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aquadrom%20waterpark%203.jpg> .
+
+wd:Q17020373 dc:title "Marshal Scotty's Playland Park"@en ;
+	dc:spatial "Point(-116.884072 32.842267)"^^geo:wktLiteral .
+
+wd:Q2367192 dc:title "Q2367192" ;
+	dc:spatial "Point(18.107147222 54.204738888)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/An%20%27upside-down%20house%27%20in%20open-air%20museum%2C%20Szybmark%2C%20Poland..jpg> .
+
+wd:Q7927217 dc:title "Victorian Gardens"@en ;
+	dc:spatial "Point(-73.9773 40.7686)"^^geo:wktLiteral .
+
+wd:Q20669825 dc:title "Q20669825" ;
+	dc:spatial "Point(4.41166 46.8124)"^^geo:wktLiteral .
+
+wd:Q19851614 dc:title "Shanghai Haichang Ocean Park"@en ;
+	dc:spatial "Point(121.902388888 30.915361111)"^^geo:wktLiteral .
+
+wd:Q2936437 dc:title "Canobie Lake Park"@en ;
+	dc:spatial "Point(-71.25089 42.79592)"^^geo:wktLiteral .
+
+wd:Q7404241 dc:title "Salem Willows"@en ;
+	dc:spatial "Point(-70.869475 42.53502222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Salem%20Willows%20Path.jpg> .
+
+wd:Q7986790 dc:title "West View Park"@en ;
+	dc:spatial "Point(-80.0346 40.5164)"^^geo:wktLiteral .
+
+wd:Q14704940 dc:spatial "Point(-95.925 41.301944444)"^^geo:wktLiteral .
+
+wd:Q5500854 dc:title "Freedomland U.S.A."@en ;
+	dc:spatial "Point(-73.8276 40.8718)"^^geo:wktLiteral .
+
+wd:Q8031892 dc:title "Wonderland Amusement Park"@en ;
+	dc:spatial "Point(116.164 40.233)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wonderland%20Park%20near%20Beijing.jpg> .
+
+wd:Q6475818 dc:title "Lake Fairfax Park"@en ;
+	dc:spatial "Point(-77.3181 38.9644)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/LakeFairfaxCarousel.jpg> .
+
+wd:Q702179 dc:title "Heide Park"@en ;
+	dc:spatial "Point(9.869166666 53.028055555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Heide%20Park%20Eingang.jpg> .
+
+wd:Q880597 dc:title "Schloss Beck"@en ;
+	dc:spatial "Point(6.97806 51.6133)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Schloss%20beck.jpg> .
+
+wd:Q2449813 dc:title "Transvaal Park"@en ;
+	dc:spatial "Point(37.529444444 55.598055555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/RIAN%20archive%20142921%20Rescuers%20in%20Transvaal%20Park%20after%20incedent.jpg> .
+
+wd:Q12191277 dc:title "Pharaonic Village"@en ;
+	dc:spatial "Point(31.215216 29.997295)"^^geo:wktLiteral .
+
+wd:Q3363841 dc:title "Kodomonokuni Theme Park"@en ;
+	dc:spatial "Point(139.491424 35.562325)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Colorful%20boats%20kodomonokuni.jpg> .
+
+wd:Q4875870 dc:title "Beachland Amusements"@en ;
+	dc:spatial "Point(-74.068104 40.591603)"^^geo:wktLiteral .
+
+wd:Q21993283 dc:title "Takamori Spring Tunnel Park"@en ;
+	dc:spatial "Point(131.122694444 32.813555555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/TakamoriSpringTunnelPark.jpg> .
+
+wd:Q7514811 dc:title "Silesian Amusement Park"@en ;
+	dc:spatial "Point(18.990555 50.273763)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/WPKiW%20-%20%C5%9Al%C4%85skie%20Weso%C5%82e%20Miasteczko%2001.JPG> .
+
+wd:Q758228 dc:title "Attractiepark Slagharen"@en ;
+	dc:spatial "Point(6.561944 52.624444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Attractiepark%20Slagharen%2083230.jpg> .
+
+wd:Q25589 dc:title "Kremlin in Izmailovo"@en ;
+	dc:spatial "Point(37.75027778 55.79472222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kremlin%20in%20Izmaylovo.JPG> .
+
+wd:Q2720654 dc:title "Kings Dominion"@en ;
+	dc:spatial "Point(-77.445 37.84)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/PKDEntrance.jpg> .
+
+wd:Q18465807 dc:title "Cidade da Criança"@en ;
+	dc:spatial "Point(-46.5572864 -23.687825)"^^geo:wktLiteral .
+
+wd:Q648192 dc:title "Six Flags New Orleans"@en ;
+	dc:spatial "Point(-89.934417 30.051111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/6FlagsHaveAGreatDayFloodlines.jpg> .
+
+wd:Q11641304 dc:title "Roadside station Ai-land Yubetsu"@en ;
+	dc:spatial "Point(143.719222222 44.13075)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Michinoeki%20Ailand%20Yubetsu.jpg> .
+
+wd:Q1880060 dc:title "Q1880060" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Drunen%20-%20Voorste%20Venne%20%281%29.jpg> .
+
+wd:Q1355404 dc:title "Q1355404" ;
+	dc:spatial "Point(9.76472 51.3708)"^^geo:wktLiteral .
+
+wd:Q6479072 dc:title "Lakeside Amusement Park"@en ;
+	dc:spatial "Point(-80.0289 37.2964)"^^geo:wktLiteral .
+
+wd:Q16255793 dc:title "The World of Sid and Marty Krofft"@en ;
+	dc:spatial "Point(-84.3944 33.7581)"^^geo:wktLiteral .
+
+wd:Q7569061 dc:title "South of the Border"@en ;
+	dc:spatial "Point(-79.3097 34.4978)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/South%20of%20the%20Border%20%28attraction%29%201.jpg> .
+
+wd:Q125316 dc:title "Djurs Summer Park"@en ;
+	dc:spatial "Point(9.64777778 57.27055556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2006%2007%2018%20Pos%C4%99pny%20czerep%20ubt.jpeg> .
+
+wd:Q5375361 dc:title "Enchanted Forest"@en ;
+	dc:spatial "Point(-76.8567 39.2803)"^^geo:wktLiteral .
+
+wd:Q10345195 dc:title "Parque Mayer"@en ;
+	dc:spatial "Point(-9.146378 38.719324)"^^geo:wktLiteral .
+
+wd:Q3566486 dc:title "Wasalandia"@en ;
+	dc:spatial "Point(21.5731215 63.0880105)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wasalandia%20portti.JPG> .
+
+wd:Q1046970 dc:title "Yomiuri Land"@en ;
+	dc:spatial "Point(139.519 35.6258)"^^geo:wktLiteral .
+
+wd:Q1940476 dc:title "PowerPark"@en ;
+	dc:spatial "Point(22.859722 63.228333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/PowerPark.JPG> .
+
+wd:Q5061600 dc:title "Central Park"@en ;
+	dc:spatial "Point(-75.4208 40.6222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/1914%20-%20Central%20Park%20Rotating%20Swings.jpg> .
+
+wd:Q6479071 dc:title "Lakeside Amusement Park"@en ;
+	dc:spatial "Point(-105.059444444 39.778333333)"^^geo:wktLiteral .
+
+wd:Q3518520 dc:title "Terra Encantada"@en ;
+	dc:spatial "Point(-43.36256 -22.9841)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cabhum....jpg> .
+
+wd:Q3529963 dc:title "Tivoli Friheden"@en ;
+	dc:spatial "Point(10.198083333 56.136416666)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tivoli%20friheden.JPG> .
+
+wd:Q23994725 dc:title "Fun Sport America-Kissimmee"@en ;
+	dc:spatial "Point(-81.514558 28.330285)"^^geo:wktLiteral .
+
+wd:Q15178220 dc:title "Adrenalin Quarry"@en ;
+	dc:spatial "Point(-4.446 50.417)"^^geo:wktLiteral .
+
+wd:Q20011458 dc:title "Savin Rock Amusement Park"@en ;
+	dc:spatial "Point(-72.95 41.257)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sky%20Blazer%2C%20White%20City%2C%20Savin%20Rock%2C%20Conn%20%2885707%29.jpg> .
+
+wd:Q261618 dc:title "Six Flags St. Louis"@en ;
+	dc:spatial "Point(-90.67505 38.512806)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Batman%20-%20The%20Ride%20-%20St.%20Louis.jpg> .
+
+wd:Q6815840 dc:title "Memphis Kiddie Park"@en ;
+	dc:spatial "Point(-81.7573 41.4405)"^^geo:wktLiteral .
+
+wd:Q3472599 dc:title "Santa Cruz Beach Boardwalk"@en ;
+	dc:spatial "Point(-122.017777777 36.964166666)"^^geo:wktLiteral .
+
+wd:Q2936437 dc:spatial "Point(-71.2503 42.795)"^^geo:wktLiteral .
+
+wd:Q8000861 dc:title "Wild Wild Wet"@en ;
+	dc:spatial "Point(103.954 1.37722)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wild%20Wild%20Wet%20Theme%20Park%2C%20Singapore.jpg> .
+
+wd:Q15242976 dc:title "Loudoun Castle (theme park)"@en ;
+	dc:spatial "Point(-4.37279 55.61061)"^^geo:wktLiteral .
+
+wd:Q2197655 dc:title "Plopsa Coo"@en ;
+	dc:spatial "Point(5.874444 50.393889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Maya%20en%20wickie%20plopsa%20coo.jpg> .
+
+wd:Q5508621 dc:title "Fun-World"@en ;
+	dc:spatial "Point(-71.4422 42.7161)"^^geo:wktLiteral .
+
+wd:Q2209852 dc:title "Q2209852" ;
+	dc:spatial "Point(6.0596 51.47292)"^^geo:wktLiteral .
+
+wd:Q7620441 dc:title "Storybook Land"@en ;
+	dc:spatial "Point(-74.5918 39.4236)"^^geo:wktLiteral .
+
+wd:Q3216196 dc:title "Lagoon Amusement Park"@en ;
+	dc:spatial "Point(-111.894722222 40.985555555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bat%20tracks%20at%20Lagoon.JPG> , <http://commons.wikimedia.org/wiki/Special:FilePath/Catapult%20capsule.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Colossus%20the%20Fire%20Dragon.JPG> , <http://commons.wikimedia.org/wiki/Special:FilePath/Double%20thunder.JPG> , <http://commons.wikimedia.org/wiki/Special:FilePath/Lagoon%20carousel.JPG> , <http://commons.wikimedia.org/wiki/Special:FilePath/Lagoon%20gardens.JPG> , <http://commons.wikimedia.org/wiki/Special:FilePath/Turn%20of%20the%20Century%20-%20Lagoon.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Wicked%20at%20Lagoon2.JPG> .
+
+wd:Q5434306 dc:title "Fantasy Island"@en ;
+	dc:spatial "Point(0.347778 53.1914)"^^geo:wktLiteral .
+
+wd:Q7581147 dc:title "Springlake Amusement Park"@en ;
+	dc:spatial "Point(-97.4786 35.5131)"^^geo:wktLiteral .
+
+wd:Q17311945 dc:title "Q17311945" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/DinoPark-Plze%C5%88-gate.jpg> .
+
+wd:Q3074868 dc:title "Foire des Rameaux"@en .
+
+wd:Q6155617 dc:title "Jantzen Beach"@en ;
+	dc:spatial "Point(-122.682 45.613)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Jantzen%20Beach%20Amusement%20Park%2C%201936.JPG> .
+
+wd:Q2531936 dc:title "Q2531936" ;
+	dc:spatial "Point(11.5125 48.156)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Val%20217%206.jpg> .
+
+wd:Q3234867 dc:title "Q3234867" ;
+	dc:spatial "Point(3.04864 50.6391)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lille%20-%20Les%20Poussins%2C%20Parc%20de%20la%20Citadelle%20%2808%29.JPG> .
+
+wd:Q6749232 dc:title "Manhattan Beach"@en .
+
+wd:Q10339470 dc:title "Q10339470" .
+
+wd:Q10345189 dc:title "Q10345189" .
+
+wd:Q10350461 dc:title "Play City"@en .
+
+wd:Q7289927 dc:title "Ramona Park"@en ;
+	dc:spatial "Point(-85.61555556 42.95000833)"^^geo:wktLiteral .
+
+wd:Q668596 dc:title "Bohemian Prater"@en ;
+	dc:spatial "Point(16.3975 48.165)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wien%20Boehmischer%20Prater%2001.jpg> .
+
+wd:Q7593268 dc:title "St Giles' Fair"@en ;
+	dc:spatial "Point(-1.2601 51.758)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/St%20Giles%20Fair%20in%20Oxford%20-%20geograph.org.uk%20-%201491731.jpg> .
+
+wd:Q20711325 dc:title "Legoland Discovery Center Kansas City"@en ;
+	dc:spatial "Point(-94.5817603 39.0818625)"^^geo:wktLiteral .
+
+wd:Q15987336 dc:title "Eden"@en .
+
+wd:Q16711008 dc:title "Q16711008" .
+
+wd:Q3229105 dc:title "Legoland Malaysia"@en ;
+	dc:spatial "Point(103.62722222 1.425)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20Legoland%20Malaysia.jpg> .
+
+wd:Q17066245 dc:title "Playland Park"@en .
+
+wd:Q20061508 dc:title "Q20061508" .
+
+wd:Q2963655 dc:title "Chimelong Paradise"@en ;
+	dc:spatial "Point(113.326913 23.004355)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/ChimelongGiantFrisbee.jpg> .
+
+wd:Q3178547 dc:title "Legoland Deutschland"@en ;
+	dc:spatial "Point(10.29972222 48.42444444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Legoland%20de%20Entrance.jpg> .
+
+wd:Q8031894 dc:title "Wonderland Amusement Park"@en .
+
+wd:Q8031893 dc:title "Wonderland Amusement Park"@en .
+
+wd:Q3568104 dc:title "Wild Adventures"@en ;
+	dc:spatial "Point(-83.323333333 30.72)"^^geo:wktLiteral .
+
+wd:Q11887861 dc:title "Q11887861" ;
+	dc:spatial "Point(25.813794 62.235983)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Peukkula%2001.jpg> .
+
+wd:Q7368226 dc:title "Roseland Park"@en .
+
+wd:Q5252847 dc:title "DelGrosso's Amusement Park"@en ;
+	dc:spatial "Point(-78.2961 40.6358)"^^geo:wktLiteral .
+
+wd:Q20657177 dc:title "Legoland Discovery Center Westchester"@en .
+
+wd:Q7573171 dc:title "Spanish City"@en ;
+	dc:spatial "Point(-1.44747 55.0476)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Spanish%20City%2C%20Whitley%20Bay%2C%20September%202010.jpg> .
+
+wd:Q4798544 dc:title "Formosa Aboriginal Culture Village"@en ;
+	dc:spatial "Point(120.94777778 23.86805556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Turnstile%20entrance%20to%20the%20Formosan%20Aboriginal%20Culture%20Village.jpg> .
+
+wd:Q6404405 dc:title "Kid's World"@en ;
+	dc:spatial "Point(-73.9795 40.3025)"^^geo:wktLiteral .
+
+wd:Q20712562 dc:title "Legoland Discovery Center Dallas Fort Worth"@en ;
+	dc:spatial "Point(-97.043481 32.966641)"^^geo:wktLiteral .
+
+wd:Q11889195 dc:title "Puuhapuisto Veijari"@en ;
+	dc:spatial "Point(25.173611 62.740278)"^^geo:wktLiteral .
+
+wd:Q5165566 dc:title "Contoocook River Amusement Park"@en ;
+	dc:spatial "Point(-71.6111 43.2702)"^^geo:wktLiteral .
+
+wd:Q3074870 dc:title "Q3074870" ;
+	dc:spatial "Point(4.34043 50.8405)"^^geo:wktLiteral .
+
+wd:Q3037111 dc:title "Dorney Park & Wildwater Kingdom"@en ;
+	dc:spatial "Point(-75.5336 40.5799)"^^geo:wktLiteral .
+
+wd:Q16489718 dc:title "American Park"@en .
+
+wd:Q5254256 dc:title "Delmar Gardens"@en .
+
+wd:Q3267421 dc:title "Luna Park, Paris"@en ;
+	dc:spatial "Point(2.28344 48.8795)"^^geo:wktLiteral .
+
+wd:Q7420003 dc:title "Santafair"@en .
+
+wd:Q7572709 dc:title "Spaceplex"@en .
+
+wd:Q7338195 dc:title "Riverfront Park"@en ;
+	dc:spatial "Point(-117.419 47.6621)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Spokanefallsm05.jpg> .
+
+wd:Q11557598 dc:title "Hamanako Pal Pal"@en ;
+	dc:spatial "Point(137.616708 34.763853)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kanzanji%20ropeway.JPG> .
+
+wd:Q20711319 dc:title "Legoland Discovery Center Chicago"@en ;
+	dc:spatial "Point(-88.034011111 42.039747222)"^^geo:wktLiteral .
+
+wd:Q3567768 dc:title "White City"@en ;
+	dc:spatial "Point(-71.7525 42.2732)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/White%20city%20amusement%20park%201.jpg> .
+
+wd:Q11217612 dc:title "Boheminium"@en ;
+	dc:spatial "Point(12.7208 49.9714)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mari%C3%A1nsk%C3%A9%20L%C3%A1zn%C4%9B%20park%20Boheminium%20hrad%20a%20z%C3%A1mek%20Be%C4%8Dov.jpg> .
+
+wd:Q16968821 dc:title "Happyland Amusement Park"@en .
+
+wd:Q20683359 dc:title "Speel- en Dierenpark SanjesFertier"@en .
+
+wd:Q3678591 dc:title "Q3678591" ;
+	dc:spatial "Point(9.106876 45.591575)"^^geo:wktLiteral .
+
+wd:Q7457401 dc:title "Seven Seas Marine Life Park"@en ;
+	dc:spatial "Point(-97.0817 32.7567)"^^geo:wktLiteral .
+
+wd:Q4121129 dc:title "Italpark"@en ;
+	dc:spatial "Point(-58.38611111 -34.58555556)"^^geo:wktLiteral .
+
+wd:Q3363902 dc:title "Parc Saint-Paul"@en ;
+	dc:spatial "Point(1.98122 49.4218)"^^geo:wktLiteral .
+
+wd:Q6774786 dc:title "Martin's Fantasy Island"@en ;
+	dc:spatial "Point(-78.9707 43.027)"^^geo:wktLiteral .
+
+wd:Q6439209 dc:title "Krug Park (amusement park)"@en ;
+	dc:spatial "Point(-95.9964 41.2869)"^^geo:wktLiteral .
+
+wd:Q3060716 dc:title "Europark"@en ;
+	dc:spatial "Point(3.412457 43.301352)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Euroloop%20Europark.JPG> .
+
+wd:Q5354080 dc:title "Eldora Park"@en ;
+	dc:spatial "Point(-79.891 40.177)"^^geo:wktLiteral .
+
+wd:Q6003536 dc:title "Imbiah Lookout"@en ;
+	dc:spatial "Point(103.815 1.256)"^^geo:wktLiteral .
+
+wd:Q8032938 dc:title "Woodlands Family Theme Park"@en ;
+	dc:spatial "Point(-3.67158 50.3563)"^^geo:wktLiteral .
+
+wd:Q1165470 dc:title "Luna Park"@en ;
+	dc:spatial "Point(151.209972222 -33.848222222)"^^geo:wktLiteral .
+
+wd:Q7602080 dc:title "Starlight Park"@en ;
+	dc:spatial "Point(-73.879 40.837)"^^geo:wktLiteral .
+
+wd:Q6550914 dc:title "Lincoln Park"@en ;
+	dc:spatial "Point(-71.0422 41.6363)"^^geo:wktLiteral .
+
+wd:Q3347870 dc:title "Oakwood Theme Park"@en ;
+	dc:spatial "Point(-4.8048 51.7794)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Oakwoodpark.jpg> .
+
+wd:Q3569978 dc:title "World Joyland"@en ;
+	dc:spatial "Point(119.989 31.8133)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sky%20Scrapper%20at%20World%20Joyland%2023.jpg> .
+
+wd:Q7357566 dc:title "Roeding Park"@en ;
+	dc:spatial "Point(-119.822 36.7539)"^^geo:wktLiteral .
+
+wd:Q3216196 foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wicked%20Tower.JPG> .
+
+wd:Q7086391 dc:title "Olentangy Park"@en ;
+	dc:spatial "Point(-83.0143 40.0204)"^^geo:wktLiteral .
+
+wd:Q14505646 dc:title "Happy Valley Tianjin"@en ;
+	dc:spatial "Point(117.460858 39.188304)"^^geo:wktLiteral .
+
+wd:Q3363781 dc:title "Parc Bagatelle"@en ;
+	dc:spatial "Point(1.6028 50.43)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bag%20Pearl%20Grande%20roue%20Flamingos%20Bagatelle.jpg> .
+
+wd:Q7798170 dc:title "Thrill-Ville USA"@en ;
+	dc:spatial "Point(-123.009 44.8331)"^^geo:wktLiteral .
+
+wd:Q15852125 dc:title "Q15852125" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Universum-Brigittenau.jpg> .
+
+wd:Q4686519 dc:title "Adventure Park"@en ;
+	dc:spatial "Point(144.515 -38.2092)"^^geo:wktLiteral .
+
+wd:Q4928861 dc:title "Blue Bayou and Dixie Landin'"@en ;
+	dc:spatial "Point(-91.0265 30.3441)"^^geo:wktLiteral .
+
+wd:Q5259266 dc:title "Deno's Wonder Wheel Amusement Park"@en ;
+	dc:spatial "Point(-73.9792 40.5743)"^^geo:wktLiteral .
+
+wd:Q3216196 foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lagoon%20Roller%20Coaster%20winter.jpeg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Lagoon%20Adventure%201%20004.jpg> .
+
+wd:Q3553873 dc:title "Valleyfair"@en ;
+	dc:spatial "Point(-93.450138888 44.796730555)"^^geo:wktLiteral .
+
+wd:Q7165445 dc:title "Peony Park"@en ;
+	dc:spatial "Point(-96.04 41.266666666)"^^geo:wktLiteral .
+
+wd:Q1063513 dc:title "Legoland Billund"@en ;
+	dc:spatial "Point(9.12611111 55.73555556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/LegoBillundTowerView.jpg> .
+
+wd:Q1165470 dc:spatial "Point(151.21 -33.8482)"^^geo:wktLiteral .
+
+wd:Q5595274 dc:title "Grand World Scenic Park"@en ;
+	dc:spatial "Point(113.419697 23.148716)"^^geo:wktLiteral .
+
+wd:Q6703555 dc:title "Luna Park, Arlington"@en ;
+	dc:spatial "Point(-77.0556 38.8444)"^^geo:wktLiteral .
+
+wd:Q6648864 dc:title "Little Amerricka"@en ;
+	dc:spatial "Point(-89.0583 43.1647)"^^geo:wktLiteral .
+
+wd:Q6736073 dc:title "Main Street"@en ;
+	dc:spatial "Point(153.316 -27.8632)"^^geo:wktLiteral .
+
+wd:Q7134302 dc:title "Paradise Lake"@en ;
+	dc:spatial "Point(-81.3379 40.0475)"^^geo:wktLiteral .
+
+wd:Q20712558 dc:title "Legoland Discovery Center Boston"@en ;
+	dc:spatial "Point(-71.07961111 42.39469444)"^^geo:wktLiteral .
+
+wd:Q5433160 dc:title "Family Kingdom Amusement Park"@en ;
+	dc:spatial "Point(-78.89305556 33.68166667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Family%20Kingdom%20Amusement%20Park%203.jpg> .
+
+wd:Q3471816 dc:title "Sandcastle Waterpark"@en ;
+	dc:spatial "Point(-79.928 40.398)"^^geo:wktLiteral .
+
+wd:Q7232489 dc:title "Portsmouth Pyramids Centre"@en ;
+	dc:spatial "Point(-1.08539 50.779)"^^geo:wktLiteral .
+
+wd:Q7989945 dc:title "Wet'n'Wild Hawaii"@en ;
+	dc:spatial "Point(-158.088 21.335)"^^geo:wktLiteral .
+
+wd:Q6538591 dc:title "Li'an Ocean Harbor Theme Park"@en ;
+	dc:spatial "Point(110.081 18.483)"^^geo:wktLiteral .
+
+wd:Q17636865 dc:title "Plopsaqua"@en ;
+	dc:spatial "Point(2.60137 51.0822)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Toboggans%20Plopsaqua.jpg> .
+
+wd:Q2170137 dc:title "Aqualibi"@en ;
+	dc:spatial "Point(4.59055556 50.69861111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aqualibi%20%2802%29.JPG> .
+
+wd:Q6752008 dc:title "Manteca Waterslides"@en .
+
+wd:Q4686532 dc:title "Adventure River"@en ;
+	dc:spatial "Point(-89.83222222 35.18)"^^geo:wktLiteral .
+
+wd:Q7846196 dc:title "Tropicana, Weston-super-Mare"@en ;
+	dc:spatial "Point(-2.9828 51.3409)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tropicana%20frontage.jpg> .
+
+wd:Q24887679 dc:title "Western Water Park"@en ;
+	dc:spatial "Point(2.51678 39.50702)"^^geo:wktLiteral .
+
+wd:Q6798154 dc:title "Maywood Beach"@en ;
+	dc:spatial "Point(-95.14861 43.35163)"^^geo:wktLiteral .
+
+wd:Q15987312 dc:title "Q15987312" .
+
+wd:Q3485583 dc:title "Six Flags Atlantis"@en ;
+	dc:spatial "Point(-80.15916667 26.0475)"^^geo:wktLiteral .
+
+wd:Q485469 dc:title "Caribbean Bay"@en ;
+	dc:spatial "Point(127.20055556 37.29694444)"^^geo:wktLiteral .
+
+wd:Q7294263 dc:title "Rapids Water Park"@en ;
+	dc:spatial "Point(-80.107 26.771)"^^geo:wktLiteral .
+
+wd:Q15713760 dc:title "Q15713760" ;
+	dc:spatial "Point(11.6646 52.134314)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nautica%20magdeburg.jpg> .
+
+wd:Q7578371 dc:title "Splash Amarillo Waterpark"@en ;
+	dc:spatial "Point(-101.77 35.194)"^^geo:wktLiteral .
+
+wd:Q20971679 dc:title "Q20971679" .
+
+wd:Q55116138 dc:title "Bellewaerde Aquapark"@en ;
+	dc:spatial "Point(2.948028 50.846695)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bellewaerde%20Aquapark%20%28A09%29.JPG> .
+
+wd:Q5432558 dc:title "Fallsville Splash Park"@en ;
+	dc:spatial "Point(-79.0539 43.0855)"^^geo:wktLiteral .
+
+wd:Q14709868 dc:title "Dollywood's Splash Country"@en ;
+	dc:spatial "Point(-83.5342 35.8098)"^^geo:wktLiteral .
+
+wd:Q7400088 dc:title "Saigon Water Park"@en .
+
+wd:Q7572064 dc:title "Sozo Water Park"@en .
+
+wd:Q1575819 dc:title "Therme Erding"@en ;
+	dc:spatial "Point(11.88671944 48.29029444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Therme%20Erding%20Innen.jpg> .
+
+wd:Q28219584 dc:title "Safari Lagoon Waterpark"@en .
+
+wd:Q30936037 dc:title "Q30936037" .
+
+wd:Q8000773 dc:title "Wild River Country"@en ;
+	dc:spatial "Point(-92.3426 34.8181)"^^geo:wktLiteral .
+
+wd:Q1430614 dc:title "Geibeltbad Pirna"@en ;
+	dc:spatial "Point(13.940674 50.946018)"^^geo:wktLiteral .
+
+wd:Q21189137 dc:title "White Water Bay"@en .
+
+wd:Q18393943 dc:title "The Wave UK"@en ;
+	dc:spatial "Point(-2.60555556 51.54222222)"^^geo:wktLiteral .
+
+wd:Q7368231 dc:title "Roseland Waterpark"@en ;
+	dc:spatial "Point(-77.25971 42.881884)"^^geo:wktLiteral .
+
+wd:Q20949642 dc:title "Mersin Aquapark"@en ;
+	dc:spatial "Point(34.6274 36.7884)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mersin%20Aquapark.jpg> .
+
+wd:Q7995514 dc:title "White Water Branson"@en ;
+	dc:spatial "Point(-93.2996 36.644)"^^geo:wktLiteral .
+
+wd:Q3568129 dc:title "WildWater Adventure"@en ;
+	dc:spatial "Point(-86.2789 43.3474)"^^geo:wktLiteral .
+
+wd:Q8074173 dc:title "Zoombezi Bay"@en ;
+	dc:spatial "Point(-83.1199 40.1549)"^^geo:wktLiteral .
+
+wd:Q26256391 dc:title "Aquapark Reda"@en .
+
+wd:Q5580654 dc:title "Golfland Sunsplash"@en ;
+	dc:spatial "Point(-111.838 33.388)"^^geo:wktLiteral .
+
+wd:Q6472546 dc:title "Lagoon-A-Beach"@en ;
+	dc:spatial "Point(-111.893 40.9839)"^^geo:wktLiteral .
+
+wd:Q8001530 dc:title "Wildwater Kingdom"@en ;
+	dc:spatial "Point(-81.3692 41.3484)"^^geo:wktLiteral .
+
+wd:Q17198628 dc:title "Munsu Water Park"@en ;
+	dc:spatial "Point(125.7811832 39.0396197)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Munsu%20Water%20Park%20-%20Pyongyang%2C%20North%20Korea%20%2811511854045%29.jpg> .
+
+wd:Q7989977 dc:title "Wet N Wild"@en ;
+	dc:spatial "Point(-1.4607 54.996)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wet%20%27n%27%20Wild%2C%20Leisure%20Pool%2C%20North%20Shields%20-%20geograph.org.uk%20-%20121052.jpg> .
+
+wd:Q5243615 dc:title "Daytona Lagoon"@en ;
+	dc:spatial "Point(-81.0116 29.2302)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/DaytonaLagoon-0632.JPG> , <http://commons.wikimedia.org/wiki/Special:FilePath/DaytonaLagoon-0633.JPG> , <http://commons.wikimedia.org/wiki/Special:FilePath/DaytonaLagoon-0641.JPG> , <http://commons.wikimedia.org/wiki/Special:FilePath/DaytonaLagoon-0680.JPG> .
+
+wd:Q4875740 dc:title "Beach Park"@en ;
+	dc:spatial "Point(-38.39055556 -3.84444444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Maior%20toboagua%20do%20mundo.JPG> .
+
+wd:Q28859945 dc:title "Maya Mare"@en ;
+	dc:spatial "Point(11.96583333 51.42888889)"^^geo:wktLiteral .
+
+wd:Q8000693 dc:title "Wild Island"@en ;
+	dc:spatial "Point(-119.714 39.5308)"^^geo:wktLiteral .
+
+wd:Q3417493 dc:title "Raging Waters Sacramento"@en ;
+	dc:spatial "Point(-121.436 38.5908)"^^geo:wktLiteral .
+
+wd:Q3621089 dc:title "Aqualandia (Italy)"@en ;
+	dc:spatial "Point(12.60109722 45.49405556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lido%20de%20Jesolo%2C%20Aqualandia%2C%20panorama%20-%20panoramio.jpg> .
+
+wd:Q26769281 dc:title "Memadion"@en ;
+	dc:spatial "Point(34.82005119 32.10201678)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Memadion008.jpg> .
+
+wd:Q3198045 dc:title "Knott's Soak City"@en ;
+	dc:spatial "Point(-117.994888 33.840881)"^^geo:wktLiteral .
+
+wd:Q5038433 dc:title "Cardiff International Pool"@en ;
+	dc:spatial "Point(-3.181078 51.449755)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cardiff%20International%20Pool%20002.jpg> .
+
+wd:Q379952 dc:title "Adventure Island"@en ;
+	dc:spatial "Point(-82.4131 28.0417)"^^geo:wktLiteral .
+
+wd:Q4906404 dc:title "Big Splash"@en ;
+	dc:spatial "Point(149.07 -35.251)"^^geo:wktLiteral .
+
+wd:Q16484874 dc:title "Q16484874" ;
+	dc:spatial "Point(17.0325 51.090833)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wroc%C5%82awski%20Park%20Wodny%20-%20Baseny%20Rekreacyjne%202.jpg> .
+
+wd:Q6798154 dc:spatial "Point(-89.8463 34.9705)"^^geo:wktLiteral .
+
+wd:Q3347879 dc:title "Oasiria"@en ;
+	dc:spatial "Point(-8.015181 31.58093)"^^geo:wktLiteral .
+
+wd:Q5768795 dc:title "Cici Aquapark"@en ;
+	dc:spatial "Point(-74.08916667 4.67055556)"^^geo:wktLiteral .
+
+wd:Q7990483 dc:title "Whale's Tale Water Park"@en ;
+	dc:spatial "Point(-71.6867 44.0717)"^^geo:wktLiteral .
+
+wd:Q2859157 dc:title "Aquaparc"@en ;
+	dc:spatial "Point(6.86190556 46.38939167)"^^geo:wktLiteral .
+
+wd:Q7204281 dc:title "Pleasure Island"@en ;
+	dc:spatial "Point(-86.24444444 43.13222222)"^^geo:wktLiteral .
+
+wd:Q20979434 dc:title "Volcano Bay"@en ;
+	dc:spatial "Point(-81.473144 28.461381)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Krakatau%20at%20Volcano%20Bay.jpg> .
+
+wd:Q30623293 dc:title "AppuGhar Water Park"@en ;
+	dc:spatial "Point(77.07206 28.460256)"^^geo:wktLiteral .
+
+wd:Q4782359 dc:title "Simhallsbadet, Malmö"@en ;
+	dc:spatial "Point(12.99277778 55.59944444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aq-va-kul%20rivs%2C%20Malm%C3%B6.jpg> .
+
+wd:Q7973425 dc:title "Water Wizz"@en ;
+	dc:spatial "Point(-70.6595 41.7568)"^^geo:wktLiteral .
+
+wd:Q5200317 dc:title "Cypress Cove Family Aquatic Park"@en ;
+	dc:spatial "Point(-88.0378 41.7347)"^^geo:wktLiteral .
+
+wd:Q30632970 dc:title "Aqua Paradise Water Park"@en ;
+	dc:spatial "Point(27.6821351 42.6562608)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aquapark%20Ravda%20Nesebar%20-%20panoramio.jpg> .
+
+wd:Q3487273 dc:title "Froster Soak City"@en ;
+	dc:spatial "Point(-79.4125 43.628333333)"^^geo:wktLiteral .
+
+wd:Q2934577 dc:title "Calypso Park"@en ;
+	dc:spatial "Point(-75.2167 45.3167)"^^geo:wktLiteral .
+
+wd:Q16647100 dc:title "Dushanbe aquapark"@en ;
+	dc:spatial "Point(68.733788 38.576809)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D1%83%D1%88%D0%B0%D0%BD%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B0%D0%BA%D0%B2%D0%B0%D0%BF%D0%B0%D1%80%D0%BA.jpg> .
+
+wd:Q4816741 dc:title "Atlantis Waterslides"@en ;
+	dc:spatial "Point(-119.241 50.3343)"^^geo:wktLiteral .
+
+wd:Q23016916 dc:title "Deep River Water Park"@en ;
+	dc:spatial "Point(87.335278 41.485556)"^^geo:wktLiteral .
+
+wd:Q17476647 dc:title "Aaseebad Ibbenbüren"@en ;
+	dc:spatial "Point(7.73155 52.26329)"^^geo:wktLiteral .
+
+wd:Q2859147 dc:title "Aqualeón"@en ;
+	dc:spatial "Point(1.4966619 41.2460631)"^^geo:wktLiteral .
+
+wd:Q3493654 dc:title "Splash Works"@en ;
+	dc:spatial "Point(-79.5442 43.8397)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20the%20top%20of%20Behemoth%20%28Canada%27s%20Wonderland%29.jpg> .
+
+wd:Q4394388 dc:title "Q4394388" ;
+	dc:spatial "Point(49.129829 55.815474)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kazan%20Riviera%20Hotel%2008-2016.jpg> .
+
+wd:Q1562662 dc:title "H2O"@en ;
+	dc:spatial "Point(8.68604 52.1062)"^^geo:wktLiteral .
+
+wd:Q884556 dc:title "Disney's Blizzard Beach"@en ;
+	dc:spatial "Point(-81.5754 28.3518)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/WDW%20Blizzard%20Beach%20entrance.JPG> .
+
+wd:Q7578592 dc:title "Splish Splash"@en ;
+	dc:spatial "Point(-72.7282 40.9207)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SplishSplashMainEntrance.jpg> .
+
+wd:Q11811658 dc:title "Q11811658" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Besenova%20004.jpg> .
+
+wd:Q20977313 dc:title "Q20977313" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Holidaypark%20Kov%C3%A1%C4%8Dov%C3%A1%20hlavn%C3%BD%20baz%C3%A9n.JPG> .
+
+wd:Q2004257 dc:title "Océade"@en ;
+	dc:spatial "Point(4.33694 50.89444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Oc%C3%A9ade%20%28A008%29.JPG> .
+
+wd:Q17021937 dc:title "Splashdown Quaywest"@en ;
+	dc:spatial "Point(-3.5609 50.4245)"^^geo:wktLiteral .
+
+wd:Q25223535 dc:title "Hidropark"@en ;
+	dc:spatial "Point(3.1149 39.84147)"^^geo:wktLiteral .
+
+wd:Q5628830 dc:title "H2Oasis Indoor Waterpark"@en ;
+	dc:spatial "Point(-149.854 61.1212)"^^geo:wktLiteral .
+
+wd:Q5136282 dc:title "Club Lake Ahoy"@en ;
+	dc:spatial "Point(-76.4004 36.8039)"^^geo:wktLiteral .
+
+wd:Q200856 dc:title "Wild Wadi Water Park"@en ;
+	dc:spatial "Point(55.189166666 25.139444444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wild-wadi.jpg> .
+
+wd:Q7973428 dc:title "Water World, Stoke-on-Trent"@en ;
+	dc:spatial "Point(-2.198 53.0274)"^^geo:wktLiteral .
+
+wd:Q28679515 dc:title "Thermas dos Laranjais"@en ;
+	dc:spatial "Point(-48.9163673 -20.7211842)"^^geo:wktLiteral .
+
+wd:Q7549748 dc:title "Soak City"@en ;
+	dc:spatial "Point(-93.4501 44.7967)"^^geo:wktLiteral .
+
+wd:Q10854571 dc:title "Q10854571" ;
+	dc:spatial "Point(16.5736 48.9025)"^^geo:wktLiteral .
+
+wd:Q16527947 dc:title "Aquapark di Zambrone"@en ;
+	dc:spatial "Point(15.9711 38.7108)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Panoramica%20AQUAPARK%20di%20Zambrone.JPG> .
+
+wd:Q1930121 dc:title "Q1930121" ;
+	dc:spatial "Point(11.6364 48.1167)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Michaelibad%20munich.jpg> .
+
+wd:Q6391301 dc:title "Kenosee Superslides"@en ;
+	dc:spatial "Point(-102.276 49.832)"^^geo:wktLiteral .
+
+wd:Q14707321 dc:title "Splashtown at Darien Lake"@en ;
+	dc:spatial "Point(-78.3849 42.9285)"^^geo:wktLiteral .
+
+wd:Q54864681 dc:title "Aquatica San Antonio"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aquatica%20San%20Antonio%20overview%202.jpg> .
+
+wd:Q5701906 dc:title "Aquapark of Cerceda"@en ;
+	dc:spatial "Point(-8.47 42.176888888)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aquaparkcerceda.jpg> .
+
+wd:Q5701913 dc:title "Q5701913" .
+
+wd:Q798526 dc:title "Aqualandia"@en ;
+	dc:spatial "Point(-0.0924 38.5451)"^^geo:wktLiteral .
+
+wd:Q4736909 dc:title "Alton Towers Waterpark"@en ;
+	dc:spatial "Point(-1.8761 52.9851)"^^geo:wktLiteral .
+
+wd:Q9158736 dc:title "Q9158736" .
+
+wd:Q7578382 dc:title "Splash Moraine"@en ;
+	dc:spatial "Point(-84.245 39.6853)"^^geo:wktLiteral .
+
+wd:Q10350080 dc:title "Q10350080" .
+
+wd:Q20878249 dc:title "Surf Snowdonia"@en ;
+	dc:spatial "Point(-3.841 53.19)"^^geo:wktLiteral .
+
+wd:Q6924917 dc:title "Mountain Creek Waterpark"@en ;
+	dc:spatial "Point(-74.507 41.189)"^^geo:wktLiteral .
+
+wd:Q12476680 dc:title "Q12476680" .
+
+wd:Q8000840 dc:title "Wild Waters"@en ;
+	dc:spatial "Point(-82.0569 29.2163)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Silver%20Bullet%20SR%2040.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Wild%20Waters%20Entrance.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Wild%20Waters%20entrance%2C%20Alligator%20Ambush.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Wild%20Waters%20entrance%2C%20The%20Hurricane.jpg> .
+
+wd:Q18015628 dc:title "Q18015628" ;
+	dc:spatial "Point(27.452229 53.952895)"^^geo:wktLiteral .
+
+wd:Q16144683 dc:title "Q16144683" .
+
+wd:Q7989952 dc:title "Wet 'n Wild Emerald Pointe"@en ;
+	dc:spatial "Point(-79.8403 36.0075)"^^geo:wktLiteral .
+
+wd:Q511276 dc:title "Tropical Islands Resort"@en ;
+	dc:spatial "Point(13.748611111 52.0375)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2018%2006%20TropicalIslands%20IMG%202078.jpg> .
+
+wd:Q5725135 dc:title "Azadegan Water Park"@en ;
+	dc:spatial "Point(51.47277778 35.63138889)"^^geo:wktLiteral .
+
+wd:Q7578375 dc:title "Splash Island"@en .
+
+wd:Q1524223 dc:title "Q1524223" ;
+	dc:spatial "Point(7.0164 51.4532)"^^geo:wktLiteral .
+
+wd:Q10298587 dc:title "Hot Park"@en .
+
+wd:Q7578391 dc:title "Splash in the Boro"@en .
+
+wd:Q4929317 dc:title "Blue Lagoon Water Park"@en ;
+	dc:spatial "Point(-4.808 51.78)"^^geo:wktLiteral .
+
+wd:Q7297100 dc:title "Ray's Splash Planet"@en ;
+	dc:spatial "Point(-80.8513 35.2381)"^^geo:wktLiteral .
+
+wd:Q2859151 dc:title "Aqualud"@en ;
+	dc:spatial "Point(1.580701 50.52533)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aqualud%20%28B56%29.JPG> .
+
+wd:Q4782594 dc:title "Aqua Park Macedonia"@en .
+
+wd:Q4983786 dc:title "Bud Boogie Beach"@en .
+
+wd:Q7416048 dc:title "Sandcastle Water Park"@en ;
+	dc:spatial "Point(-3.0574 53.7941)"^^geo:wktLiteral .
+
+wd:Q851581 dc:title "Q851581" ;
+	dc:spatial "Point(7.84484 52.0361)"^^geo:wktLiteral .
+
+wd:Q4997742 dc:title "Bunker Beach"@en ;
+	dc:spatial "Point(-93.2836 45.2103)"^^geo:wktLiteral .
+
+wd:Q56071912 dc:title "Aquaventure"@en ;
+	dc:spatial "Point(55.120382 25.134418)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Atlantis%20Aquapark.JPG> .
+
+wd:Q19898521 dc:title "Suraj Water Park"@en ;
+	dc:spatial "Point(72.9705 19.2553)"^^geo:wktLiteral .
+
+wd:Q3485590 dc:title "Six Flags White Water"@en ;
+	dc:spatial "Point(-84.521388888 33.958055555)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Six%20Flags%20Whitewater%20Atlanta%20Entrance.jpg> .
+
+wd:Q7973282 dc:title "Water Country USA"@en ;
+	dc:spatial "Point(-76.6356 37.2625)"^^geo:wktLiteral .
+
+wd:Q7989946 dc:title "Wet'n'Wild Phoenix"@en ;
+	dc:spatial "Point(-112.15 33.6959)"^^geo:wktLiteral .
+
+wd:Q56033897 dc:title "O'Gliss Park"@en ;
+	dc:spatial "Point(-1.420657 46.455522)"^^geo:wktLiteral .
+
+wd:Q7995513 dc:title "White Water Bay"@en ;
+	dc:spatial "Point(-97.5885 35.4614)"^^geo:wktLiteral .
+
+wd:Q51162550 dc:title "Rulantica"@en ;
+	dc:spatial "Point(7.74 48.2605)"^^geo:wktLiteral .
+
+wd:Q7958826 dc:title "Wacky Waters Adventure Park"@en ;
+	dc:spatial "Point(-90.63 41.604)"^^geo:wktLiteral .
+
+wd:Q18662511 dc:title "Tykkimäki Aquapark"@en .
+
+wd:Q17040343 dc:title "NRH2O"@en ;
+	dc:spatial "Point(-97.193749 32.850577)"^^geo:wktLiteral .
+
+wd:Q55116796 dc:title "Q55116796" ;
+	dc:spatial "Point(5.889444444 50.81)"^^geo:wktLiteral .
+
+wd:Q7578361 dc:title "SplashTown Houston"@en ;
+	dc:spatial "Point(-95.4319 30.0702)"^^geo:wktLiteral .
+
+wd:Q6750622 dc:title "Manly Waterworks"@en ;
+	dc:spatial "Point(151.281 -33.7991)"^^geo:wktLiteral .
+
+wd:Q7431723 dc:title "Schlitterbahn Kansas City"@en ;
+	dc:spatial "Point(-94.8042 39.1208)"^^geo:wktLiteral .
+
+wd:Q28219595 dc:title "Aquabeat Water Theme Park"@en .
+
+wd:Q6520406 dc:title "Leith Waterworld"@en ;
+	dc:spatial "Point(-3.17111 55.97)"^^geo:wktLiteral .
+
+wd:Q30633151 dc:title "Annagora Aquapark"@en ;
+	dc:spatial "Point(17.8700477 46.9482006)"^^geo:wktLiteral .
+
+wd:Q2915574 dc:title "Disney's Typhoon Lagoon"@en ;
+	dc:spatial "Point(-81.5278 28.365)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Walt%20Disney%20World%20Typhoon%20Lagoon%20Entrance.JPG> .
+
+wd:Q31034213 dc:title "Aquacolors"@en ;
+	dc:spatial "Point(13.6052 45.1983)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aquapark%20Aquacolors.jpg> .
+
+wd:Q7578384 dc:title "Splash Planet"@en ;
+	dc:spatial "Point(176.863649 -39.644041)"^^geo:wktLiteral .
+
+wd:Q8000777 dc:title "Wild Rivers"@en ;
+	dc:spatial "Point(-117.748 33.6432)"^^geo:wktLiteral .
+
+wd:Q6730888 dc:title "Magic Waters"@en ;
+	dc:spatial "Point(-88.964 42.246)"^^geo:wktLiteral .
+
+wd:Q8022369 dc:title "Willow Springs Water Park"@en ;
+	dc:spatial "Point(-92.3198 34.6284)"^^geo:wktLiteral .
+
+wd:Q54864502 dc:title "Aquatica Orlando"@en .
+
+wd:Q2915959 dc:title "Disney's River Country"@en ;
+	dc:spatial "Point(-81.5647 28.4113)"^^geo:wktLiteral .
+
+wd:Q5189711 dc:title "Croydon Water Palace"@en ;
+	dc:spatial "Point(-0.115 51.356)"^^geo:wktLiteral .
+
+wd:Q7578373 dc:title "Splash Down Waterpark"@en ;
+	dc:spatial "Point(-77.4774 38.7943)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Splashdown%20Waterpark.jpg> .
+
+wd:Q15962048 dc:title "Aquadrom"@en ;
+	dc:spatial "Point(18.8437 50.2417)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aquadrom%20Ruda%20-widok%2Cdach.JPG> .
+
+wd:Q19607262 dc:title "Chimelong Waterpark"@en ;
+	dc:spatial "Point(113.32 23.0)"^^geo:wktLiteral .
+
+wd:Q47527952 dc:title "Parque Aquático de Amarante"@en ;
+	dc:spatial "Point(-8.10788889 41.24994444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Parque%20aqu%C3%A1tico%20de%20Amarante%20%2811%29.jpg> .
+
+wd:Q6599549 dc:title "Q6599549" ;
+	dc:spatial "Point(34.793666666 32.002888888)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Yamit2000%201.JPG> .
+
+wd:Q54864470 dc:title "Bahamas Aquaventure Water Park"@en .
+
+wd:Q54864479 dc:title "Hot Park Rio Quente"@en .
+
+wd:Q5417255 dc:title "Evergreen Wings and Waves Waterpark"@en ;
+	dc:spatial "Point(-123.15 45.204)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Evergreen%20Air%20and%20Space%20Museum%20water%20slide%20-%20McMinnville%2C%20Oregon.JPG> .
+
+wd:Q7578379 dc:title "Splash Kingdom Waterpark"@en ;
+	dc:spatial "Point(-117.227 34.0693)"^^geo:wktLiteral .
+
+wd:Q6475637 dc:title "Lake Dolores Waterpark"@en ;
+	dc:spatial "Point(-116.687 34.9482)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Rockahoolawaterprk.jpg> .
+
+wd:Q18662785 dc:title "Q18662785" ;
+	dc:spatial "Point(24.740556 60.325833)"^^geo:wktLiteral .
+
+wd:Q16903186 dc:title "Wet'n'Wild Palm Springs"@en ;
+	dc:spatial "Point(-116.491 33.8042)"^^geo:wktLiteral .
+
+wd:Q4791653 dc:title "Arkadelphia Aquatic Park"@en ;
+	dc:spatial "Point(-93.0793 34.1264)"^^geo:wktLiteral .
+
+wd:Q6730789 dc:title "Magic Mountain Water Park"@en ;
+	dc:spatial "Point(-64.888 46.138)"^^geo:wktLiteral .
+
+wd:Q31817183 dc:title "Q31817183" ;
+	dc:spatial "Point(12.35732 50.117231)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aquaforum.jpg> .
+
+wd:Q17021954 dc:title "Splashdown Waterpark"@en ;
+	dc:spatial "Point(-1.95158 50.74622)"^^geo:wktLiteral .
+
+wd:Q5309563 dc:title "Dry Town Water Park"@en ;
+	dc:spatial "Point(-118.05985 34.55742)"^^geo:wktLiteral .
+
+wd:Q623069 dc:title "Aquapark Tatralandia"@en ;
+	dc:spatial "Point(19.570427 49.105996)"^^geo:wktLiteral .
+
+wd:Q10854575 dc:title "Aquapalace Praha"@en ;
+	dc:spatial "Point(14.57111073 50.00749969)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aquapalace%20Praha%20%2803%29.jpg> .
+
+wd:Q16242261 dc:title "Taipei Water Park"@en ;
+	dc:spatial "Point(121.533 25.0125)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Taipei%20Water%20Park%20entrance%2020160101.jpg> .
+
+wd:Q3348697 dc:title "Oceans of Fun"@en ;
+	dc:spatial "Point(-94.4824 39.1706)"^^geo:wktLiteral .
+
+wd:Q55429944 dc:title "Lanta Haven Waterpark"@en ;
+	dc:spatial "Point(99.082577 7.542199)"^^geo:wktLiteral .
+
+wd:Q7989943 dc:title "Wet'n'Wild Las Vegas"@en ;
+	dc:spatial "Point(-115.300122 36.059941)"^^geo:wktLiteral .
+
+wd:Q1907354 dc:title "PortAventura Aquatic Park"@en ;
+	dc:spatial "Point(1.1536 41.088)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrada%20Caribe%20Aquatic%20Park.JPG> .
+
+wd:Q4300458 dc:title "Aquadrome"@en ;
+	dc:spatial "Point(6.89639 52.20671)"^^geo:wktLiteral .
+
+wd:Q4906491 dc:title "Big Surf"@en ;
+	dc:spatial "Point(-111.913 33.4457)"^^geo:wktLiteral .
+
+wd:Q49498541 dc:title "Hartke Pool"@en ;
+	dc:spatial "Point(-115.124444444 36.190833333)"^^geo:wktLiteral .
+
+wd:Q1800377 dc:title "Q1800377" ;
+	dc:spatial "Point(7.261201 51.534818)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Herne%20Lago%20way%20in.jpg> .
+
+wd:Q14875374 dc:title "Ontario Place"@en ;
+	dc:spatial "Point(-79.415 43.629)"^^geo:wktLiteral .
+
+wd:Q7973243 dc:title "WaterWorks"@en ;
+	dc:spatial "Point(-77.4426 37.8362)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/WaterWorks%20in%202007%2C%20showing%20the%20new%20Tornado.jpg> .
+
+wd:Q6392388 dc:title "Kentucky Splash Waterpark"@en ;
+	dc:spatial "Point(-84.1751 36.7277)"^^geo:wktLiteral .
+
+wd:Q379175 dc:title "Cedar Point Shores"@en ;
+	dc:spatial "Point(-81.6117 41.4897)"^^geo:wktLiteral .
+
+wd:Q7578380 dc:title "Splash Lagoon"@en ;
+	dc:spatial "Point(-80.0779 42.0482)"^^geo:wktLiteral .
+
+wd:Q4929172 dc:title "Blue Harbor Resort"@en ;
+	dc:spatial "Point(-87.7064 43.746)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/BlueHarborResort.jpg> .
+
+wd:Q3342498 dc:title "Noah's Ark Water Park"@en ;
+	dc:spatial "Point(-89.7863 43.6036)"^^geo:wktLiteral .
+
+wd:Q7578409 dc:title "Splashtown San Antonio"@en ;
+	dc:spatial "Point(-98.426 29.447)"^^geo:wktLiteral .
+
+wd:Q843997 dc:title "Tokyo Disneyland"@en ;
+	dc:spatial "Point(139.880555555 35.632777777)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/TDL%20Cinderella%20Castle%20New%20Color.jpg> .
+
+wd:Q1880820 dc:title "Universal Studios Florida"@en ;
+	dc:spatial "Point(-81.467 28.4752)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20universal.jpg> .
+
+wd:Q3241925 dc:title "Lego World - The Netherlands"@en .
+
+wd:Q10891944 dc:title "Formosa Fun Coast"@en ;
+	dc:spatial "Point(121.39027778 25.14472222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/%E5%85%AB%E4%BB%99%E6%B0%B4%E4%B8%8A%E6%A8%82%E5%9C%921.JPG> .
+
+wd:Q14707840 dc:title "Zoom Flume"@en ;
+	dc:spatial "Point(-74.1454 42.3793)"^^geo:wktLiteral .
+
+wd:Q6062268 dc:title "Q6062268" .
+
+wd:Q6124433 dc:title "Q6124433" .
+
+wd:Q623745 dc:title "Hallyuwood"@en .
+
+wd:Q1957398 dc:title "Q1957398" ;
+	dc:spatial "Point(8.72972 49.4019)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Maerchenpark%20Heidelberg%20Spielplatz.jpg> .
+
+wd:Q2777672 dc:title "WESTCOT Center"@en .
+
+wd:Q9097845 dc:title "Zoomarine"@en .
+
+wd:Q10350079 dc:title "Q10350079" .
+
+wd:Q11102588 dc:title "Hangzhou Sea World"@en .
+
+wd:Q60609199 dc:title "Playmobil FunPark Malta"@en ;
+	dc:spatial "Point(14.505066666 35.813)"^^geo:wktLiteral .
+
+wd:Q2512799 dc:title "Venedig in Wien"@en .
+
+wd:Q12606754 dc:title "Ecoland"@en ;
+	dc:spatial "Point(126.667617 33.447126)"^^geo:wktLiteral .
+
+wd:Q5396496 dc:title "Doghill"@en .
+
+wd:Q20018990 dc:title "Q20018990" .
+
+wd:Q16924378 dc:title "Marco Polo Park"@en .
+
+wd:Q16879645 dc:title "West Lake Resortopia"@en ;
+	dc:spatial "Point(120.759 24.3908)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/West%20Lake%20Resortopia%20and%20West%20Lake%20Resort%20Hotel%20entrance%20sign%2020100102.jpg> .
+
+wd:Q3039179 dc:title "Drayton Manor Theme Park"@en ;
+	dc:spatial "Point(-1.71333 52.6108)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20to%20Drayton%20Manor%20Park%20-%20geograph.org.uk%20-%201461434.jpg> .
+
+wd:Q16833479 dc:title "Parc du Petit Prince"@en ;
+	dc:spatial "Point(7.296944444 47.860833333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2015-07-03%2011-16-30%20parc-petit-prince.jpg> .
+
+wd:Q15927262 dc:title "Hangzhou Orient Culture Park"@en .
+
+wd:Q28855221 dc:title "20th Century Fox World (Dubai)"@en .
+
+wd:Q10958042 dc:title "Little Ding-Dong Science Park"@en ;
+	dc:spatial "Point(120.97972222 24.86916667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Little%20Ding-Dong%20Science%20Theme%20Park%20entrance%20sign%2020140816.jpg> .
+
+wd:Q1957387 dc:title "Q1957387" ;
+	dc:spatial "Point(7.809923 50.031625)"^^geo:wktLiteral .
+
+wd:Q811990 dc:title "Bavaria Filmstadt"@en ;
+	dc:spatial "Point(11.55399942 48.06537208)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Eingang%20bavaria%20film.jpg> .
+
+wd:Q11246213 dc:title "Bucheon Fantastic Studio"@en ;
+	dc:spatial "Point(126.744056 37.508028)"^^geo:wktLiteral .
+
+wd:Q55594753 dc:title "Q55594753" ;
+	dc:spatial "Point(12.504194444 50.373833333)"^^geo:wktLiteral .
+
+wd:Q3571276 dc:title "Dinópolis"@en ;
+	dc:spatial "Point(-1.08111111 40.3325)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Din%C3%B3polis%20Teruel.jpg> .
+
+wd:Q2998295 dc:title "Berjaya Times Square Theme Park"@en ;
+	dc:spatial "Point(101.71055556 3.14222222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Berjaya%20Times%20Square%20Indoor%20Theme%20Park.JPG> .
+
+wd:Q12322793 dc:title "Q12322793" ;
+	dc:spatial "Point(8.24478 56.10211)"^^geo:wktLiteral .
+
+wd:Q15229585 dc:title "Yerevan Water World"@en ;
+	dc:spatial "Point(44.5582 40.2049)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/WaterWorld%20Yerevan.jpg> .
+
+wd:Q1454981 dc:title "Q1454981" ;
+	dc:spatial "Point(6.967 51.4547)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Freizeitbad%20Oase.JPG> .
+
+wd:Q7973427 dc:title "Water World, Colorado"@en ;
+	dc:spatial "Point(-105.010819444 39.856980555)"^^geo:wktLiteral .
+
+wd:Q2001298 dc:title "Splash and Fun Water Park"@en .
+
+wd:Q605959 dc:title "Hong Kong Disneyland"@en ;
+	dc:spatial "Point(114.043333333 22.313333333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Disney%20in%20star.jpg> .
+
+wd:Q5183266 dc:title "Crazy Water Park"@en .
+
+wd:Q25223525 dc:title "Aquarama"@en ;
+	dc:spatial "Point(0.05139 40.04799)"^^geo:wktLiteral .
+
+wd:Q11852394 dc:title "Aqualand Maspalomas"@en .
+
+wd:Q181185 dc:title "Disneyland"@en ;
+	dc:spatial "Point(-117.919 33.809)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sleepingbeautycastle50.jpg> .
+
+wd:Q60609197 dc:title "Playmobil FunPark Athens"@en ;
+	dc:spatial "Point(23.806347222 38.101816666)"^^geo:wktLiteral .
+
+wd:Q1616861 dc:title "Witches' Water"@en ;
+	dc:spatial "Point(12.1975 47.480555555)"^^geo:wktLiteral .
+
+wd:Q1337576 dc:title "Universal Studios Hollywood"@en ;
+	dc:spatial "Point(-118.3539 34.13585556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Universal%20Studios%20Hollywood%20%28recorte%29.jpg> .
+
+wd:Q60609198 dc:title "Playmobil FunPark Fresnes"@en ;
+	dc:spatial "Point(2.330480555 48.755191666)"^^geo:wktLiteral .
+
+wd:Q750684 dc:title "Astrid Lindgren's World"@en ;
+	dc:spatial "Point(15.843611111 57.674444444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Hyvikumpu.jpg> .
+
+wd:Q3372842 dc:title "Paultons Park"@en ;
+	dc:spatial "Point(-1.55236 50.9489)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Paulton%20Park%27s%20Lost%20Kingdom.jpg> .
+
+wd:Q3570941 dc:title "Xetulul"@en ;
+	dc:spatial "Point(-91.611632 14.594813)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Xetulul%20El%20Gran%20Jaguar%2C%20la%20R%C3%A9plica%20crop.jpg> .
+
+wd:Q22813237 dc:title "Cartoon Network Amazone Waterpark"@en .
+
+wd:Q48797557 dc:title "Happy Valley Nanjing"@en .
+
+wd:Q4683250 dc:title "Adlabs Imagica"@en ;
+	dc:spatial "Point(73.280697 18.767075)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Adlabs%20Imagica%202013%20%2810364145606%29.jpg> .
+
+wd:Q17636364 dc:title "Q17636364" ;
+	dc:spatial "Point(-2.31389 47.7006)"^^geo:wktLiteral .
+
+wd:Q16902599 dc:title "Veneza water park"@en ;
+	dc:spatial "Point(-34.8363 -7.87025)"^^geo:wktLiteral .
+
+wd:Q7715969 dc:title "The Beach at Adventure Landing"@en ;
+	dc:spatial "Point(-84.2621 39.3617)"^^geo:wktLiteral .
+
+wd:Q16468857 dc:title "Q16468857" ;
+	dc:spatial "Point(25.2013 54.6793)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Pasaku%20parkas%2C%20Vilnius.jpg> .
+
+wd:Q7139648 dc:title "Parque Marítimo César Manrique"@en ;
+	dc:spatial "Point(-16.255 28.45416667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Palmetum%20of%20Santa%20Cruz%20de%20Tenerife%202019%20046.jpg> .
+
+wd:Q16902673 dc:title "Vichy Water Park"@en ;
+	dc:spatial "Point(25.2767 54.7161)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vichy%20Water%20Park%20%28Vilnius%29.jpg> .
+
+wd:Q7973924 dc:title "Watercity"@en ;
+	dc:spatial "Point(25.25 35.311)"^^geo:wktLiteral .
+
+wd:Q2313567 dc:title "Disneyland Park"@en ;
+	dc:spatial "Point(2.776747 48.872608)"^^geo:wktLiteral .
+
+wd:Q5121320 dc:title "Ciputra Waterpark"@en ;
+	dc:spatial "Point(112.6325 -7.28444444)"^^geo:wktLiteral .
+
+wd:Q673656 dc:title "Ferrari World Abu Dhabi"@en ;
+	dc:spatial "Point(54.60704 24.48366)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Yas%20Marina%20Circuit%20%2B%20Ferrari%20World%20-Abu%20Dhabi.jpg> .
+
+wd:Q7974162 dc:title "Waterland WaterPark"@en ;
+	dc:spatial "Point(23.017 40.511)"^^geo:wktLiteral .
+
+wd:Q7135338 dc:title "London Paramount"@en ;
+	dc:spatial "Point(0.311745 51.4618)"^^geo:wktLiteral .
+
+wd:Q3363928 dc:title "Upper Clements Parks"@en ;
+	dc:spatial "Point(-65.569 44.7029)"^^geo:wktLiteral .
+
+wd:Q13222390 dc:title "Q13222390" ;
+	dc:spatial "Point(16.5335 49.3099)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wellness%20Kurim.jpg> .
+
+wd:Q5025883 dc:title "Camelbeach Waterpark"@en ;
+	dc:spatial "Point(-75.356 41.05)"^^geo:wktLiteral .
+
+wd:Q2669590 dc:title "Portugal dos Pequenitos"@en ;
+	dc:spatial "Point(-8.43416667 40.20305556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Portugal%20dos%20pequenitos%20%282%29.jpg> .
+
+wd:Q56300348 dc:title "Hainan Ocean Paradise"@en ;
+	dc:spatial "Point(110.043805555 18.445722222)"^^geo:wktLiteral .
+
+wd:Q3248109 dc:title "Wet 'n Wild Orlando"@en ;
+	dc:spatial "Point(-81.4648 28.4609)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/WetandWildOrlando.jpg> .
+
+wd:Q3364646 dc:title "Parc océanique Cousteau"@en ;
+	dc:spatial "Point(2.34343 48.8629)"^^geo:wktLiteral .
+
+wd:Q735257 dc:title "Terra Mítica"@en ;
+	dc:spatial "Point(-0.158889 38.560278)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/TerraMitica.JPG> .
+
+wd:Q30576578 dc:title "Tokachi Hills"@en ;
+	dc:spatial "Point(143.243333333 42.863333333)"^^geo:wktLiteral .
+
+wd:Q28531358 dc:title "Tokyo One Piece Tower"@en ;
+	dc:spatial "Point(139.745555555 35.658611111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20OP%20Tower%20Inneres.jpg> .
+
+wd:Q11234463 dc:title "NASPA Cosmos Garden"@en ;
+	dc:spatial "Point(138.813228 36.927717)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/NASPA%E3%82%B3%E3%82%B9%E3%83%A2%E3%82%B92.jpg> .
+
+wd:Q623008 dc:title "Aquafan"@en ;
+	dc:spatial "Point(12.64472222 43.98694444)"^^geo:wktLiteral .
+
+wd:Q8000836 dc:title "Wild Water Kingdom"@en ;
+	dc:spatial "Point(-79.6399 43.7408)"^^geo:wktLiteral .
+
+wd:Q22117790 dc:title "Sippo Art Village"@en ;
+	dc:spatial "Point(136.799253 35.183669)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Shippo%20Art%20Village-20150201.jpg> .
+
+wd:Q61750488 dc:title "Q61750488" ;
+	dc:spatial "Point(-80.107575 26.795155555)"^^geo:wktLiteral .
+
+wd:Q3518517 dc:title "Terra Botanica"@en ;
+	dc:spatial "Point(-0.57 47.5011)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Terra%20Botanica%20-%20Ballon%20captif%20-%20Terra%20vu%20du%20ciel%20-%20Coeur%20du%20parc.jpg> .
+
+wd:Q10362744 dc:title "Q10362744" ;
+	dc:spatial "Point(-43.48753 -22.98012)"^^geo:wktLiteral .
+
+wd:Q8036476 dc:title "World Waterpark"@en ;
+	dc:spatial "Point(-113.626 53.5219)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/The%20World%20Waterpark%20-%20Edmonton.jpg> .
+
+wd:Q56963453 dc:title "SHIROI KOIBITO PARK"@en ;
+	dc:spatial "Point(141.271666666 43.088611111)"^^geo:wktLiteral .
+
+wd:Q6948638 dc:title "Myrtle Waves"@en ;
+	dc:spatial "Point(-78.8986 33.715)"^^geo:wktLiteral .
+
+wd:Q1957403 dc:title "Q1957403" ;
+	dc:spatial "Point(11.1403 52.8254)"^^geo:wktLiteral .
+
+wd:Q1475214 dc:title "Vulcania"@en ;
+	dc:spatial "Point(2.94027778 45.81361111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vulcania%20exterieur%205.jpg> .
+
+wd:Q60643610 dc:title "Q60643610" ;
+	dc:spatial "Point(10.9414 49.4306)"^^geo:wktLiteral .
+
+wd:Q4824804 dc:title "Australian Wildlife Experience"@en ;
+	dc:spatial "Point(153.318 -27.8617)"^^geo:wktLiteral .
+
+wd:Q575499 dc:title "Mother Farm"@en ;
+	dc:spatial "Point(139.934833333 35.246027777)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Motherfarm.jpg> .
+
+wd:Q2587322 dc:title "Adventure World"@en ;
+	dc:spatial "Point(135.375797 33.66775)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Panda%20Adventure%20World%20Shirahama.JPG> .
+
+wd:Q18165028 dc:title "Istralandia"@en ;
+	dc:spatial "Point(13.6171 45.3467)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Istralandia%201.jpg> .
+
+wd:Q10854568 dc:title "Q10854568" ;
+	dc:spatial "Point(13.6472 50.4958)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aquadrom%20Most.JPG> .
+
+wd:Q505518 dc:title "Sea World"@en ;
+	dc:spatial "Point(153.4257 -27.9559)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sea%20world%20australia.jpg> .
+
+wd:Q41781250 dc:title "Q41781250" ;
+	dc:spatial "Point(6.0744558 52.5047598)"^^geo:wktLiteral .
+
+wd:Q12082007 dc:title "Q12082007" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%BA%D0%B2%D0%B0%D0%BF%D0%B0%D1%80%D0%BA%20%28%D0%91%D0%B5%D1%80%D0%B4%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%29.JPG> .
+
+wd:Q1202341 dc:title "Tokyo DisneySea"@en ;
+	dc:spatial "Point(139.888056 35.626667)"^^geo:wktLiteral .
+
+wd:Q11235188 dc:title "Tokyo doitsu mura"@en ;
+	dc:spatial "Point(140.059444 35.405556)"^^geo:wktLiteral .
+
+wd:Q1568767 dc:title "Kryal Castle"@en ;
+	dc:spatial "Point(143.956 -37.5719)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kryal%20castle.jpg> .
+
+wd:Q3391618 dc:title "Planète magique"@en ;
+	dc:spatial "Point(2.35349 48.8666)"^^geo:wktLiteral .
+
+wd:Q26156546 dc:title "Open Camp"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Open%20Sprint.jpg> .
+
+wd:Q6062000 dc:title "Q6062000" .
+
+wd:Q11261002 dc:title "Ehime Children's Castle"@en ;
+	dc:spatial "Point(132.797611 33.761917)"^^geo:wktLiteral .
+
+wd:Q2743662 dc:title "Artificial Lake Castle"@en ;
+	dc:spatial "Point(106.92083333 47.90916667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Castle%20UB.jpg> .
+
+wd:Q1043956 dc:title "MarineLand"@en ;
+	dc:spatial "Point(-79.0725 43.0656)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/MarineLand%20Logo.svg> .
+
+wd:Q874796 dc:title "Serengeti Park"@en ;
+	dc:spatial "Point(9.61667 52.7456)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Serengetipark%20Eingang.jpg> .
+
+wd:Q10699808 dc:title "Santaworld"@en ;
+	dc:spatial "Point(14.51777778 60.87944444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Tomteland%20entrance.jpg> .
+
+wd:Q1229098 dc:title "Disney California Adventure"@en ;
+	dc:spatial "Point(-117.919167 33.807778)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/California-Adventure-Szmurlo.jpg> .
+
+wd:Q2449490 dc:title "SeaWorld Orlando"@en ;
+	dc:spatial "Point(-81.4625 28.4108)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SeaWorldORL08-04-01a.JPG> .
+
+wd:Q3046447 dc:title "Earth Explorer"@en ;
+	dc:spatial "Point(2.93874 51.2378)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Earth%20explorer.jpg> .
+
+wd:Q17058506 dc:title "20th Century Fox World"@en ;
+	dc:spatial "Point(101.7944919 3.4219212)"^^geo:wktLiteral .
+
+wd:Q2959739 dc:title "Familiepark Harry Malter"@en ;
+	dc:spatial "Point(3.819422 51.015744)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Familiepark%20Harry%20Malter%2013-07-2010%2010-21-10.JPG> .
+
+wd:Q1052042 dc:title "Epcot"@en ;
+	dc:spatial "Point(-81.55 28.371)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Epcot07.jpg> .
+
+wd:Q24908667 dc:title "Ark Encounter"@en ;
+	dc:spatial "Point(-84.592280555 38.622238888)"^^geo:wktLiteral .
+
+wd:Q5580652 dc:title "Golfland"@en .
+
+wd:Q17995372 dc:title "Q17995372" ;
+	dc:spatial "Point(140.887444 38.264278)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sendai%20Anpanman%20Children%27s%20Museum%20%26%20Mall.JPG> .
+
+wd:Q24836146 dc:title "Q24836146" .
+
+wd:Q764186 dc:title "Disney's Animal Kingdom"@en ;
+	dc:spatial "Point(-81.59 28.358)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Expedition%20Everest%20train%20ascending%20lift%20%28Disney%27s%20Animal%20Kingdom%29.jpg> .
+
+wd:Q1395270 dc:title "Q1395270" ;
+	dc:spatial "Point(10.1333 52.0714)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Eingang%20sottrum%20komplett.jpg> .
+
+wd:Q3274095 dc:title "Macau Fisherman's Wharf"@en ;
+	dc:spatial "Point(113.55660833 22.19145278)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Macau%20Fisherman%27s%20Wharf2.JPG> .
+
+wd:Q9055940 dc:title "Parque do Pasatempo"@en ;
+	dc:spatial "Point(-8.219611 43.277245)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Estanque%20del%20Retiro.jpg> .
+
+wd:Q865312 dc:title "Shanghai Disneyland Park"@en ;
+	dc:spatial "Point(121.657 31.144)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Enchanted%20Storybook%20Castle%20of%20Shanghai%20Disneyland.jpg> .
+
+wd:Q3576064 dc:title "Zoosafari Fasanolandia"@en ;
+	dc:spatial "Point(17.3386 40.8335)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Fasano%20-%20Zoosafari-%20Fasanolandia%2001.JPG> .
+
+wd:Q2403850 dc:title "Six Flags Over Georgia"@en ;
+	dc:spatial "Point(-84.5507 33.7679)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Six%20Flags%20Over%20Georgia%20-%20Main%20gate.jpg> .
+
+wd:Q1946237 dc:title "SeaWorld San Diego"@en ;
+	dc:spatial "Point(-117.227275 32.765753)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/San%20Diego%20Sea%20World.JPG> .
+
+wd:Q3321963 dc:title "Q3321963" ;
+	dc:spatial "Point(5.25129 50.5139)"^^geo:wktLiteral .
+
+wd:Q9086261 dc:title "Q9086261" ;
+	dc:spatial "Point(-1.164892 38.011148)"^^geo:wktLiteral .
+
+wd:Q283773 dc:title "Poképark"@en .
+
+wd:Q1625335 dc:title "Holy Land Experience"@en ;
+	dc:spatial "Point(-81.433 28.4962)"^^geo:wktLiteral .
+
+wd:Q60749334 dc:title "LEGOLAND Discovery Centre Toronto"@en ;
+	dc:spatial "Point(-79.539 43.8255)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/LegolandDiscoveryCentreToronto.JPG> .
+
+wd:Q3823473 dc:title "Republic of the Children"@en ;
+	dc:spatial "Point(-58.021361 -34.887917)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Republica%20de%20los%20ninios3.jpg> .
+
+wd:Q11391755 dc:title "Eighth Route Army Cultural Park"@en .
+
+wd:Q689585 dc:title "Gatorland"@en ;
+	dc:spatial "Point(-81.4042 28.3556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gatorland%20entrance%20-Florida-23Feb2006.jpg> .
+
+wd:Q1064760 dc:title "Six Flags Great Adventure"@en ;
+	dc:spatial "Point(-74.440747222 40.137958333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/SFGAdvEntryPlaza.jpg> .
+
+wd:Q48734193 dc:title "Springfield"@en .
+
+wd:Q19878135 dc:title "Everglades Holiday Park"@en .
+
+wd:Q632646 dc:title "Archeon"@en ;
+	dc:spatial "Point(4.649167 52.115)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/2006-05%20Archeon%20binnenhof%20badhuis.JPG> .
+
+wd:Q16668891 dc:title "Parc Chlorophylle"@en ;
+	dc:spatial "Point(5.59777 50.2409)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Parc%20Chlorophylle%20Dochamps.JPG> .
+
+wd:Q18126816 dc:title "KidzDunya"@en .
+
+wd:Q11339218 dc:title "Q11339218" ;
+	dc:spatial "Point(140.269694 35.940417)"^^geo:wktLiteral .
+
+wd:Q1018484 dc:title "Haw Par Villa"@en ;
+	dc:spatial "Point(103.782 1.28426)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Haw%20Par%20Villa%2048%2C%20Nov%2006.JPG> .
+
+wd:Q16410543 dc:title "Q16410543" ;
+	dc:spatial "Point(26.585849 57.941817)"^^geo:wktLiteral .
+
+wd:Q4899748 dc:title "BeWILDerwood"@en ;
+	dc:spatial "Point(1.4492 52.7111)"^^geo:wktLiteral .
+
+wd:Q11294440 dc:title "Q11294440" ;
+	dc:spatial "Point(142.239222222 43.566111111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/CanadianWorldPark.jpg> .
+
+wd:Q54872003 dc:title "Al-Qiddiya"@en ;
+	dc:spatial "Point(46.28327 24.570208)"^^geo:wktLiteral .
+
+wd:Q2961111 dc:title "Isla Mágica"@en ;
+	dc:spatial "Point(-6.00028 37.40833)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrada%20a%20Isla%20M%C3%A1gica.JPG> .
+
+wd:Q2449490 dc:spatial "Point(-81.461388888 28.411111111)"^^geo:wktLiteral .
+
+wd:Q1475660 dc:title "Futuroscope"@en ;
+	dc:spatial "Point(0.368888888 46.669166666)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Le%20parc%20du%20futuroscope.JPG> .
+
+wd:Q4879400 dc:title "Bedrock City"@en ;
+	dc:spatial "Point(-103.614 43.7613)"^^geo:wktLiteral .
+
+wd:Q3411109 dc:title "Puy du Fou"@en ;
+	dc:spatial "Point(-0.931944444 46.893333333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Secret%20de%20la%20Lance.jpg> .
+
+wd:Q935388 dc:title "Ontario Place"@en ;
+	dc:spatial "Point(-79.415048 43.628993)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/WikiOntarioPlace%20Toronto%20ID.jpg> .
+
+wd:Q1139847 dc:title "Nara Dreamland"@en ;
+	dc:spatial "Point(135.82416667 34.7)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nara%20dreamland%20castle.jpg> .
+
+wd:Q18233530 dc:title "Universal Beijing Resort"@en ;
+	dc:spatial "Point(116.67240833 39.84524722)"^^geo:wktLiteral .
+
+wd:Q10968241 dc:title "Noah's Ark (Hong Kong)"@en ;
+	dc:spatial "Point(114.06155556 22.34819444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Noahspark.JPG> .
+
+wd:Q24019021 dc:title "Sioux City Park"@en ;
+	dc:spatial "Point(-15.53487 27.78621)"^^geo:wktLiteral .
+
+wd:Q20477030 dc:title "Wonderland Eurasia"@en ;
+	dc:spatial "Point(32.783611111 39.943055555)"^^geo:wktLiteral .
+
+wd:Q6583260 dc:title "Farm Chokchai"@en ;
+	dc:spatial "Point(101.350296944 14.652946944)"^^geo:wktLiteral .
+
+wd:Q564554 dc:title "Tokyo Dome City"@en ;
+	dc:spatial "Point(139.752 35.7056)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/TokyoDome8945.jpg> .
+
+wd:Q63883313 dc:title "Puy du Fou España"@en ;
+	dc:spatial "Point(-4.0925199 39.8351547)"^^geo:wktLiteral .
+
+wd:Q55627450 dc:title "Old Nayong Pilipino"@en .
+
+wd:Q787902 dc:title "Dubailand"@en ;
+	dc:spatial "Point(55.36388889 25.075)"^^geo:wktLiteral .
+
+wd:Q2742709 dc:title "Cinderella Castle"@en ;
+	dc:spatial "Point(-81.5812 28.4195)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Cinderella%20Castle%202013%20Wade.jpg> .
+
+wd:Q18629465 dc:title "Q18629465" ;
+	dc:spatial "Point(11.79951 48.16997)"^^geo:wktLiteral .
+
+wd:Q1345090 dc:title "Disney's Hollywood Studios"@en ;
+	dc:spatial "Point(-81.558889 28.358333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Movie%20Ride%20and%20Chinese%20Theater%20at%20Walt%20Disney%20World.jpg> .
+
+wd:Q1625335 dc:spatial "Point(-81.43315 28.49593)"^^geo:wktLiteral .
+
+wd:Q1070642 dc:title "Chessington World of Adventures"@en ;
+	dc:spatial "Point(-0.316666666 51.348611111)"^^geo:wktLiteral .
+
+wd:Q7857535 dc:title "Tweetsie Railroad"@en ;
+	dc:spatial "Point(-81.649 36.1709)"^^geo:wktLiteral .
+
+wd:Q19974049 dc:title "Q19974049" ;
+	dc:spatial "Point(4.162188 52.019447)"^^geo:wktLiteral .
+
+wd:Q2001885 dc:title "Six Flags Discovery Kingdom"@en ;
+	dc:spatial "Point(-122.23 38.137778)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Medusa%20%28Six%20Flags%20Discovery%20Kingdom%29%2001.JPG> .
+
+wd:Q47164517 dc:title "Legoland Discovery Centre Berlin"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Legoland%20Berlin%20-%20panoramio%20%281%29.jpg> .
+
+wd:Q15925112 dc:title "Window of the World"@en ;
+	dc:spatial "Point(113.055 28.2389)"^^geo:wktLiteral .
+
+wd:Q1553178 dc:title "Historiecenter Dybbøl Banke"@en ;
+	dc:spatial "Point(9.75444444 54.90666667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/201607Historiecenter%20Dybb%C3%B8l%20Banke%20b%2010.jpg> .
+
+wd:Q3570845 dc:title "Xcaret"@en ;
+	dc:spatial "Point(-87.11916667 20.57805556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/XcaretMexico.jpg> .
+
+wd:Q2677140 dc:title "Boudewijn Seapark"@en ;
+	dc:spatial "Point(3.21222222 51.18333333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20Boudewjinpark.JPG> .
+
+wd:Q2583112 dc:title "Universal's Islands of Adventure"@en ;
+	dc:spatial "Point(-81.47138889 28.47166667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/IoA%20Tower.jpg> .
+
+wd:Q17624538 dc:title "Mudéjar theme park"@en ;
+	dc:spatial "Point(-4.681569 41.290138)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/ParqueMudejar-Olmedo-MINdsc05600.jpg> .
+
+wd:Q3400200 dc:title "Q3400200" ;
+	dc:spatial "Point(30.42866 50.43509)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9C%D0%B0%D0%BC%D0%B0%D1%94%D0%B2%D0%B0%20%D0%A1%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D0%B0.JPG> .
+
+wd:Q21654949 dc:title "Metsä"@en ;
+	dc:spatial "Point(139.32933333 35.8725)"^^geo:wktLiteral .
+
+wd:Q3503999 dc:title "Sunway Lagoon"@en ;
+	dc:spatial "Point(101.607 3.06921)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sunway%20Lagoon.jpg> .
+
+wd:Q1324340 dc:title "Magic Kingdom"@en ;
+	dc:spatial "Point(-81.581111111 28.418611111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Magic%20Kingdom%20castle.jpg> .
+
+wd:Q56849085 dc:title "Comics Station"@en ;
+	dc:spatial "Point(4.421533 51.213372)"^^geo:wktLiteral .
+
+wd:Q2928695 dc:title "Busch Gardens Williamsburg"@en ;
+	dc:spatial "Point(-76.6444 37.2347)"^^geo:wktLiteral .
+
+wd:Q614631 dc:title "Hard Rock Entertainment World"@en ;
+	dc:spatial "Point(1.151389 41.084722)"^^geo:wktLiteral .
+
+wd:Q26721245 dc:title "Baekje Cultural Land"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Baekje%20Cultural%20Land%20007%20%289706835400%29.jpg> .
+
+wd:Q567864 dc:title "SeaWorld San Antonio"@en ;
+	dc:spatial "Point(-98.6998 29.4584)"^^geo:wktLiteral .
+
+wd:Q3305037 dc:title "Meli Park"@en ;
+	dc:spatial "Point(2.601592 51.081353)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/MeliparkCariocaPanorama.jpg> .
+
+wd:Q303439 dc:title "Legoland Discovery Centre"@en ;
+	dc:spatial "Point(13.372121 52.510122)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Legoland%20Duisburg%20Innenhafen%20Werhahnmuehle.JPG> .
+
+wd:Q56150630 dc:title "Q56150630" ;
+	dc:spatial "Point(6.60974 51.86194)"^^geo:wktLiteral .
+
+wd:Q56771273 dc:title "Miramar"@en ;
+	dc:spatial "Point(8.643 49.533)"^^geo:wktLiteral .
+
+wd:Q28859877 dc:title "Q28859877" ;
+	dc:spatial "Point(16.247695277 49.515694444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Centrum%20Eden.png> .
+
+wd:Q61427553 dc:title "Q61427553" ;
+	dc:spatial "Point(4.896305 45.78549)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Exalto%20%28Villeurbanne%29%20-%20centre%20de%20r%C3%A9alit%C3%A9%20virtuelle.jpg> .
+
+wd:Q66085108 dc:title "Universal's Epic Universe"@en ;
+	dc:spatial "Point(-81.449166666 28.442222222)"^^geo:wktLiteral .
+
+wd:Q61988391 dc:title "Q61988391" ;
+	dc:spatial "Point(138.211666666 36.948888888)"^^geo:wktLiteral .
+
+wd:Q18701116 dc:title "Q18701116" .
+
+wd:Q22024896 dc:title "Playland Park"@en .
+
+wd:Q33165541 dc:title "Q33165541" ;
+	dc:spatial "Point(13.087194444 54.258444444)"^^geo:wktLiteral .
+
+wd:Q63968137 dc:title "Q63968137" ;
+	dc:spatial "Point(6.862497243 51.836424305)"^^geo:wktLiteral .
+
+wd:Q56676259 dc:title "Merrymeeting Park"@en ;
+	dc:spatial "Point(-69.9314899 43.9077887)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Merrymeeting%20Park%20Casino%2C%20Brunswick%2C%20ME.jpg> .
+
+wd:Q48767387 dc:title "Six Flags Power Plant"@en ;
+	dc:spatial "Point(-76.6075 39.286111111)"^^geo:wktLiteral .
+
+wd:Q48750896 dc:title "Babyland-Amiland"@en ;
+	dc:spatial "Point(2.515555555 48.592222222)"^^geo:wktLiteral .
+
+wd:Q37813516 dc:title "Q37813516" .
+
+wd:Q49494388 dc:title "Golden City Amusement Park"@en ;
+	dc:spatial "Point(-73.885833333 40.63)"^^geo:wktLiteral .
+
+wd:Q56478270 dc:title "AquaMagis"@en ;
+	dc:spatial "Point(7.850079 51.232104)"^^geo:wktLiteral .
+
+wd:Q15051937 dc:title "Erlebnisbergwerk Merkers"@en ;
+	dc:spatial "Point(10.1236 50.8196)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Erlebnisbergwerk%20Merkers%20-%20salt%20mine%20Merkers%20-%20Thuringia%20-%20Germany%20-%2005.jpg> .
+
+wd:Q63762656 dc:title "Globe Tower"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20will%20soon%20have%20the%20highest%20structure%20but%20one%20ever%20raised%20by%20man.%20LOC%203798317026.jpg> .
+
+wd:Q57280172 dc:title "Q57280172" .
+
+wd:Q38787566 dc:title "Potjesmarkt"@en .
+
+wd:Q56064533 dc:title "Parko Paliatso"@en .
+
+wd:Q20714544 dc:title "Bedrock City"@en ;
+	dc:spatial "Point(-112.140127 35.654056)"^^geo:wktLiteral .
+
+wd:Q48780971 dc:title "Adventure Park USA"@en .
+
+wd:Q36698368 dc:title "Q36698368" ;
+	dc:spatial "Point(6.576111111 43.261111111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Logo%20de%20l%27Azur%20park%20%C3%A0%20Gassin.jpg> .
+
+wd:Q51879583 dc:title "Attractiepark Sprookjeshof"@en ;
+	dc:spatial "Point(6.688528 53.099361)"^^geo:wktLiteral .
+
+wd:Q59315410 dc:title "Jenkinson's Boardwalk"@en .
+
+wd:Q55739036 dc:title "Rattana Resort & Waterpark"@en ;
+	dc:spatial "Point(99.0457237 7.6710819)"^^geo:wktLiteral .
+
+wd:Q64708611 dc:title "Lake Shawnee Amusement Park"@en ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Silence%20in%20the%20Wind%20%2810512051993%29.jpg> .
+
+wd:Q58051219 dc:title "PortAventura Park"@en ;
+	dc:spatial "Point(1.157777777 41.087777777)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Shambala%20%26%20Dragon%20Khan2.jpg> .
+
+wd:Q11330769 dc:title "Q11330769" ;
+	dc:spatial "Point(139.740722 35.584472)"^^geo:wktLiteral .
+
+wd:Q59563752 dc:title "Nickelodeon Universe Theme Park"@en .
+
+wd:Q28041086 dc:title "Legoland Dubai"@en ;
+	dc:spatial "Point(55.01007 24.91907)"^^geo:wktLiteral .
+
+wd:Q55185408 dc:title "Lewa Adventure"@en .
+
+wd:Q55604314 dc:title "Askari Amusement Park"@en .
+
+wd:Q56863102 dc:title "Q56863102" ;
+	dc:spatial "Point(14.4941003 50.1107872)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Lanov%C3%A9%20centrum%20Vyso%C4%8Dany%20near%20Rube%C5%A1ka%20street%20in%20Prague-Vyso%C4%8Dany%2C%20Prague.jpg> .
+
+wd:Q64167932 dc:title "Lightwater Valley Theme Park"@en .
+
+wd:Q51880358 dc:title "Le Fleury"@en ;
+	dc:spatial "Point(3.290601 50.274913)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wavrechain-sous-Faulx%20-%20Le%20Fleury%2C%20entr%C3%A9e%20du%20parc%20%2801%29.JPG> .
+
+wd:Q42347648 dc:title "Sunnyland"@en ;
+	dc:spatial "Point(18.414802777 43.841952777)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sunnyland%201.jpg> .
+
+wd:Q60523244 dc:title "Vinnyajagat"@en ;
+	dc:spatial "Point(89.1090506 25.8305871)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Vinnyajagat%20Guest%20House%20%26%20Conference%20Centre%20%2801%29.jpg> .
+
+wd:Q41776580 dc:title "Q41776580" ;
+	dc:spatial "Point(27.343436111 61.700808333)"^^geo:wktLiteral .
+
+wd:Q65032249 dc:title "Q65032249" ;
+	dc:spatial "Point(11.542427777 48.097638888)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Gierlinger%20Park%208544.jpg> .
+
+wd:Q49546890 dc:title "Puritas Springs Park"@en ;
+	dc:spatial "Point(-81.83708 41.43672)"^^geo:wktLiteral .
+
+wd:Q60189464 dc:title "Changchun Movie Wonderland"@en ;
+	dc:spatial "Point(125.446771 43.77373)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/%E9%95%BF%E5%BD%B1%E4%B8%96%E7%BA%AA%E5%9F%8E%C2%B7%E8%B7%AF%E8%BE%B9%E5%BB%BA%E7%AD%912017.jpg> .
+
+wd:Q56184170 dc:title "Q56184170" ;
+	dc:spatial "Point(139.9332193 35.8008263)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Genroku%20matsudomura01.jpg> .
+
+wd:Q30590075 dc:title "Warner Bros. World Abu Dhabi"@en ;
+	dc:spatial "Point(54.60002 24.49197)"^^geo:wktLiteral .
+
+wd:Q56824864 dc:title "Majaland Kownaty"@en ;
+	dc:spatial "Point(15.081543 52.35)"^^geo:wktLiteral .
+
+wd:Q58215249 dc:title "Krokodýlek"@en ;
+	dc:spatial "Point(17.254356166 49.607571166)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Krokodylek%20-%202.jpg> .
+
+wd:Q63170507 dc:title "Q63170507" ;
+	dc:spatial "Point(138.633055555 37.210833333)"^^geo:wktLiteral .
+
+wd:Q56353067 dc:title "Q56353067" ;
+	dc:spatial "Point(10.247902777 51.7243)"^^geo:wktLiteral .
+
+wd:Q5364305 dc:title "Namco Namja Town"@en ;
+	dc:spatial "Point(139.72 35.72861111)"^^geo:wktLiteral .
+
+wd:Q11508260 dc:title "Gifu Seiryu-satoyama Koen"@en ;
+	dc:spatial "Point(137.030527777 35.473694444)"^^geo:wktLiteral .
+
+wd:Q11395835 dc:title "Q11395835" ;
+	dc:spatial "Point(132.874972 35.386639)"^^geo:wktLiteral .
+
+wd:Q11507877 dc:title "Nihon Taishomura"@en ;
+	dc:spatial "Point(137.39036111 35.30488889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Taisho%20Roman%20Hall.jpg> .
+
+wd:Q11442700 dc:title "Amanohashidate View Land"@en ;
+	dc:spatial "Point(135.18175 35.5525)"^^geo:wktLiteral .
+
+wd:Q17215455 dc:title "TSUKUBA WANWAN LAND"@en ;
+	dc:spatial "Point(140.075194 36.203667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/TsukubaWanWanLand%28Entrance%29.jpg> .
+
+wd:Q11230816 dc:title "Q11230816" .
+
+wd:Q11256976 dc:title "Q11256976" .
+
+wd:Q11262855 dc:title "Q11262855" .
+
+wd:Q11264907 dc:title "Q11264907" .
+
+wd:Q11272918 dc:title "Q11272918" .
+
+wd:Q11280469 dc:title "Q11280469" .
+
+wd:Q11282844 dc:title "Q11282844" .
+
+wd:Q11296789 dc:title "Q11296789" .
+
+wd:Q11324028 dc:title "Q11324028" .
+
+wd:Q11340483 dc:title "Q11340483" .
+
+wd:Q11355516 dc:title "Q11355516" .
+
+wd:Q11394864 dc:title "Q11394864" .
+
+wd:Q11399646 dc:title "Q11399646" .
+
+wd:Q11402420 dc:title "Q11402420" .
+
+wd:Q11411934 dc:title "Q11411934" .
+
+wd:Q11462982 dc:title "Q11462982" .
+
+wd:Q11466608 dc:title "Q11466608" .
+
+wd:Q11491638 dc:title "Q11491638" .
+
+wd:Q11498237 dc:title "Q11498237" .
+
+wd:Q11504889 dc:title "Q11504889" .
+
+wd:Q11524428 dc:title "Q11524428" .
+
+wd:Q11543310 dc:title "Q11543310" .
+
+wd:Q11558465 dc:title "Q11558465" .
+
+wd:Q11571945 dc:title "Q11571945" .
+
+wd:Q3459356 dc:title "Shuzenji Romney Railway"@en ;
+	dc:spatial "Point(138.910924 34.974569)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nijinosato%2020121104%20Entrance.jpg> .
+
+wd:Q11580007 dc:title "Q11580007" .
+
+wd:Q11666878 dc:title "Q11666878" .
+
+wd:Q114525 dc:title "Flamingo Land Resort"@en ;
+	dc:spatial "Point(-0.8082 54.2097)"^^geo:wktLiteral .
+
+wd:Q16669013 dc:title "Parque España-Shima Spain Village"@en ;
+	dc:spatial "Point(136.844278 34.361806)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/La%20Villa%20Espa%C3%B1ola%20de%20Shima%2C%20Parque%20Espa%C3%B1a%20-%20Plaza%20de%20Mayor.jpg> .
+
+wd:Q11662592 dc:title "Seishu-no-sato"@en ;
+	dc:spatial "Point(135.441138888 34.281194444)"^^geo:wktLiteral .
+
+wd:Q11310533 dc:title "Joypolis"@en ;
+	dc:spatial "Point(139.775161 35.628508)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Sega%20Joypolis%20Odaiba.jpg> .
+
+wd:Q11371381 dc:title "Twenty Four Eyes"@en ;
+	dc:spatial "Point(134.28518056 34.44541667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Twenty-four%20eyes01s3200.jpg> .
+
+wd:Q11339346 dc:title "Q11339346" ;
+	dc:spatial "Point(135.176917 34.154167)"^^geo:wktLiteral .
+
+wd:Q11363007 dc:title "Nakaizu Winery Hills"@en .
+
+wd:Q11589749 dc:title "Q11589749" ;
+	dc:spatial "Point(135.18027778 34.67916667)"^^geo:wktLiteral .
+
+wd:Q11289253 dc:title "Q11289253" ;
+	dc:spatial "Point(136.50925 36.459083)"^^geo:wktLiteral .
+
+wd:Q5432560 dc:title "Fallsview Indoor Waterpark"@en ;
+	dc:spatial "Point(-79.0706 43.0925)"^^geo:wktLiteral .
+
+wd:Q17214706 dc:title "Q17214706" ;
+	dc:spatial "Point(140.29423 35.40152)"^^geo:wktLiteral .
+
+wd:Q11378931 dc:title "Ise Azuchi Momoyama Culture Village"@en ;
+	dc:spatial "Point(136.777703 34.498314)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Aduchijou-mogi.jpg> .
+
+wd:Q10947551 dc:title "Ueno German Culture Village"@en ;
+	dc:spatial "Point(125.322647222 24.719336111)"^^geo:wktLiteral .
+
+wd:Q11266011 dc:title "Kenji World"@en .
+
+wd:Q1832013 dc:title "Bellewaerde"@en ;
+	dc:spatial "Point(2.945556 50.848333)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Bellewaerde.jpg> .
+
+wd:Q912392 dc:title "Kobe Chinatown"@en ;
+	dc:spatial "Point(135.18805556 34.68805556)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kobe-Nankinmachi.JPG> .
+
+wd:Q11087091 dc:title "Asahikawa Ramen Village"@en ;
+	dc:spatial "Point(142.414444444 43.781944444)"^^geo:wktLiteral .
+
+wd:Q11504885 dc:title "Edo Wonderland Nikko Edomura"@en ;
+	dc:spatial "Point(139.698 36.791)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nikko%20Edo-Mura%207.jpg> .
+
+wd:Q11339828 dc:title "Minetopia Besshi"@en ;
+	dc:spatial "Point(133.3095 33.901444444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Roadside%20Station%20Mine%20topia%20Besshi.jpg> .
+
+wd:Q11103541 dc:title "Toei Kyoto Studio Park"@en ;
+	dc:spatial "Point(135.708333 35.016389)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Toei%20Kyoto%20Studio%20Park%20from%20above.jpg> .
+
+wd:Q5368597 dc:title "Tokyo Summerland"@en .
+
+wd:Q11587228 dc:title "Ishibe-shukuba-no-sato"@en ;
+	dc:spatial "Point(136.044722 35.003889)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ishibe%20shukubanosato14s3200.jpg> .
+
+wd:Q11609171 dc:title "Mihama Town Resort American Village"@en ;
+	dc:spatial "Point(127.756668 26.316183)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Mihama%20AV%20D%20Japan.jpg> .
+
+wd:Q17211017 dc:title "Q17211017" ;
+	dc:spatial "Point(139.72 35.72861111)"^^geo:wktLiteral .
+
+wd:Q3155850 dc:title "Italia Mura"@en ;
+	dc:spatial "Point(136.88444444 35.09)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Italia%20mura.jpg> .
+
+wd:Q11346723 dc:title "LAGUNA TEN BOSCH"@en ;
+	dc:spatial "Point(137.275833 34.807722)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Ragunatenbos1.JPG> .
+
+wd:Q11444846 dc:title "Q11444846" ;
+	dc:spatial "Point(129.694444 28.416667)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Amami%20Park.jpg> .
+
+wd:Q1375103 dc:title "Universal Studios Japan"@en ;
+	dc:spatial "Point(135.433 34.6647)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/USJ%205years.JPG> .
+
+wd:Q5375437 dc:title "Enchō-en"@en ;
+	dc:spatial "Point(133.892583333 35.464666666)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Enchoen01n4592.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Roadside%20Station%20Encho-en.jpg> .
+
+wd:Q11261717 dc:title "Q11261717" ;
+	dc:spatial "Point(134.013472222 34.866722222)"^^geo:wktLiteral .
+
+wd:Q11260958 dc:title "Q11260958" ;
+	dc:spatial "Point(141.188889 39.194444)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Esashi-fujiharanosato.jpg> .
+
+wd:Q11589937 dc:title "Roadside station Koube Fruit Flower Park Oosawa"@en ;
+	dc:spatial "Point(135.19175 34.845722222)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Fruit%20Flower%20Park.jpg> .
+
+wd:Q11559800 dc:title "Q11559800" ;
+	dc:spatial "Point(134.899831 34.416644)"^^geo:wktLiteral .
+
+wd:Q1207908 dc:title "Ocean Park Hong Kong"@en ;
+	dc:spatial "Point(114.175916666 22.245861111)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Main%20Entrance%20of%20Ocean%20Park.jpg> .
+
+wd:Q11419683 dc:title "Q11419683" ;
+	dc:spatial "Point(133.835389 34.172861)"^^geo:wktLiteral .
+
+wd:Q2496699 dc:title "Nagashima Spa Land"@en ;
+	dc:spatial "Point(136.730014 35.029698)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Nagashima%20spa%20land%20skyview.jpg> .
+
+wd:Q11577976 dc:title "Q11577976" ;
+	dc:spatial "Point(136.207417 34.919667)"^^geo:wktLiteral .
+
+wd:Q11418454 dc:title "Q11418454" ;
+	dc:spatial "Point(139.738056 35.626306)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Shinatatsu%20Donburi%205ninshu.JPG> .
+
+wd:Q11616614 dc:title "Q11616614" ;
+	dc:spatial "Point(135.589333 35.489917)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Wakasa-Takahama%20Eldoland.jpg> .
+
+wd:Q11327370 dc:title "Q11327370" ;
+	dc:spatial "Point(131.546569 33.401619)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Harmony%20Land%2001.jpg> .
+
+wd:Q11456135 dc:title "Q11456135" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Fujikachouen2.jpg> .
+
+wd:Q11546374 dc:title "Q11546374" ;
+	dc:spatial "Point(139.646417 35.844833)"^^geo:wktLiteral .
+
+wd:Q11614659 dc:title "Q11614659" ;
+	dc:spatial "Point(136.176156 36.250756)"^^geo:wktLiteral .
+
+wd:Q11590095 dc:title "Q11590095" ;
+	dc:spatial "Point(135.040278 34.7325)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kobecity%20Agricultural%20Park%20No%2C8.JPG> .
+
+wd:Q2743812 dc:title "Busch Gardens Tampa"@en ;
+	dc:spatial "Point(-82.4216 28.0379)"^^geo:wktLiteral .
+
+wd:Q11437813 dc:title "Q11437813" ;
+	dc:spatial "Point(138.988056 36.630833)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Marble%20Village%20Lockheart%20Castle%2C%20Lockheart%20Castle%20front%20exterior.jpg> .
+
+wd:Q11288492 dc:title "Q11288492" ;
+	dc:spatial "Point(139.710083 36.772972)"^^geo:wktLiteral .
+
+wd:Q11605806 dc:title "Q11605806" ;
+	dc:spatial "Point(140.900567 38.809464)"^^geo:wktLiteral .
+
+wd:Q11507277 dc:title "Q11507277" ;
+	dc:spatial "Point(136.300389 36.341472)"^^geo:wktLiteral .
+
+wd:Q11296642 dc:title "Q11296642" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Kizakura%20Kappa%20Country05nt3200.jpg> .
+
+wd:Q11356637 dc:title "Q11356637" ;
+	dc:spatial "Point(130.27379722 33.40563333)"^^geo:wktLiteral .
+
+wd:Q11516746 dc:title "Q11516746" ;
+	dc:spatial "Point(135.252694 34.80125)"^^geo:wktLiteral .
+
+wd:Q11556435 dc:title "Q11556435" ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Neputamura-gaikan.jpg> .
+
+wd:Q1302288 dc:title "Q1302288" ;
+	dc:spatial "Point(6.56528 51.3269)"^^geo:wktLiteral .
+
+wd:Q643755 dc:title "Lagunasia"@en ;
+	dc:spatial "Point(137.271986 34.808573)"^^geo:wktLiteral .
+
+wd:Q11595197 dc:title "Q11595197" ;
+	dc:spatial "Point(140.546206 39.29335)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/Akita%20Furusato-mura%2C%20Wonder%20Castle%201.jpg> .
+
+wd:Q11263435 dc:title "Q11263435" ;
+	dc:spatial "Point(136.937244 35.333233)"^^geo:wktLiteral ;
+	foaf:depiction <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Sweet%20Castle%20in%20Aichi.JPG> .
